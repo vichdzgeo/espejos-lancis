@@ -77,7 +77,7 @@ Vegetación costera
 
     **Metadatos**: |e_fv_v_costera_yuc|
     
-    **Ruta**: SIG/desarrollo/sig_papiit/entregables/exposicion/biologica/v_costera_yuc/fv_v_costera_yuc.tif
+    **Ruta**: SIG/desarrollo/sig_papiit/entregables/exposicion/biologica/v_costera_yuc/fv_v_costera.tif
 
     **issue**: |vegetacion_costera|
 
