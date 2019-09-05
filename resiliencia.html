@@ -93,9 +93,9 @@
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#fisica">Física</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#ancho-de-playa">Ancho de playa</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#duna-costera">Duna costera</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#tipo-de-litoral">Tipo de litoral</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#dunas-costeras">Dunas costeras</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#elevacion">Elevación</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#tipo-de-litoral">Tipo de litoral</a></li>
 </ul>
 </li>
 </ul>
@@ -172,42 +172,283 @@
 <h2>Insumos<a class="headerlink" href="#insumos" title="Enlazar permanentemente con este título">¶</a></h2>
 <div class="section" id="biologica">
 <h3>Biológica<a class="headerlink" href="#biologica" title="Enlazar permanentemente con este título">¶</a></h3>
+<p><strong>Peso</strong>:0.50</p>
+<p><strong>Nombre del archivo</strong>:</p>
 <div class="section" id="biodiversidad">
 <h4>Biodiversidad<a class="headerlink" href="#biodiversidad" title="Enlazar permanentemente con este título">¶</a></h4>
+<p><em>Resiliencia - Biológica</em></p>
+<blockquote>
+<div><p><strong>peso</strong>:0.50</p>
+<p><strong>Nombre del arhivo</strong>: fv_biodiversidad_yuc.tif</p>
+<p>Esta capa representa la presencia de vegetación costera en la zona de estudio.</p>
+<p>Funcion Discreta</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="26%" />
+<col width="62%" />
+<col width="12%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Categoria</th>
+<th class="head">Descripción</th>
+<th class="head">Peso</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>1</td>
+<td>Dunas Costeras</td>
+<td>0.33</td>
+</tr>
+<tr class="row-odd"><td>2</td>
+<td>Manglar</td>
+<td>1.00</td>
+</tr>
+<tr class="row-even"><td>3</td>
+<td>Tular</td>
+<td>0.09</td>
+</tr>
+<tr class="row-odd"><td>4</td>
+<td>Vegetación de peten</td>
+<td>0.31</td>
+</tr>
+<tr class="row-even"><td>5</td>
+<td>vegetación arbustiva</td>
+<td>0.06</td>
+</tr>
+</tbody>
+</table>
+<p>insumo de la funcion de valor: ifv_biodiversidad.tif
+donde los valores de pixel corresponden al número de la categoría descrita anteriormente.</p>
+</div></blockquote>
 </div>
 <div class="section" id="servicios-ambientales">
 <h4>Servicios ambientales<a class="headerlink" href="#servicios-ambientales" title="Enlazar permanentemente con este título">¶</a></h4>
+<blockquote>
+<div><p><em>Resiliencia - Biológica</em></p>
+<p><strong>peso</strong>: 0.50</p>
+<p><strong>Nombre del archivo</strong>:</p>
+<p>Esta capa es el resultado de la integración de la capa de protección costera y la capa de Provisión</p>
+<p><code class="docutils literal notranslate"><span class="pre">servicios</span> <span class="pre">ambientales</span> <span class="pre">=</span> <span class="pre">proteccion_costera*0.75</span> <span class="pre">+</span> <span class="pre">provision*0.25</span></code></p>
+<p><em>Resiliencia - Biológica - Servicios ambientales</em></p>
+<p><strong>Peso</strong>:0.50</p>
+<p><strong>Nombre del archivo</strong>:</p>
+<blockquote>
+<div><p><a href="#id1"><span class="problematic" id="id2">**</span></a>Resiliencia - Biológica - Servicios ambientales - Protección costera*</p>
+<p><strong>Peso</strong>:0.16</p>
+<p><strong>Nombre del archivo</strong>: fv_v_acuatica.tif</p>
+<p>Esta capa representa la distancia a la que se encuentran los pastos marinos dentro de la costa, la distancia
+va de 0 a 3000 metros. esta capa es procesada con una función de valor logística, quedando sus valores
+de 0 a 1.</p>
+<p>nombre del archivo:</p>
+<p><code class="docutils literal notranslate"><span class="pre">mínimo:</span> <span class="pre">0.0</span>
+<span class="pre">máximo:1.00</span></code></p>
+<p>función continua - Logística</p>
+<p>insumo:</p>
+<div class="admonition note">
+<p class="first admonition-title">Nota</p>
+<p class="last">Esta capa fue procesada en grass 7</p>
+</div>
+<p>archivo json: fv_exp_bio_v_acuatica.json</p>
+<p><code class="docutils literal notranslate"><span class="pre">centro:1500,</span>
+<span class="pre">min:0,</span>
+<span class="pre">max:3000,</span>
+<span class="pre">saturacion:</span> <span class="pre">3,</span>
+<span class="pre">k:0.0834999999999999</span></code></p>
+<img alt="_images/fi_fv_exp_bio_v_acuatica.JPG" src="_images/fi_fv_exp_bio_v_acuatica.JPG" />
+<p><a href="#id3"><span class="problematic" id="id4">**</span></a>Resiliencia - Biológica - Servicios ambientales - Protección costera*</p>
+<p><strong>Peso</strong>:0.14</p>
+<p><strong>Nombre del archivo</strong>:</p>
+<p><a href="#id5"><span class="problematic" id="id6">**</span></a>Resiliencia - Biológica - Servicios ambientales - Protección costera*</p>
+<p><strong>Peso</strong>:0.70</p>
+<p><strong>Nombre del archivo</strong>:</p>
+</div></blockquote>
+<p><em>Resiliencia - Biológica - Servicios ambientales</em></p>
+<p><strong>Peso</strong>:0.50</p>
+<p><strong>Nombre del archivo</strong>:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="26%" />
+<col width="62%" />
+<col width="12%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Categoria</th>
+<th class="head">Descripción</th>
+<th class="head">Peso</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>1</td>
+<td>Dunas Costeras</td>
+<td>0.19</td>
+</tr>
+<tr class="row-odd"><td>2</td>
+<td>Manglar</td>
+<td>0.56</td>
+</tr>
+<tr class="row-even"><td>3</td>
+<td>Tular</td>
+<td>0.05</td>
+</tr>
+<tr class="row-odd"><td>4</td>
+<td>Vegetación de peten</td>
+<td>0.17</td>
+</tr>
+<tr class="row-even"><td>5</td>
+<td>vegetación arbustiva</td>
+<td>0.03</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
 </div>
 </div>
 <div class="section" id="fisica">
 <h3>Física<a class="headerlink" href="#fisica" title="Enlazar permanentemente con este título">¶</a></h3>
+<p><em>Resiliencia
+**Peso*</em>:0.50</p>
+<p><strong>Nombre del archivo</strong>:</p>
+<p>Esta capa representa la integración de las capas Ancho de playa, Dunas costeras
+Elevación y tipo de litoral con sus respectivos pesos.</p>
+<p><code class="docutils literal notranslate"><span class="pre">Física</span> <span class="pre">=</span> <span class="pre">ancho_de_playa*0.33</span> <span class="pre">+</span> <span class="pre">dunas_costeras*0.56</span> <span class="pre">+</span> <span class="pre">elevacion*0.04</span> <span class="pre">+</span> <span class="pre">tipo_litoral</span> <span class="pre">*</span> <span class="pre">0.07</span></code></p>
 <div class="section" id="ancho-de-playa">
 <h4>Ancho de playa<a class="headerlink" href="#ancho-de-playa" title="Enlazar permanentemente con este título">¶</a></h4>
-<p><strong>Nombre de la capa</strong>:</p>
-<p><strong>metadatos</strong>:</p>
-<p><strong>Ruta</strong>:</p>
-<p><strong>Issue</strong>:</p>
+<p><em>Resiliencia - Física</em></p>
+<blockquote>
+<div><p><strong>Criterio</strong>:</p>
+<p><strong>Peso</strong>:0.62</p>
+<p><strong>Nombre del archivo</strong>:</p>
+<p>Esta capa representa la presencia del ancho de playa en la costa.</p>
+</div></blockquote>
 </div>
-<div class="section" id="duna-costera">
-<h4>Duna costera<a class="headerlink" href="#duna-costera" title="Enlazar permanentemente con este título">¶</a></h4>
-<p><strong>Nombre de la capa</strong>:</p>
-<p><strong>metadatos</strong>:</p>
-<p><strong>Ruta</strong>:</p>
-<p><strong>Issue</strong>:</p>
-</div>
-<div class="section" id="tipo-de-litoral">
-<h4>Tipo de litoral<a class="headerlink" href="#tipo-de-litoral" title="Enlazar permanentemente con este título">¶</a></h4>
-<p><strong>Nombre de la capa</strong>:</p>
-<p><strong>metadatos</strong>:</p>
-<p><strong>Ruta</strong>:</p>
-<p><strong>Issue</strong>:</p>
+<div class="section" id="dunas-costeras">
+<h4>Dunas costeras<a class="headerlink" href="#dunas-costeras" title="Enlazar permanentemente con este título">¶</a></h4>
+<p><em>Resiliencia - Física</em></p>
+<blockquote>
+<div><p><strong>Criterio</strong>:</p>
+<p><strong>Peso</strong>:0.27</p>
+<p><strong>Nombre del archivo</strong>:</p>
+<p>Esta capa representa la presencia de dunas costeras en la costa, El insumo ocupado
+para la generación de esta capa corresponde a información del POETY</p>
+</div></blockquote>
 </div>
 <div class="section" id="elevacion">
 <h4>Elevación<a class="headerlink" href="#elevacion" title="Enlazar permanentemente con este título">¶</a></h4>
-<p><strong>Nombre de la capa</strong>:</p>
-<p><strong>metadatos</strong>:</p>
-<p><strong>Ruta</strong>:</p>
-<p><strong>Issue</strong>:</p>
+<p><em>Resiliencia - Física</em></p>
+<blockquote>
+<div><p><strong>Criterio</strong>:</p>
+<p><strong>Peso</strong>:0.06</p>
+<p><strong>Nombre del archivo</strong>:</p>
+<p>El insumo para la generación de esta capa proviene del Continuo de Elevaciones Mexicano (CEM) de INEGI,
+a la cual se le aplico una funcion de valor <em>concava decreciente</em></p>
+<p>Funcion continua - Concava creciente</p>
+<div class="admonition warning">
+<p class="first admonition-title">Advertencia</p>
+<p class="last">por verificar</p>
+</div>
+<p>arhivo json:</p>
+<p><a href="#id7"><span class="problematic" id="id8">``</span></a>min: -8
+max: 25
+gama: 0.01975
+saturacion: ``</p>
+<img alt="../recursos/fi_fv_sen_fis_elevacion.JPG" src="../recursos/fi_fv_sen_fis_elevacion.JPG" />
+</div></blockquote>
+</div>
+<div class="section" id="tipo-de-litoral">
+<h4>Tipo de litoral<a class="headerlink" href="#tipo-de-litoral" title="Enlazar permanentemente con este título">¶</a></h4>
+<p><em>Resiliencia - Física</em></p>
+<blockquote>
+<div><p><strong>Criterio</strong>:</p>
+<p><strong>Peso</strong>:0.05</p>
+<p><strong>Nombre del archivo</strong>:</p>
+<p>Esta capa representa la presencia de diferentes tipos de litoral, estos fueron clasificados
+conforme a la siguiente tabla, el insumo ocupado es la capa de uso de suelo y vegetación
+serie VI de INEGI</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="62%" />
+<col width="38%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Tipo de Vegetación</th>
+<th class="head">Tipo de litoral</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Área desprovista de vegetación</td>
+<td>Arenoso</td>
+</tr>
+<tr class="row-odd"><td>Sin vegetación aparente</td>
+<td>Arenoso</td>
+</tr>
+<tr class="row-even"><td>vegetación dunas costeras</td>
+<td>Arenoso</td>
+</tr>
+<tr class="row-odd"><td>Acuícola</td>
+<td>Artificial</td>
+</tr>
+<tr class="row-even"><td>Urbano construido</td>
+<td>Artificial</td>
+</tr>
+<tr class="row-odd"><td>Agua</td>
+<td>Lodoso</td>
+</tr>
+<tr class="row-even"><td>Peten</td>
+<td>Lodoso</td>
+</tr>
+<tr class="row-odd"><td>Vegetación halofila, hidrofila</td>
+<td>Lodoso</td>
+</tr>
+<tr class="row-even"><td>Agricultura de riego anual</td>
+<td>Vegetado</td>
+</tr>
+<tr class="row-odd"><td>Agricultura de riego permanente</td>
+<td>Vegetado</td>
+</tr>
+<tr class="row-even"><td>Manglar</td>
+<td>Vegetado</td>
+</tr>
+<tr class="row-odd"><td>Palmar, pastizal,manglar, tular</td>
+<td>Vegetado</td>
+</tr>
+<tr class="row-even"><td>Vegetación secundaria (5 clases)</td>
+<td>Vegetado</td>
+</tr>
+</tbody>
+</table>
+<p>Quendando de esta forma los pesos asignados para cada categoría.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="38%" />
+<col width="46%" />
+<col width="17%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Categoria</th>
+<th class="head">Descripción</th>
+<th class="head">Peso</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>1</td>
+<td>Arenoso</td>
+<td>0.28</td>
+</tr>
+<tr class="row-odd"><td>2</td>
+<td>Artificial</td>
+<td>0.05</td>
+</tr>
+<tr class="row-even"><td>3</td>
+<td>Lodoso</td>
+<td>0.52</td>
+</tr>
+<tr class="row-odd"><td>4</td>
+<td>Vegetado</td>
+<td>0.15</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
 </div>
 </div>
 </div>
