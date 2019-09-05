@@ -171,6 +171,8 @@
 <h2>Insumos<a class="headerlink" href="#insumos" title="Enlazar permanentemente con este título">¶</a></h2>
 <div class="section" id="biologica">
 <h3>Biológica<a class="headerlink" href="#biologica" title="Enlazar permanentemente con este título">¶</a></h3>
+<p><strong>Peso</strong>:0.34</p>
+<p><strong>Nombre del archivo</strong>:</p>
 <div class="section" id="vegetacion-acuatica">
 <h4>Vegetación acuatíca<a class="headerlink" href="#vegetacion-acuatica" title="Enlazar permanentemente con este título">¶</a></h4>
 <blockquote>
@@ -183,7 +185,7 @@ de 0 a 1.</p>
 <p>nombre del archivo: fv_v_acuatica_yuc.tif</p>
 <p><code class="docutils literal notranslate"><span class="pre">mínimo:</span> <span class="pre">0.0</span>
 <span class="pre">máximo:1.00</span></code></p>
-<p>función continua - Logística invertida</p>
+<p>función continua - Logística</p>
 <p>insumo: ifv_v_acuatica.tif</p>
 <div class="admonition note">
 <p class="first admonition-title">Nota</p>
@@ -238,8 +240,6 @@ hasta 1.0, que representa estar lo más lejano a una duna. la cercanía a la dun
 <span class="pre">saturación:10</span>
 <span class="pre">k:0.255</span></code></p>
 <img alt="_images/fi_fv_exp_bio_duna.JPG" src="_images/fi_fv_exp_bio_duna.JPG" />
-<p>issue:</p>
-<p>metadatos:</p>
 </div></blockquote>
 </div>
 <div class="section" id="manglar">
@@ -247,8 +247,8 @@ hasta 1.0, que representa estar lo más lejano a una duna. la cercanía a la dun
 <p><em>Exposición - Biológica</em></p>
 <blockquote>
 <div><p>Criterio: Vegetacion costera</p>
-<p><strong>peso</strong>: (0.75)
-nombre del archivo: fv_ditancia_manglar.tif</p>
+<p><strong>peso</strong>: (0.75)</p>
+<p>nombre del archivo: fv_ditancia_manglar.tif</p>
 <p>Esta capa representa la lejanía a una zona delimitada como manglar, el rango  va de 0 ,lo  que representa especialmente estar situado en el manglar,
 hasta 1.0, que representa estar lo más lejano a una zona de manglar. la lejanía al manglar esta representada por una función de valor logística</p>
 <p><code class="docutils literal notranslate"><span class="pre">mínimo:</span> <span class="pre">0.00</span>
@@ -262,21 +262,21 @@ hasta 1.0, que representa estar lo más lejano a una zona de manglar. la lejaní
 <span class="pre">saturación:4</span>
 <span class="pre">k:0.108</span></code></p>
 <img alt="_images/fi_fv_exp_bio_manglar.JPG" src="_images/fi_fv_exp_bio_manglar.JPG" />
-<p>issue:</p>
-<p>metadatos:</p>
 </div></blockquote>
 </div>
 </div>
 </div>
 <div class="section" id="fisica">
 <h3>Física<a class="headerlink" href="#fisica" title="Enlazar permanentemente con este título">¶</a></h3>
+<p><strong>Peso</strong>:0.66</p>
+<p><strong>Nombre del archivo</strong>:</p>
 <div class="section" id="ancho-de-playa">
 <h4>Ancho de playa<a class="headerlink" href="#ancho-de-playa" title="Enlazar permanentemente con este título">¶</a></h4>
 <p><em>Exposición - Física</em></p>
 <blockquote>
 <div><p>Criterio: Ancho de playa</p>
-<p><strong>peso</strong> : <strong>actualizar</strong></p>
-<p>Nombre del archivo: fv_distancia_playa.tif</p>
+<p><strong>peso</strong> : 0.13
+Nombre del archivo: fv_distancia_playa.tif</p>
 <p>Esta capa representa la lejania a la playa, el rango va de 0, lo que representa espacialmente estar situado en la playa,
 hasta 1, que representa espacialmente estar lo más alejado de la playa.</p>
 <p><code class="docutils literal notranslate"><span class="pre">mínimo:</span> <span class="pre">0.00</span>
@@ -300,7 +300,7 @@ hasta 1, que representa espacialmente estar lo más alejado de la playa.</p>
 <p><em>Exposición - Física</em></p>
 <blockquote>
 <div><p>Criterio: elevacion</p>
-<p><strong>peso</strong>: <strong>verificar</strong></p>
+<p><strong>peso</strong>: 0.87</p>
 <p>nombre del archivo: fv_elev_yuc.tif</p>
 <p>El insumo para la generación de esta capa proviene del Continuo de Elevaciones Mexicano (CEM) de INEGI,
 a la cual se le aplico una funcion de valor <em>concava decreciente</em></p>

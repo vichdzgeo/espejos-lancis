@@ -8,11 +8,14 @@ Insumos
 
 Biológica
 ===========
+**Peso**:0.34
+
+**Nombre del archivo**:
 
 Vegetación acuatíca
 -------------------------
     *Exposición - biológica*
-
+ 
     Criterio: vegetacion acuatica 
 
     **peso**:0.16
@@ -27,9 +30,9 @@ Vegetación acuatíca
     ``mínimo: 0.0
     máximo:1.00``
 
-    función continua - Logística invertida
+    función continua - Logística
 
-    insumo: ifv_v_acuatica.tif
+    insumo: ifv_v_acuatica.tif 
 
     .. note::
         Esta capa fue procesada en grass 7
@@ -43,7 +46,7 @@ Vegetación acuatíca
     saturacion: 3,
     k:0.0834999999999999``
 
-    .. imagen:: ../recursos/fi_fv_exp_bio_v_acuatica.JPG
+    .. image:: ../recursos/fi_fv_exp_bio_v_acuatica.JPG
 
 
 
@@ -109,11 +112,8 @@ Dunas costeras
     saturación:10
     k:0.255``
 
-    .. imagen:: ../recursos/fi_fv_exp_bio_duna.JPG
+    .. image:: ../recursos/fi_fv_exp_bio_duna.JPG
 
-    issue:
-
-    metadatos:
 
 Manglar 
 ^^^^^^^^
@@ -122,6 +122,7 @@ Manglar
     Criterio: Vegetacion costera
     
     **peso**: (0.75)
+
     nombre del archivo: fv_ditancia_manglar.tif
     
     Esta capa representa la lejanía a una zona delimitada como manglar, el rango  va de 0 ,lo  que representa especialmente estar situado en el manglar, 
@@ -142,15 +143,16 @@ Manglar
     saturación:4
     k:0.108``
 
-    .. imagen:: ../recursos/fi_fv_exp_bio_manglar.JPG
-
-    issue:
-
-    metadatos:
+    .. image:: ../recursos/fi_fv_exp_bio_manglar.JPG
 
 
 Física
 ========
+
+**Peso**:0.66
+
+**Nombre del archivo**:
+
 
 Ancho de playa
 ----------------
@@ -158,8 +160,7 @@ Ancho de playa
 
     Criterio: Ancho de playa
 
-    **peso** : **actualizar**
-
+    **peso** : 0.13
     Nombre del archivo: fv_distancia_playa.tif
 
     Esta capa representa la lejania a la playa, el rango va de 0, lo que representa espacialmente estar situado en la playa, 
@@ -180,7 +181,7 @@ Ancho de playa
     saturación:7,
     k:0.1815``
 
-    .. imagen:: ../recursos/fi_fv_exp_fis_distancia_playa.JPG
+    .. image:: ../recursos/fi_fv_exp_fis_distancia_playa.JPG
 
     **metadatos**: |e_fv_ancho_playa_yuc|
 
@@ -195,7 +196,7 @@ Elevación
 
     Criterio: elevacion
 
-    **peso**: **verificar**
+    **peso**: 0.87
 
     nombre del archivo: fv_elev_yuc.tif
 
@@ -212,7 +213,7 @@ Elevación
     saturacion: 3``
 
 
-    .. imagen:: ../recursos/fi_fv_exp_fis_elevacion.JPG
+    .. image:: ../recursos/fi_fv_exp_fis_elevacion.JPG
 
 
     **Nombre de la capa**: fv_elev_yuc.tif
@@ -224,7 +225,7 @@ Elevación
     **issue**: |elevacion|
 
 
-.. liga de los metadatos
+.. ####liga de los metadatos#####
 .. parte Biológica 
 
 .. |e_fv_v_costera_yuc| raw:: html
@@ -245,20 +246,12 @@ Elevación
 
     <a href= "http://magrat.mine.nu:8088/geonetwork/srv/spa/catalog.search#/metadata/ac5e34c8-1c3c-4bfb-a4ab-9be7885f9db6" target="_blank">e_fv_ancho_playa_yuc</a>
 
-.. |e_fv_duna_yuc| raw:: html
-
-    <a href= "http://magrat.mine.nu:8088/geonetwork/srv/spa/catalog.search#/metadata/e4801fba-766d-48ea-bbc5-dd78203d7ffa" target="_blank"e_fv_duna_yuc</a>
-
-.. |e_fv_tipo_litoral_yuc| raw:: html
-
-    <a href= "http://magrat.mine.nu:8088/geonetwork/srv/spa/catalog.search#/metadata/93fb03d9-dda9-4cb1-b6c6-fb97db32429b" target="_blank">e_fv_tipo_litoral_yuc</a>
-
 .. |fv_e_elev_yuc| raw:: html
 
     <a href= "http://magrat.mine.nu:8088/geonetwork/srv/spa/catalog.search#/metadata/b794113f-dc2a-4ce0-b700-6d65263c9df4" target="_blank">fv_e_elev_yuc</a>
 
 
-.. liga de los issues
+.. ####liga de los issues#####
 .. biologica
 
 .. |vegetacion_costera| raw:: html
@@ -273,10 +266,6 @@ Elevación
 .. |elevacion| raw:: html
     
     <a href= "https://github.com/lancis-apc/espejos-lancis/issues/58" target="_blank">elevacion</a>
-
-.. |tipo_litoral| raw:: html
-    
-    <a href= "https://github.com/lancis-apc/espejos-lancis/issues/54" target="_blank">tipo de litoral</a>
 
 .. |duna_costera| raw:: html
     
