@@ -37,7 +37,7 @@
     <link rel="index" title="Índice" href="genindex.html" />
     <link rel="search" title="Búsqueda" href="search.html" />
     <link rel="next" title="Criterio de sensiblidad" href="sensibilidad.html" />
-    <link rel="prev" title="Welcome to PAPIIT’s documentation!" href="index.html" /> 
+    <link rel="prev" title="Documentación del proyecto de Vulnerabilidad costera - Yucatán PAPIIT" href="index.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -169,38 +169,34 @@
 <h1>Criterio de exposición<a class="headerlink" href="#criterio-de-exposicion" title="Enlazar permanentemente con este título">¶</a></h1>
 <div class="section" id="insumos">
 <h2>Insumos<a class="headerlink" href="#insumos" title="Enlazar permanentemente con este título">¶</a></h2>
+<img alt="_images/vulnerabilidad_exposicion_04sep2019_fv.png" src="_images/vulnerabilidad_exposicion_04sep2019_fv.png" />
 <div class="section" id="biologica">
 <h3>Biológica<a class="headerlink" href="#biologica" title="Enlazar permanentemente con este título">¶</a></h3>
-<p><strong>Peso</strong>:0.34</p>
-<p><strong>Nombre del archivo</strong>:</p>
 <div class="section" id="vegetacion-acuatica">
 <h4>Vegetación acuatíca<a class="headerlink" href="#vegetacion-acuatica" title="Enlazar permanentemente con este título">¶</a></h4>
 <blockquote>
 <div><p><em>Exposición - biológica</em></p>
 <p>Criterio: vegetacion acuatica</p>
-<p><strong>peso</strong>:0.16</p>
-<p>Esta capa representa la distancia a la que se encuentran los pastos marinos dentro de la costa, la distancia
-va de 0 a 3000 metros. esta capa es procesada con una función de valor logística, quedando sus valores
-de 0 a 1.</p>
-<p>nombre del archivo: fv_v_acuatica_yuc.tif</p>
+<p><strong>Peso local</strong>:0.16</p>
+<p><strong>insumo:</strong> <a href= "http://magrat.mine.nu:8088/geonetwork/srv/spa/catalog.search#/metadata/4a300c5b-af8e-47d5-ad48-3b15a3e541bf" target="_blank">ifv_v_acuatica_yuc.tif</a></p>
+<p><strong>Definición:</strong> Distancia entre los pastos y la línea de costa</p>
 <p><code class="docutils literal notranslate"><span class="pre">mínimo:</span> <span class="pre">0.0</span>
-<span class="pre">máximo:1.00</span></code></p>
-<p>función continua - Logística</p>
-<p>insumo: ifv_v_acuatica.tif</p>
+<span class="pre">máximo:3000</span></code></p>
+<p><strong>tipo de función:</strong>  Continua - Logística</p>
 <div class="admonition note">
 <p class="first admonition-title">Nota</p>
-<p class="last">Esta capa fue procesada en grass 7</p>
+<p class="last">Esta capa fue procesada en grass 7 ya que no se pudo procesar en la
+plataforma</p>
 </div>
-<p>archivo json: fv_exp_bio_v_acuatica.jsonn</p>
+<p>archivo json: fv_exp_bio_v_acuatica.json</p>
 <p><code class="docutils literal notranslate"><span class="pre">centro:1500,</span>
 <span class="pre">min:0,</span>
 <span class="pre">max:3000,</span>
 <span class="pre">saturacion:</span> <span class="pre">3,</span>
 <span class="pre">k:0.0834999999999999</span></code></p>
-<img alt="_images/fi_fv_exp_bio_v_acuatica.JPG" src="_images/fi_fv_exp_bio_v_acuatica.JPG" />
-<p><strong>Metadatos</strong>: <a href= "http://magrat.mine.nu:8088/geonetwork/srv/spa/catalog.search#/metadata/4a300c5b-af8e-47d5-ad48-3b15a3e541bf" target="_blank">e_fv_v_acuatica_yuc</a></p>
-<p><strong>Ruta</strong>: SIG/desarrollo/sig_papiit/entregables/exposicion/biologica/v_acuatica_yuc/fv_v_acuatica_yuc.tif</p>
-<p><strong>issue</strong>: <a href= "https://github.com/lancis-apc/espejos-lancis/issues/47" target="_blank">Vegetación acuatica</a></p>
+<img alt="_images/fv_c_exp_veg_acuatica.png" src="_images/fv_c_exp_veg_acuatica.png" />
+<p><strong>Resultado:</strong> SIG/desarrollo/sig_papiit/entregables/exposicion/biologica/v_acuatica_yuc/fv_v_acuatica_yuc.tif</p>
+<p><strong>issue:</strong> <a href= "https://github.com/lancis-apc/espejos-lancis/issues/47" target="_blank">Vegetación acuatica</a></p>
 </div></blockquote>
 </div>
 <div class="section" id="vegetacion-costera">
@@ -208,7 +204,8 @@ de 0 a 1.</p>
 <blockquote>
 <div><p><em>Exposición - Biológica</em></p>
 <p>Criterio : Vegetación costera</p>
-<p><strong>peso</strong>: 0.84</p>
+<p><strong>peso local:</strong> 0.84</p>
+<p><strong>insumo:</strong> <a href= "http://magrat.mine.nu:8088/geonetwork/srv/spa/catalog.search#/metadata/3970a9d9-e5fc-4522-ab83-fabefed5633b" target="_blank">ifv_v_costera_yuc.tif</a></p>
 <p>Esta capa representa la integración de las capas de distancia de dunas costeras con la capa de distancias de manglar
 la construcción es</p>
 <p><code class="docutils literal notranslate"><span class="pre">vegetacion</span> <span class="pre">costera</span> <span class="pre">=</span> <span class="pre">fv_distancia_dunas.tif*0.25</span> <span class="pre">+</span> <span class="pre">fv_ditancia_manglar.tif*0.75</span></code></p>
@@ -216,21 +213,19 @@ la construcción es</p>
 <p><code class="docutils literal notranslate"><span class="pre">mínimo:</span> <span class="pre">0.02</span>
 <span class="pre">máximo:1.00</span></code></p>
 <p><strong>Nombre de la capa</strong>: fv_v_costera_yuc</p>
-<p><strong>Metadatos</strong>: <a href= "http://magrat.mine.nu:8088/geonetwork/srv/spa/catalog.search#/metadata/3970a9d9-e5fc-4522-ab83-fabefed5633b" target="_blank">e_fv_v_costera_yuc</a></p>
+<p><strong>Metadatos</strong>: <a href="#id3"><span class="problematic" id="id4">|e_fv_v_costera_yuc|</span></a></p>
 <p><strong>Ruta</strong>: SIG/desarrollo/sig_papiit/entregables/exposicion/biologica/v_costera_yuc/fv_v_costera.tif</p>
 <p><strong>issue</strong>: <a href= "https://github.com/lancis-apc/espejos-lancis/issues/66" target="_blank">Vegetación costera</a></p>
 </div></blockquote>
 <div class="section" id="dunas-costeras">
 <h5>Dunas costeras<a class="headerlink" href="#dunas-costeras" title="Enlazar permanentemente con este título">¶</a></h5>
-<p><em>Exposición - biológica</em></p>
+<p><em>Exposición - biológica - Vegetación costera</em></p>
 <blockquote>
-<div><p>Criterio: Vegetación costera</p>
-<p><strong>peso</strong>: 0.25</p>
-<p>nombre del archivo: fv_distancia_dunas.tif</p>
-<p>Esta capa representa la lejanía a una duna costera, el rango  va de 0 ,lo  que representa especialmente estar situado en la duna,
-hasta 1.0, que representa estar lo más lejano a una duna. la cercanía a la duna esta representada por una función de valor logística</p>
-<p><code class="docutils literal notranslate"><span class="pre">mínimo:</span> <span class="pre">0.00</span>
-<span class="pre">máximo:1.00</span></code></p>
+<div><p><strong>peso</strong>: 0.25</p>
+<p><strong>insumo:</strong> fv_distancia_dunas.tif</p>
+<blockquote>
+<div><strong>Definición:</strong> Lejanía a una duna costera dentro de la franja de 3 kms</div></blockquote>
+<p><code class="docutils literal notranslate"><span class="pre">mínimo:</span> <span class="pre">0.0</span>&#160; <span class="pre">máximo:3000</span></code></p>
 <p>Función continua - logística</p>
 <p>insumo: ifv_distancia_dunas.tif</p>
 <p>archivo json: fv_exp_bio_veg_dunas.json</p>
@@ -239,82 +234,70 @@ hasta 1.0, que representa estar lo más lejano a una duna. la cercanía a la dun
 <span class="pre">max:3000</span>
 <span class="pre">saturación:10</span>
 <span class="pre">k:0.255</span></code></p>
-<img alt="_images/fi_fv_exp_bio_duna.JPG" src="_images/fi_fv_exp_bio_duna.JPG" />
+<img alt="_images/fv_c_exp_dunas_costeras.png" src="_images/fv_c_exp_dunas_costeras.png" />
 </div></blockquote>
 </div>
 <div class="section" id="manglar">
 <h5>Manglar<a class="headerlink" href="#manglar" title="Enlazar permanentemente con este título">¶</a></h5>
-<p><em>Exposición - Biológica</em></p>
+<p><em>Exposición - Biológica - Vegetación costera</em></p>
 <blockquote>
-<div><p>Criterio: Vegetacion costera</p>
-<p><strong>peso</strong>: (0.75)</p>
-<p>nombre del archivo: fv_ditancia_manglar.tif</p>
-<p>Esta capa representa la lejanía a una zona delimitada como manglar, el rango  va de 0 ,lo  que representa especialmente estar situado en el manglar,
-hasta 1.0, que representa estar lo más lejano a una zona de manglar. la lejanía al manglar esta representada por una función de valor logística</p>
-<p><code class="docutils literal notranslate"><span class="pre">mínimo:</span> <span class="pre">0.00</span>
-<span class="pre">máximo:1.00</span></code></p>
-<p>Función continua - logística</p>
-<p>insumo: ifv_distancia_manglar.tif</p>
+<div><p><strong>peso local:</strong> 0.75</p>
+<p>insumo: fv_ditancia_manglar.tif</p>
+<p><strong>Definición:</strong> Lejanía a una zona de manglar dentro de la franja de 3kms</p>
+<p><code class="docutils literal notranslate"><span class="pre">mínimo:</span> <span class="pre">0.00</span> <span class="pre">máximo:1.00</span></code></p>
+<p><strong>Tipo de función:</strong> Continua - logística</p>
 <p>archivo json: fv_exp_bio_veg_manglar.json</p>
 <p><code class="docutils literal notranslate"><span class="pre">centro:250</span>
 <span class="pre">min:0</span>
 <span class="pre">max:3000</span>
 <span class="pre">saturación:4</span>
 <span class="pre">k:0.108</span></code></p>
-<img alt="_images/fi_fv_exp_bio_manglar.JPG" src="_images/fi_fv_exp_bio_manglar.JPG" />
+<img alt="_images/fv_c_exp_manglar.png" src="_images/fv_c_exp_manglar.png" />
 </div></blockquote>
+<p><strong>Resultado:</strong> fv_veg_costera.tif
+<strong>Issue:</strong>:</p>
 </div>
 </div>
 </div>
 <div class="section" id="fisica">
 <h3>Física<a class="headerlink" href="#fisica" title="Enlazar permanentemente con este título">¶</a></h3>
-<p><strong>Peso</strong>:0.66</p>
-<p><strong>Nombre del archivo</strong>:</p>
 <div class="section" id="ancho-de-playa">
 <h4>Ancho de playa<a class="headerlink" href="#ancho-de-playa" title="Enlazar permanentemente con este título">¶</a></h4>
 <p><em>Exposición - Física</em></p>
 <blockquote>
-<div><p>Criterio: Ancho de playa</p>
-<p><strong>peso</strong> : 0.13
-Nombre del archivo: fv_distancia_playa.tif</p>
-<p>Esta capa representa la lejania a la playa, el rango va de 0, lo que representa espacialmente estar situado en la playa,
-hasta 1, que representa espacialmente estar lo más alejado de la playa.</p>
+<div><p><strong>peso local:</strong> 0.13</p>
+<p><strong>insumo:</strong> ifv_distancia_playa.tif</p>
+<p><strong>Definición:</strong> Distancia entre la línea de mar y el final de la playa</p>
+<div class="admonition note">
+<p class="first admonition-title">Nota</p>
+<p class="last">verificar esta Definición</p>
+</div>
 <p><code class="docutils literal notranslate"><span class="pre">mínimo:</span> <span class="pre">0.00</span>
-<span class="pre">máximo:1.00</span></code></p>
-<p>Función continua - logística</p>
-<p>insumo: ifv_distancia_playa.tif</p>
+<span class="pre">máximo:3000.00</span></code></p>
+<p><a href="#id1"><span class="problematic" id="id2">**</span></a>Tipo de función: ** Continua - logística</p>
 <p>archivo json: fv_exp_fis_playa.json</p>
 <p><code class="docutils literal notranslate"><span class="pre">centro:60,</span>
 <span class="pre">min:0,</span>
 <span class="pre">max:3000,</span>
 <span class="pre">saturación:7,</span>
 <span class="pre">k:0.1815</span></code></p>
-<img alt="_images/fi_fv_exp_fis_distancia_playa.JPG" src="_images/fi_fv_exp_fis_distancia_playa.JPG" />
-<p><strong>metadatos</strong>: <a href= "http://magrat.mine.nu:8088/geonetwork/srv/spa/catalog.search#/metadata/ac5e34c8-1c3c-4bfb-a4ab-9be7885f9db6" target="_blank">e_fv_ancho_playa_yuc</a></p>
-<p><strong>Ruta</strong>: SIG/desarrollo/sig_papiit/entregables/exposicion/fisica/ancho_playa_yuc/fv_ancho_playa_yuc.tif</p>
-<p><strong>issue</strong>: <a href= "https://github.com/lancis-apc/espejos-lancis/issues/69" target="_blank">ancho de playa</a></p>
+<img alt="_images/fv_c_exp_aplaya.png" src="_images/fv_c_exp_aplaya.png" />
 </div></blockquote>
 </div>
 <div class="section" id="elevacion">
 <h4>Elevación<a class="headerlink" href="#elevacion" title="Enlazar permanentemente con este título">¶</a></h4>
 <p><em>Exposición - Física</em></p>
 <blockquote>
-<div><p>Criterio: elevacion</p>
-<p><strong>peso</strong>: 0.87</p>
-<p>nombre del archivo: fv_elev_yuc.tif</p>
-<p>El insumo para la generación de esta capa proviene del Continuo de Elevaciones Mexicano (CEM) de INEGI,
-a la cual se le aplico una funcion de valor <em>concava decreciente</em></p>
-<p>Funcion continua - Concava decreciente</p>
+<div><p><strong>peso local:</strong> 0.87</p>
+<p><strong>insumo:</strong> ifv_elev_yuc.tif</p>
+<p><strong>Definición:</strong> Localización sobre el nivel medio del mar</p>
+<p><strong>Tipo de función:</strong> Continua - Concava decreciente</p>
 <p>arhivo json: fv_exp_fis_elevacion.json</p>
 <p><code class="docutils literal notranslate"><span class="pre">min:</span> <span class="pre">0</span>
 <span class="pre">max:</span> <span class="pre">31</span>
 <span class="pre">gama:</span> <span class="pre">0.049249999999999995</span>
 <span class="pre">saturacion:</span> <span class="pre">3</span></code></p>
-<img alt="_images/fi_fv_exp_fis_elevacion.JPG" src="_images/fi_fv_exp_fis_elevacion.JPG" />
-<p><strong>Nombre de la capa</strong>: fv_elev_yuc.tif</p>
-<p><strong>metadatos</strong>: <a href= "http://magrat.mine.nu:8088/geonetwork/srv/spa/catalog.search#/metadata/b794113f-dc2a-4ce0-b700-6d65263c9df4" target="_blank">fv_e_elev_yuc</a></p>
-<p><strong>Ruta</strong>: SIG/desarrollo/sig_papiit/entregables/exposicion/fisica/elev_yuc/fv_elev_yuc.tif</p>
-<p><strong>issue</strong>: <a href= "https://github.com/lancis-apc/espejos-lancis/issues/58" target="_blank">elevacion</a></p>
+<img alt="_images/fv_c_exp_elevacion.png" src="_images/fv_c_exp_elevacion.png" />
 </div></blockquote>
 </div>
 </div>
@@ -332,7 +315,7 @@ a la cual se le aplico una funcion de valor <em>concava decreciente</em></p>
         <a href="sensibilidad.html" class="btn btn-neutral float-right" title="Criterio de sensiblidad" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="index.html" class="btn btn-neutral float-left" title="Welcome to PAPIIT’s documentation!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="index.html" class="btn btn-neutral float-left" title="Documentación del proyecto de Vulnerabilidad costera - Yucatán PAPIIT" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
