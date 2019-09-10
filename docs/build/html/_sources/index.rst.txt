@@ -3,8 +3,8 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to PAPIIT's documentation!
-==================================
+Documentación del proyecto de Vulnerabilidad costera - Yucatán PAPIIT
+=========================================================================
 
 .. toctree::
    :maxdepth: 2

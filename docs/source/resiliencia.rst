@@ -1,7 +1,7 @@
 Criterio de resiliencia
 ##########################
 
-
+.. imagen:: ../recursos/vulnerabilidad_resiliencia_04sep2019.png
 
 Insumos
 *********

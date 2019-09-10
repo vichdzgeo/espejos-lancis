@@ -1,16 +1,16 @@
 Criterio de exposición
 ##########################
 
-
-
 Insumos
 *********
 
+.. imagen:: ../recursos/vulnerabilidad_exposicion_04sep2019_fv.png
+
+
+
+
 Biológica
 ===========
-**Peso**:0.34
-
-**Nombre del archivo**:
 
 Vegetación acuatíca
 -------------------------
@@ -18,27 +18,24 @@ Vegetación acuatíca
  
     Criterio: vegetacion acuatica 
 
-    **peso**:0.16
+    **Peso local**:0.16
 
+    **insumo:** |ifv_v_acuatica_yuc.tif|
     
-    Esta capa representa la distancia a la que se encuentran los pastos marinos dentro de la costa, la distancia 
-    va de 0 a 3000 metros. esta capa es procesada con una función de valor logística, quedando sus valores
-    de 0 a 1.
-
-    nombre del archivo: fv_v_acuatica_yuc.tif
+    **Definición:** Distancia entre los pastos y la línea de costa 
 
     ``mínimo: 0.0
-    máximo:1.00``
+    máximo:3000``
 
-    función continua - Logística
+    **tipo de función:**  Continua - Logística
 
-    insumo: ifv_v_acuatica.tif 
-
+    
     .. note::
-        Esta capa fue procesada en grass 7
+        Esta capa fue procesada en grass 7 ya que no se pudo procesar en la 
+        plataforma  
     
     
-    archivo json: fv_exp_bio_v_acuatica.jsonn
+    archivo json: fv_exp_bio_v_acuatica.json
 
     ``centro:1500,
     min:0,
@@ -46,15 +43,13 @@ Vegetación acuatíca
     saturacion: 3,
     k:0.0834999999999999``
 
-    .. image:: ../recursos/fi_fv_exp_bio_v_acuatica.JPG
+    .. image:: ../recursos/fv/fv_c_exp_veg_acuatica.png
 
 
+    **Resultado:** SIG/desarrollo/sig_papiit/entregables/exposicion/biologica/v_acuatica_yuc/fv_v_acuatica_yuc.tif
 
-    **Metadatos**: |e_fv_v_acuatica_yuc|
+    **issue:** |vegetacion_acuatica|
 
-    **Ruta**: SIG/desarrollo/sig_papiit/entregables/exposicion/biologica/v_acuatica_yuc/fv_v_acuatica_yuc.tif
-
-    **issue**: |vegetacion_acuatica|
 
     
 Vegetación costera
@@ -63,7 +58,9 @@ Vegetación costera
 
     Criterio : Vegetación costera
 
-    **peso**: 0.84
+    **peso local:** 0.84
+
+    **insumo:** |ifv_v_costera_yuc.tif|
     
     Esta capa representa la integración de las capas de distancia de dunas costeras con la capa de distancias de manglar
     la construcción es 
@@ -86,19 +83,15 @@ Vegetación costera
 
 Dunas costeras
 ^^^^^^^^^^^^^^
-*Exposición - biológica*
+*Exposición - biológica - Vegetación costera*
 
-    Criterio: Vegetación costera
-    
     **peso**: 0.25 
     
-    nombre del archivo: fv_distancia_dunas.tif
-    
-    Esta capa representa la lejanía a una duna costera, el rango  va de 0 ,lo  que representa especialmente estar situado en la duna,
-    hasta 1.0, que representa estar lo más lejano a una duna. la cercanía a la duna esta representada por una función de valor logística
-    
-    ``mínimo: 0.00
-    máximo:1.00``
+    **insumo:** fv_distancia_dunas.tif
+
+     **Definición:** Lejanía a una duna costera dentro de la franja de 3 kms
+
+    ``mínimo: 0.0  máximo:3000``
 
     Función continua - logística 
     
@@ -112,28 +105,23 @@ Dunas costeras
     saturación:10
     k:0.255``
 
-    .. image:: ../recursos/fi_fv_exp_bio_duna.JPG
+    .. image:: ../recursos/fv/fv_c_exp_dunas_costeras.png
+
 
 
 Manglar 
 ^^^^^^^^
-*Exposición - Biológica*
+*Exposición - Biológica - Vegetación costera*
+      
+    **peso local:** 0.75
 
-    Criterio: Vegetacion costera
+    insumo: fv_ditancia_manglar.tif
     
-    **peso**: (0.75)
+    **Definición:** Lejanía a una zona de manglar dentro de la franja de 3kms
 
-    nombre del archivo: fv_ditancia_manglar.tif
-    
-    Esta capa representa la lejanía a una zona delimitada como manglar, el rango  va de 0 ,lo  que representa especialmente estar situado en el manglar, 
-    hasta 1.0, que representa estar lo más lejano a una zona de manglar. la lejanía al manglar esta representada por una función de valor logística
+    ``mínimo: 0.00 máximo:1.00``
 
-    ``mínimo: 0.00
-    máximo:1.00``
-
-    Función continua - logística 
-    
-    insumo: ifv_distancia_manglar.tif
+    **Tipo de función:** Continua - logística 
     
     archivo json: fv_exp_bio_veg_manglar.json
    
@@ -143,69 +131,61 @@ Manglar
     saturación:4
     k:0.108``
 
-    .. image:: ../recursos/fi_fv_exp_bio_manglar.JPG
+    .. imagen:: ../recursos/fv/fv_c_exp_manglar.png
+
+**Resultado:** fv_veg_costera.tif
+**Issue:**:
 
 
 Física
 ========
 
-**Peso**:0.66
-
-**Nombre del archivo**:
-
-
 Ancho de playa
 ----------------
 *Exposición - Física*
 
-    Criterio: Ancho de playa
+    **peso local:** 0.13
 
-    **peso** : 0.13
-    Nombre del archivo: fv_distancia_playa.tif
+    **insumo:** ifv_distancia_playa.tif
 
-    Esta capa representa la lejania a la playa, el rango va de 0, lo que representa espacialmente estar situado en la playa, 
-    hasta 1, que representa espacialmente estar lo más alejado de la playa.
-
+    **Definición:** Distancia entre la línea de mar y el final de la playa
+    
+    .. Note::
+        verificar esta Definición
+    
+   
     ``mínimo: 0.00
-    máximo:1.00``
+    máximo:3000.00``
 
-    Función continua - logística 
-    
-    insumo: ifv_distancia_playa.tif
-    
+    **Tipo de función: ** Continua - logística
+        
     archivo json: fv_exp_fis_playa.json
 
     ``centro:60,
-    min:0,
+    min:0, 
     max:3000,
     saturación:7,
     k:0.1815``
 
-    .. image:: ../recursos/fi_fv_exp_fis_distancia_playa.JPG
+    .. image:: ../recursos/fv/fv_c_exp_aplaya.png
 
-    **metadatos**: |e_fv_ancho_playa_yuc|
-
-    **Ruta**: SIG/desarrollo/sig_papiit/entregables/exposicion/fisica/ancho_playa_yuc/fv_ancho_playa_yuc.tif
-
-    **issue**: |ancho_de_playa|
 
 
 Elevación
 ----------
 *Exposición - Física*
 
-    Criterio: elevacion
+    **peso local:** 0.87
 
-    **peso**: 0.87
+    **insumo:** ifv_elev_yuc.tif
 
-    nombre del archivo: fv_elev_yuc.tif
+    **Definición:** Localización sobre el nivel medio del mar
 
-    El insumo para la generación de esta capa proviene del Continuo de Elevaciones Mexicano (CEM) de INEGI,
-    a la cual se le aplico una funcion de valor *concava decreciente* 
+    **Tipo de función:** Continua - Concava decreciente
 
-    Funcion continua - Concava decreciente
 
     arhivo json: fv_exp_fis_elevacion.json
+
 
     ``min: 0
     max: 31
@@ -213,28 +193,20 @@ Elevación
     saturacion: 3``
 
 
-    .. image:: ../recursos/fi_fv_exp_fis_elevacion.JPG
+    .. image:: ../recursos/fv/fv_c_exp_elevacion.png
 
-
-    **Nombre de la capa**: fv_elev_yuc.tif
-
-    **metadatos**: |fv_e_elev_yuc|
-
-    **Ruta**: SIG/desarrollo/sig_papiit/entregables/exposicion/fisica/elev_yuc/fv_elev_yuc.tif
-
-    **issue**: |elevacion|
 
 
 .. ####liga de los metadatos#####
 .. parte Biológica 
 
-.. |e_fv_v_costera_yuc| raw:: html
+.. |ifv_v_costera_yuc.tif| raw:: html
 
-    <a href= "http://magrat.mine.nu:8088/geonetwork/srv/spa/catalog.search#/metadata/3970a9d9-e5fc-4522-ab83-fabefed5633b" target="_blank">e_fv_v_costera_yuc</a>
+    <a href= "http://magrat.mine.nu:8088/geonetwork/srv/spa/catalog.search#/metadata/3970a9d9-e5fc-4522-ab83-fabefed5633b" target="_blank">ifv_v_costera_yuc.tif</a>
 
-.. |e_fv_v_acuatica_yuc| raw:: html
+.. |ifv_v_acuatica_yuc.tif| raw:: html
 
-    <a href= "http://magrat.mine.nu:8088/geonetwork/srv/spa/catalog.search#/metadata/4a300c5b-af8e-47d5-ad48-3b15a3e541bf" target="_blank">e_fv_v_acuatica_yuc</a>
+    <a href= "http://magrat.mine.nu:8088/geonetwork/srv/spa/catalog.search#/metadata/4a300c5b-af8e-47d5-ad48-3b15a3e541bf" target="_blank">ifv_v_acuatica_yuc.tif</a>
 
 
 

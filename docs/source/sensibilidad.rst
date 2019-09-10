@@ -5,41 +5,35 @@ Criterio de sensiblidad
 Insumos
 *********
 
+.. imagen:: ../recursos/vulnerabilidad_sensibilidad_04sep2019_fv.png
+
+
 Biológica
 ===========
-
-**Peso**:0.50
-
-**Nombre del archivo**:
 
 
 Vegetación acuatíca
 -------------------------
     *Sensibilidad - biológica*
 
-    Criterio: vegetacion acuatica 
+    **Peso local**:0.16
 
-    **peso**:0.34
-
+    **insumo:** |ifv_v_acuatica_yuc.tif|
     
-    Esta capa representa la distancia a la que se encuentran los pastos marinos dentro de la costa, la distancia 
-    va de 0 a 3000 metros. esta capa es procesada con una función de valor logística, quedando sus valores
-    de 0 a 1.
-
-    nombre del archivo: fv_v_acuatica_yuc.tif
+    **Definición:** Distancia entre los pastos y la línea de costa 
 
     ``mínimo: 0.0
-    máximo:1.00``
+    máximo:3000``
 
-    función continua - Logística
+    **tipo de función:**  Continua - Logística
 
-    insumo: ifv_v_acuatica.tif
-
+    
     .. note::
-        Esta capa fue procesada en grass 7
+        Esta capa fue procesada en grass 7 ya que no se pudo procesar en la 
+        plataforma  
     
     
-    archivo json: fv_exp_bio_v_acuatica.json
+    archivo json: fv_sens_bio_v_acuatica.json
 
     ``centro:1500,
     min:0,
@@ -47,27 +41,23 @@ Vegetación acuatíca
     saturacion: 3,
     k:0.0834999999999999``
 
-    .. imagen:: ../recursos/fi_fv_sen_bio_v_acuatica.JPG
+    .. image:: ../recursos/fv/fv_c_sens_veg_acuatica.png
+ 
 
-
-
-    **Metadatos**: |e_fv_v_acuatica_yuc|
-
-    **Ruta**: SIG/desarrollo/sig_papiit/entregables/sensibilidad/biologica/v_acuatica_yuc/fv_v_acuatica_yuc.tif
+    **Resultado:**: SIG/desarrollo/sig_papiit/entregables/sensibilidad/biologica/v_acuatica_yuc/fv_v_acuatica_yuc.tif
 
     **issue**: |vegetacion_acuatica|
+
 
 Vegetación costera
 ---------------------
     *Sensibilidad - Biológica*
 
-    Criterio: Vegetación costera
+    **peso local** : 1.00
 
-    **peso** : 0.66
+    **Insumo**:fv_costera_presencia.tif
 
-    **Nombre de la capa**:fv_costera_presencia.tif
-
-    Esta capa representa la integración de las capas de presencia de 
+    **Definición:** Esta capa representa la integración de las capas de presencia de 
     vegetación de duna constera con la capa de manglar.
 
     vegetacion costera = ifv_v_dunas_presencia(0.80) + ifv_v_manglar_presencia(0.20)
@@ -79,28 +69,29 @@ Vegetación costera
 
 
     
-    Manglar
-    ^^^^^^^
+Manglar
+^^^^^^^^^
     *Sensibilidad - Biológica - Vegetación costera*
 
-    **peso**: 0.20
+    **peso local**: 1.0
 
-    **Nombre del archivo**: ifv_manglar_presencia.tif
+    **Insumo**: ifv_manglar_presencia.tif
     
-    Esta capa representa la presencia de manglar en la zona de estudio, es una función
-    discreta donde el valor de pixel igual a 1.
+    **Definición:** Esta capa representa la presencia de manglar en la zona de estudio
 
+    **Tipo de función** Discreta
 
-    Duna costera
-    ^^^^^^^^^^^^
-    *Sensibilidad - Biológica - Vegetación costera*
+Duna costera
+^^^^^^^^^^^^
+*Sensibilidad - Biológica - Vegetación costera*
 
-    **peso**: 0.80
+    **peso local:**: 0.25
     
-    **nombre_del_archivo**: ifv_dunas_presencia.tif
+    **Insumo**: ifv_dunas_presencia.tif
 
-    Esta capa representa la presencia de vegetacion de dunas costeras en la zona de estudio, Es una función
-    discreta donde el valor de pixel igual a 1.
+    **Definición:** Esta capa representa la presencia de vegetacion de dunas costeras en la zona de estudio
+
+    **Tipo de función:** Discreta
 
 
 
@@ -123,18 +114,16 @@ Elevación y tipo de litoral con sus respectivos pesos.
 Ancho de playa 
 ---------------
 *Sensibilidad - Física*
-    
-    **Criterio**:
 
-    **Peso**:0.33
+    **Peso local:** 0.33
 
-    **Nombre del archivo**: fv_ancho_playa_yuc.tif
+    **Insumo:**: fv_ancho_playa_yuc.tif
 
-    Esta capa representa el ancho de playa en la costa. El insumo ocupado para la
+    **Definición:** Esta capa representa el ancho de playa en la costa. El insumo ocupado para la
     generación de esta capa corresponde a información dle POETY, se ocupo una función 
     logística para representar esta capa
 
-    Función Continua - Logística
+    **Tipo de función:** Continua - Logística
 
     ``min:0
     max:54
@@ -142,37 +131,36 @@ Ancho de playa
     k:0.1325
     saturación:5``
 
-    .. image:: ../recursos/fi_fv_sen_fis_ancho_playa.JPG
+    .. image:: ../recursos/fv/fv_c_sens_veg_acuatica.png
+
      
 
 Dunas costeras
 ---------------
 *Sensibilidad - Física*
     
-    **Criterio**: dunas costeras
+    **Peso local**:0.56
 
-    **Peso**:0.56
+    **Insumo:** fv_duna_yuc.tif
 
-    **Nombre del archivo**: fv_duna_yuc.tif
-
-    Esta capa representa la presencia de dunas costeras en la costa, El insumo ocupado
+    **Definición:** Esta capa representa la presencia de dunas costeras en la costa, El insumo ocupado
     para la generación de esta capa corresponde a información del POETY combinado con 
     el ancho de playa.
+
+    **Tipo de función:** Discreta
 
 Elevación 
 ---------------
 *Sensibilidad - Física*
     
-    **Criterio**:
+    **Peso local:**:0.04
 
-    **Peso**:0.04
+    **Insumo:** fv_elevacion.tif
 
-    **Nombre del archivo**:fv_elevacion.tif
-
-    El insumo para la generación de esta capa proviene del Continuo de Elevaciones Mexicano (CEM) de INEGI,
+    **Definición:** El insumo para la generación de esta capa proviene del Continuo de Elevaciones Mexicano (CEM) de INEGI,
     a la cual se le aplico una funcion de valor *concava creciente* 
 
-    Funcion continua - Concava creciente
+    **Tipo de función:** continua - Concava creciente
 
     arhivo json: 
 
@@ -182,21 +170,21 @@ Elevación
     saturacion: 13``
 
 
-    .. image:: ../recursos/fi_fv_sen_fis_elev.JPG
+    .. image:: ../recursos/fv/fv_c_sens_elevacion.png
 
 Tipo de litoral
 -----------------
 *Sensibilidad - Física*
     
-    **Criterio**:
+    **Peso local:** 0.07
 
-    **Peso**:0.07
+    **Insumo**: fv_tipo_litoral_yuc.tif
 
-    **Nombre del archivo**: fv_tipo_litoral_yuc.tif
-
-    Esta capa representa la presencia de diferentes tipos de litoral, estos fueron clasificados
+    **Definición:** Esta capa representa la presencia de diferentes tipos de litoral, estos fueron clasificados
     conforme a la siguiente tabla, el insumo ocupado es la capa de uso de suelo y vegetación 
     serie VI de INEGI
+
+    **Tipo de función:** Discreta 
 
     ================================ ====================
     Tipo de Vegetación	              Tipo de litoral

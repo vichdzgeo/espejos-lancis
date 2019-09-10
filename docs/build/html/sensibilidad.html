@@ -171,37 +171,32 @@
 <h1>Criterio de sensiblidad<a class="headerlink" href="#criterio-de-sensiblidad" title="Enlazar permanentemente con este título">¶</a></h1>
 <div class="section" id="insumos">
 <h2>Insumos<a class="headerlink" href="#insumos" title="Enlazar permanentemente con este título">¶</a></h2>
+<img alt="_images/vulnerabilidad_sensibilidad_04sep2019_fv.png" src="_images/vulnerabilidad_sensibilidad_04sep2019_fv.png" />
 <div class="section" id="biologica">
 <h3>Biológica<a class="headerlink" href="#biologica" title="Enlazar permanentemente con este título">¶</a></h3>
-<p><strong>Peso</strong>:0.50</p>
-<p><strong>Nombre del archivo</strong>:</p>
 <div class="section" id="vegetacion-acuatica">
 <h4>Vegetación acuatíca<a class="headerlink" href="#vegetacion-acuatica" title="Enlazar permanentemente con este título">¶</a></h4>
 <blockquote>
 <div><p><em>Sensibilidad - biológica</em></p>
-<p>Criterio: vegetacion acuatica</p>
-<p><strong>peso</strong>:0.34</p>
-<p>Esta capa representa la distancia a la que se encuentran los pastos marinos dentro de la costa, la distancia
-va de 0 a 3000 metros. esta capa es procesada con una función de valor logística, quedando sus valores
-de 0 a 1.</p>
-<p>nombre del archivo: fv_v_acuatica_yuc.tif</p>
+<p><strong>Peso local</strong>:0.16</p>
+<p><strong>insumo:</strong> <a href="#id1"><span class="problematic" id="id2">|ifv_v_acuatica_yuc.tif|</span></a></p>
+<p><strong>Definición:</strong> Distancia entre los pastos y la línea de costa</p>
 <p><code class="docutils literal notranslate"><span class="pre">mínimo:</span> <span class="pre">0.0</span>
-<span class="pre">máximo:1.00</span></code></p>
-<p>función continua - Logística</p>
-<p>insumo: ifv_v_acuatica.tif</p>
+<span class="pre">máximo:3000</span></code></p>
+<p><strong>tipo de función:</strong>  Continua - Logística</p>
 <div class="admonition note">
 <p class="first admonition-title">Nota</p>
-<p class="last">Esta capa fue procesada en grass 7</p>
+<p class="last">Esta capa fue procesada en grass 7 ya que no se pudo procesar en la
+plataforma</p>
 </div>
-<p>archivo json: fv_exp_bio_v_acuatica.json</p>
+<p>archivo json: fv_sens_bio_v_acuatica.json</p>
 <p><code class="docutils literal notranslate"><span class="pre">centro:1500,</span>
 <span class="pre">min:0,</span>
 <span class="pre">max:3000,</span>
 <span class="pre">saturacion:</span> <span class="pre">3,</span>
 <span class="pre">k:0.0834999999999999</span></code></p>
-<img alt="_images/fi_fv_sen_bio_v_acuatica.JPG" src="_images/fi_fv_sen_bio_v_acuatica.JPG" />
-<p><strong>Metadatos</strong>: <a href="#id1"><span class="problematic" id="id2">|e_fv_v_acuatica_yuc|</span></a></p>
-<p><strong>Ruta</strong>: SIG/desarrollo/sig_papiit/entregables/sensibilidad/biologica/v_acuatica_yuc/fv_v_acuatica_yuc.tif</p>
+<img alt="_images/fv_c_sens_veg_acuatica.png" src="_images/fv_c_sens_veg_acuatica.png" />
+<p><strong>Resultado:</strong>: SIG/desarrollo/sig_papiit/entregables/sensibilidad/biologica/v_acuatica_yuc/fv_v_acuatica_yuc.tif</p>
 <p><strong>issue</strong>: <a href="#id3"><span class="problematic" id="id4">|vegetacion_acuatica|</span></a></p>
 </div></blockquote>
 </div>
@@ -209,25 +204,34 @@ de 0 a 1.</p>
 <h4>Vegetación costera<a class="headerlink" href="#vegetacion-costera" title="Enlazar permanentemente con este título">¶</a></h4>
 <blockquote>
 <div><p><em>Sensibilidad - Biológica</em></p>
-<p>Criterio: Vegetación costera</p>
-<p><strong>peso</strong> : 0.66</p>
-<p><strong>Nombre de la capa</strong>:fv_costera_presencia.tif</p>
-<p>Esta capa representa la integración de las capas de presencia de
+<p><strong>peso local</strong> : 1.00</p>
+<p><strong>Insumo</strong>:fv_costera_presencia.tif</p>
+<p><strong>Definición:</strong> Esta capa representa la integración de las capas de presencia de
 vegetación de duna constera con la capa de manglar.</p>
 <p>vegetacion costera = ifv_v_dunas_presencia(0.80) + ifv_v_manglar_presencia(0.20)</p>
 <p><strong>metadatos</strong></p>
 <p><strong>issue</strong></p>
-<p><em>Sensibilidad - Biológica - Vegetación costera</em></p>
-<p><strong>peso</strong>: 0.20</p>
-<p><strong>Nombre del archivo</strong>: ifv_manglar_presencia.tif</p>
-<p>Esta capa representa la presencia de manglar en la zona de estudio, es una función
-discreta donde el valor de pixel igual a 1.</p>
-<p><em>Sensibilidad - Biológica - Vegetación costera</em></p>
-<p><strong>peso</strong>: 0.80</p>
-<p><strong>nombre_del_archivo</strong>: ifv_dunas_presencia.tif</p>
-<p>Esta capa representa la presencia de vegetacion de dunas costeras en la zona de estudio, Es una función
-discreta donde el valor de pixel igual a 1.</p>
 </div></blockquote>
+<div class="section" id="manglar">
+<h5>Manglar<a class="headerlink" href="#manglar" title="Enlazar permanentemente con este título">¶</a></h5>
+<blockquote>
+<div><p><em>Sensibilidad - Biológica - Vegetación costera</em></p>
+<p><strong>peso local</strong>: 1.0</p>
+<p><strong>Insumo</strong>: ifv_manglar_presencia.tif</p>
+<p><strong>Definición:</strong> Esta capa representa la presencia de manglar en la zona de estudio</p>
+<p><strong>Tipo de función</strong> Discreta</p>
+</div></blockquote>
+</div>
+<div class="section" id="duna-costera">
+<h5>Duna costera<a class="headerlink" href="#duna-costera" title="Enlazar permanentemente con este título">¶</a></h5>
+<p><em>Sensibilidad - Biológica - Vegetación costera</em></p>
+<blockquote>
+<div><p><strong>peso local:</strong>: 0.25</p>
+<p><strong>Insumo</strong>: ifv_dunas_presencia.tif</p>
+<p><strong>Definición:</strong> Esta capa representa la presencia de vegetacion de dunas costeras en la zona de estudio</p>
+<p><strong>Tipo de función:</strong> Discreta</p>
+</div></blockquote>
+</div>
 </div>
 </div>
 <div class="section" id="fisica">
@@ -241,28 +245,26 @@ Elevación y tipo de litoral con sus respectivos pesos.</p>
 <h4>Ancho de playa<a class="headerlink" href="#ancho-de-playa" title="Enlazar permanentemente con este título">¶</a></h4>
 <p><em>Sensibilidad - Física</em></p>
 <blockquote>
-<div><p><strong>Criterio</strong>:</p>
-<p><strong>Peso</strong>:0.33</p>
-<p><strong>Nombre del archivo</strong>: fv_ancho_playa_yuc.tif</p>
-<p>Esta capa representa el ancho de playa en la costa. El insumo ocupado para la
+<div><p><strong>Peso local:</strong> 0.33</p>
+<p><strong>Insumo:</strong>: fv_ancho_playa_yuc.tif</p>
+<p><strong>Definición:</strong> Esta capa representa el ancho de playa en la costa. El insumo ocupado para la
 generación de esta capa corresponde a información dle POETY, se ocupo una función
 logística para representar esta capa</p>
-<p>Función Continua - Logística</p>
+<p><strong>Tipo de función:</strong> Continua - Logística</p>
 <p><code class="docutils literal notranslate"><span class="pre">min:0</span>
 <span class="pre">max:54</span>
 <span class="pre">center:23</span>
 <span class="pre">k:0.1325</span>
 <span class="pre">saturación:5</span></code></p>
-<img alt="_images/fi_fv_sen_fis_ancho_playa.JPG" src="_images/fi_fv_sen_fis_ancho_playa.JPG" />
+<img alt="_images/fv_c_sens_veg_acuatica.png" src="_images/fv_c_sens_veg_acuatica.png" />
 </div></blockquote>
 </div>
 <div class="section" id="dunas-costeras">
 <h4>Dunas costeras<a class="headerlink" href="#dunas-costeras" title="Enlazar permanentemente con este título">¶</a></h4>
 <p><em>Sensibilidad - Física</em></p>
 <blockquote>
-<div><p><strong>Criterio</strong>: dunas costeras</p>
-<p><strong>Peso</strong>:0.56</p>
-<p><strong>Nombre del archivo</strong>: fv_duna_yuc.tif</p>
+<div><p><strong>Peso local</strong>:0.56</p>
+<p><strong>Insumo:</strong> fv_duna_yuc.tif</p>
 <p>Esta capa representa la presencia de dunas costeras en la costa, El insumo ocupado
 para la generación de esta capa corresponde a información del POETY combinado con
 el ancho de playa.</p>
@@ -272,30 +274,29 @@ el ancho de playa.</p>
 <h4>Elevación<a class="headerlink" href="#elevacion" title="Enlazar permanentemente con este título">¶</a></h4>
 <p><em>Sensibilidad - Física</em></p>
 <blockquote>
-<div><p><strong>Criterio</strong>:</p>
-<p><strong>Peso</strong>:0.04</p>
-<p><strong>Nombre del archivo</strong>:fv_elevacion.tif</p>
-<p>El insumo para la generación de esta capa proviene del Continuo de Elevaciones Mexicano (CEM) de INEGI,
+<div><p><strong>Peso local:</strong>:0.04</p>
+<p><strong>Insumo:</strong> fv_elevacion.tif</p>
+<p><strong>Definición:</strong> El insumo para la generación de esta capa proviene del Continuo de Elevaciones Mexicano (CEM) de INEGI,
 a la cual se le aplico una funcion de valor <em>concava creciente</em></p>
-<p>Funcion continua - Concava creciente</p>
+<p><strong>Tipo de función:</strong> continua - Concava creciente</p>
 <p>arhivo json:</p>
 <p><code class="docutils literal notranslate"><span class="pre">min:0</span>
 <span class="pre">max:</span> <span class="pre">31</span>
 <span class="pre">gama:</span> <span class="pre">0.01975</span>
 <span class="pre">saturacion:</span> <span class="pre">13</span></code></p>
-<img alt="_images/fi_fv_sen_fis_elev.JPG" src="_images/fi_fv_sen_fis_elev.JPG" />
+<img alt="_images/fv_c_sens_elevacion.png" src="_images/fv_c_sens_elevacion.png" />
 </div></blockquote>
 </div>
 <div class="section" id="tipo-de-litoral">
 <h4>Tipo de litoral<a class="headerlink" href="#tipo-de-litoral" title="Enlazar permanentemente con este título">¶</a></h4>
 <p><em>Sensibilidad - Física</em></p>
 <blockquote>
-<div><p><strong>Criterio</strong>:</p>
-<p><strong>Peso</strong>:0.07</p>
-<p><strong>Nombre del archivo</strong>: fv_tipo_litoral_yuc.tif</p>
-<p>Esta capa representa la presencia de diferentes tipos de litoral, estos fueron clasificados
+<div><p><strong>Peso local:</strong> 0.07</p>
+<p><strong>Insumo</strong>: fv_tipo_litoral_yuc.tif</p>
+<p><strong>Definición:</strong> Esta capa representa la presencia de diferentes tipos de litoral, estos fueron clasificados
 conforme a la siguiente tabla, el insumo ocupado es la capa de uso de suelo y vegetación
 serie VI de INEGI</p>
+<p><strong>Tipo de función:</strong> Discreta</p>
 <table border="1" class="docutils">
 <colgroup>
 <col width="62%" />
