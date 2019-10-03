@@ -1,13 +1,13 @@
 Criterio de exposición
 ##########################
 
+
+
+.. imagen:: ../recursos/vulnerabilidad_exposicion_fv.png
+
+
 Insumos
 *********
-
-.. imagen:: ../recursos/vulnerabilidad_exposicion_04sep2019_fv.png
-
-
-
 
 Biológica
 ===========
@@ -48,6 +48,8 @@ Vegetación acuatíca
 
     **Resultado:** SIG/desarrollo/sig_papiit/entregables/exposicion/biologica/v_acuatica_yuc/fv_v_acuatica_yuc.tif
 
+    **Nombre de la capa:** |fv_v_acuatica_yuc|
+
     **issue:** |vegetacion_acuatica|
 
 
@@ -58,83 +60,82 @@ Vegetación costera
 
     Criterio : Vegetación costera
 
+    **Definición**: Tipo de vegetación que se encuentra en la franja de 3 kilometros (manglar, dunas) 
+
     **peso local:** 0.84
 
-    **insumo:** |ifv_v_costera_yuc.tif|
+    **insumo:** |fv_v_costera_yuc.tif|
     
     Esta capa representa la integración de las capas de distancia de dunas costeras con la capa de distancias de manglar
     la construcción es 
     
-    ``vegetacion costera = fv_distancia_dunas.tif*0.25 + fv_ditancia_manglar.tif*0.75``
-
-    nombre del archivo = fv_v_costera.tif
-
-    ``mínimo: 0.02
-    máximo:1.00``
+    ``fv_v_costera_yuc = fv_distancia_dunas.tif*0.25 + fv_ditancia_manglar.tif*0.75``
+ 
     
-    **Nombre de la capa**: fv_v_costera_yuc
-
-
-    **Metadatos**: |e_fv_v_costera_yuc|
-    
-    **Ruta**: SIG/desarrollo/sig_papiit/entregables/exposicion/biologica/v_costera_yuc/fv_v_costera.tif
-
-    **issue**: |vegetacion_costera|
-
-Dunas costeras
-^^^^^^^^^^^^^^
-*Exposición - biológica - Vegetación costera*
-
-    **peso**: 0.25 
-    
-    **insumo:** fv_distancia_dunas.tif
-
-     **Definición:** Lejanía a una duna costera dentro de la franja de 3 kms
-
-    ``mínimo: 0.0  máximo:3000``
-
-    Función continua - logística 
-    
-    insumo: ifv_distancia_dunas.tif
-    
-    archivo json: fv_exp_bio_veg_dunas.json
-   
-    ``centro:100
-    min:0
-    max:3000
-    saturación:10
-    k:0.255``
-
-    .. image:: ../recursos/fv/fv_c_exp_dunas_costeras.png
-
-
-
-Manglar 
+Insumos
 ^^^^^^^^
-*Exposición - Biológica - Vegetación costera*
-      
-    **peso local:** 0.75
-
-    insumo: fv_ditancia_manglar.tif
+    **Dunas costeras**
     
-    **Definición:** Lejanía a una zona de manglar dentro de la franja de 3kms
+    *Exposición - biológica - Vegetación costera*
 
-    ``mínimo: 0.00 máximo:1.00``
+        **peso**: 0.25 
+        
+        **insumo:** fv_distancia_dunas.tif
 
-    **Tipo de función:** Continua - logística 
+        **Definición:** Lejanía a una duna costera dentro de la franja de 3 kms
+
+        ``mínimo: 0.0  máximo:3000``
+
+        Función continua - logística 
+        
+        insumo: ifv_distancia_dunas.tif
+        
+        archivo json: fv_exp_bio_veg_dunas.json
     
-    archivo json: fv_exp_bio_veg_manglar.json
-   
-    ``centro:250
-    min:0
-    max:3000
-    saturación:4
-    k:0.108``
+        ``centro:100
+        min:0
+        max:3000
+        saturación:10
+        k:0.255``
 
-    .. imagen:: ../recursos/fv/fv_c_exp_manglar.png
+        .. image:: ../recursos/fv/fv_c_exp_dunas_costeras.png
 
-**Resultado:** fv_veg_costera.tif
-**Issue:**:
+
+
+    **Manglar** 
+    
+    *Exposición - Biológica - Vegetación costera*
+        
+        **peso local:** 0.75
+
+        insumo: fv_ditancia_manglar.tif
+        
+        **Definición:** Lejanía a una zona de manglar dentro de la franja de 3kms
+
+        ``mínimo: 0.00 máximo:1.00``
+
+        **Tipo de función:** Continua - logística 
+        
+        archivo json: fv_exp_bio_veg_manglar.json
+    
+        ``centro:250
+        min:0
+        max:3000
+        saturación:4
+        k:0.108``
+
+        .. imagen:: ../recursos/fv/fv_c_exp_manglar.png
+
+
+
+
+**Resultado**: SIG/desarrollo/sig_papiit/entregables/exposicion/biologica/v_costera_yuc/fv_v_costera_distancia_yuc.tif
+
+
+**Nombre de la capa:** fv_v_costera_distancia_yuc
+
+**issue**: |vegetacion_costera|
+
 
 
 Física
@@ -169,6 +170,12 @@ Ancho de playa
 
     .. image:: ../recursos/fv/fv_c_exp_aplaya.png
 
+**Resultado**: SIG/desarrollo/sig_papiit/entregables/exposicion/biologica/v_costera_yuc/fv__distancia_playa.tif
+
+
+**Nombre de la capa:** |fv_distancia_playa|
+
+**issue**: |Ancho_de_playa|
 
 
 Elevación
@@ -195,6 +202,12 @@ Elevación
 
     .. image:: ../recursos/fv/fv_c_exp_elevacion.png
 
+**Resultado**: SIG/desarrollo/sig_papiit/entregables/exposicion/fisica/elev_yuc/fv_elevacion.tif
+
+
+**Nombre de la capa:** |fv_elevacion|
+
+**issue**: |Elevación|
 
 
 .. ####liga de los metadatos#####

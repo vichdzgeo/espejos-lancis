@@ -169,17 +169,17 @@
             
   <div class="section" id="criterio-de-sensiblidad">
 <h1>Criterio de sensiblidad<a class="headerlink" href="#criterio-de-sensiblidad" title="Enlazar permanentemente con este título">¶</a></h1>
+<img alt="_images/vulnerabilidad_sensibilidad_fv.png" src="_images/vulnerabilidad_sensibilidad_fv.png" />
 <div class="section" id="insumos">
 <h2>Insumos<a class="headerlink" href="#insumos" title="Enlazar permanentemente con este título">¶</a></h2>
-<img alt="_images/vulnerabilidad_sensibilidad_04sep2019_fv.png" src="_images/vulnerabilidad_sensibilidad_04sep2019_fv.png" />
 <div class="section" id="biologica">
 <h3>Biológica<a class="headerlink" href="#biologica" title="Enlazar permanentemente con este título">¶</a></h3>
 <div class="section" id="vegetacion-acuatica">
 <h4>Vegetación acuatíca<a class="headerlink" href="#vegetacion-acuatica" title="Enlazar permanentemente con este título">¶</a></h4>
 <blockquote>
 <div><p><em>Sensibilidad - biológica</em></p>
-<p><strong>Peso local</strong>:0.16</p>
-<p><strong>insumo:</strong> <a href="#id1"><span class="problematic" id="id2">|ifv_v_acuatica_yuc.tif|</span></a></p>
+<p><strong>Peso local</strong>:0.34</p>
+<p><strong>insumo:</strong> ifv_v_acuatica_yuc.tif</p>
 <p><strong>Definición:</strong> Distancia entre los pastos y la línea de costa</p>
 <p><code class="docutils literal notranslate"><span class="pre">mínimo:</span> <span class="pre">0.0</span>
 <span class="pre">máximo:3000</span></code></p>
@@ -197,33 +197,33 @@ plataforma</p>
 <span class="pre">k:0.0834999999999999</span></code></p>
 <img alt="_images/fv_c_sens_veg_acuatica.png" src="_images/fv_c_sens_veg_acuatica.png" />
 <p><strong>Resultado:</strong>: SIG/desarrollo/sig_papiit/entregables/sensibilidad/biologica/v_acuatica_yuc/fv_v_acuatica_yuc.tif</p>
-<p><strong>issue</strong>: <a href="#id3"><span class="problematic" id="id4">|vegetacion_acuatica|</span></a></p>
+<p><strong>Nombre de la capa:</strong> fv_v_acuatica_yuc</p>
+<p><strong>issue</strong>: vegetacion_acuatica</p>
 </div></blockquote>
 </div>
 <div class="section" id="vegetacion-costera">
 <h4>Vegetación costera<a class="headerlink" href="#vegetacion-costera" title="Enlazar permanentemente con este título">¶</a></h4>
 <blockquote>
 <div><p><em>Sensibilidad - Biológica</em></p>
-<p><strong>peso local</strong> : 1.00</p>
-<p><strong>Insumo</strong>:fv_costera_presencia.tif</p>
+<p><strong>peso local</strong> : 0.66</p>
 <p><strong>Definición:</strong> Esta capa representa la integración de las capas de presencia de
 vegetación de duna constera con la capa de manglar.</p>
-<p>vegetacion costera = ifv_v_dunas_presencia(0.80) + ifv_v_manglar_presencia(0.20)</p>
-<p><strong>metadatos</strong></p>
-<p><strong>issue</strong></p>
+<p>Integración:</p>
+<blockquote>
+<div><code class="docutils literal notranslate"><span class="pre">fv_v_costera_presencia</span> <span class="pre">=</span> <span class="pre">ifv_v_dunas_presencia(1.0)</span> <span class="pre">+</span> <span class="pre">ifv_v_manglar_presencia(0.25)</span></code></div></blockquote>
 </div></blockquote>
-<div class="section" id="manglar">
-<h5>Manglar<a class="headerlink" href="#manglar" title="Enlazar permanentemente con este título">¶</a></h5>
+<div class="section" id="id1">
+<h5>Insumos<a class="headerlink" href="#id1" title="Enlazar permanentemente con este título">¶</a></h5>
+<blockquote>
+<div><p><strong>Manglar</strong></p>
 <blockquote>
 <div><p><em>Sensibilidad - Biológica - Vegetación costera</em></p>
-<p><strong>peso local</strong>: 1.0</p>
-<p><strong>Insumo</strong>: ifv_manglar_presencia.tif</p>
+<p><strong>peso local:</strong> 1.0</p>
+<p><strong>Insumo:</strong> ifv_manglar_presencia.tif</p>
 <p><strong>Definición:</strong> Esta capa representa la presencia de manglar en la zona de estudio</p>
-<p><strong>Tipo de función</strong> Discreta</p>
+<p><strong>Tipo de función:</strong> Discreta</p>
 </div></blockquote>
-</div>
-<div class="section" id="duna-costera">
-<h5>Duna costera<a class="headerlink" href="#duna-costera" title="Enlazar permanentemente con este título">¶</a></h5>
+<p><strong>Duna costera</strong></p>
 <p><em>Sensibilidad - Biológica - Vegetación costera</em></p>
 <blockquote>
 <div><p><strong>peso local:</strong>: 0.25</p>
@@ -231,16 +231,15 @@ vegetación de duna constera con la capa de manglar.</p>
 <p><strong>Definición:</strong> Esta capa representa la presencia de vegetacion de dunas costeras en la zona de estudio</p>
 <p><strong>Tipo de función:</strong> Discreta</p>
 </div></blockquote>
+</div></blockquote>
+<p><strong>Resultado:</strong>: SIG/desarrollo/sig_papiit/entregables/sensibilidad/biologica/v_costera_yuc/fv_v_costera_presencia.tif</p>
+<p><strong>Nombre de la capa:</strong> fv_v_costera_presencia.tif</p>
+<p><strong>issue</strong>:  Vegetación costera</p>
 </div>
 </div>
 </div>
 <div class="section" id="fisica">
 <h3>Física<a class="headerlink" href="#fisica" title="Enlazar permanentemente con este título">¶</a></h3>
-<p><strong>Peso</strong>:0.50</p>
-<p><strong>Nombre del archivo</strong>:</p>
-<p>Esta capa representa la integración de las capas Ancho de playa, Dunas costeras
-Elevación y tipo de litoral con sus respectivos pesos.</p>
-<p><code class="docutils literal notranslate"><span class="pre">Física</span> <span class="pre">=</span> <span class="pre">ancho_de_playa*0.33</span> <span class="pre">+</span> <span class="pre">dunas_costeras*0.56</span> <span class="pre">+</span> <span class="pre">elevacion*0.04</span> <span class="pre">+</span> <span class="pre">tipo_litoral</span> <span class="pre">*</span> <span class="pre">0.07</span></code></p>
 <div class="section" id="ancho-de-playa">
 <h4>Ancho de playa<a class="headerlink" href="#ancho-de-playa" title="Enlazar permanentemente con este título">¶</a></h4>
 <p><em>Sensibilidad - Física</em></p>
@@ -257,6 +256,9 @@ logística para representar esta capa</p>
 <span class="pre">k:0.1325</span>
 <span class="pre">saturación:5</span></code></p>
 <img alt="_images/fv_c_sens_veg_acuatica.png" src="_images/fv_c_sens_veg_acuatica.png" />
+<p><strong>Resultado:</strong></p>
+<p><strong>Nombre de la capa:</strong></p>
+<p><strong>issue</strong></p>
 </div></blockquote>
 </div>
 <div class="section" id="dunas-costeras">
@@ -265,9 +267,13 @@ logística para representar esta capa</p>
 <blockquote>
 <div><p><strong>Peso local</strong>:0.56</p>
 <p><strong>Insumo:</strong> fv_duna_yuc.tif</p>
-<p>Esta capa representa la presencia de dunas costeras en la costa, El insumo ocupado
+<p><strong>Definición:</strong> Esta capa representa la presencia de dunas costeras en la costa, El insumo ocupado
 para la generación de esta capa corresponde a información del POETY combinado con
 el ancho de playa.</p>
+<p><strong>Tipo de función:</strong> Discreta</p>
+<p><strong>Resultado:</strong></p>
+<p><strong>Nombre de la capa:</strong></p>
+<p><strong>issue</strong></p>
 </div></blockquote>
 </div>
 <div class="section" id="elevacion">
@@ -285,6 +291,9 @@ a la cual se le aplico una funcion de valor <em>concava creciente</em></p>
 <span class="pre">gama:</span> <span class="pre">0.01975</span>
 <span class="pre">saturacion:</span> <span class="pre">13</span></code></p>
 <img alt="_images/fv_c_sens_elevacion.png" src="_images/fv_c_sens_elevacion.png" />
+<p><strong>Resultado:</strong></p>
+<p><strong>Nombre de la capa:</strong></p>
+<p><strong>issue</strong></p>
 </div></blockquote>
 </div>
 <div class="section" id="tipo-de-litoral">
@@ -381,6 +390,9 @@ serie VI de INEGI</p>
 </tr>
 </tbody>
 </table>
+<p><strong>Resultado:</strong></p>
+<p><strong>Nombre de la capa:</strong></p>
+<p><strong>issue</strong></p>
 </div></blockquote>
 </div>
 </div>
