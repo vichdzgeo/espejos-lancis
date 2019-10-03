@@ -2,11 +2,12 @@ Criterio de sensiblidad
 ##########################
 
 
+
+
+.. imagen:: ../recursos/vulnerabilidad_sensibilidad_fv.png
+
 Insumos
 *********
-
-.. imagen:: ../recursos/vulnerabilidad_sensibilidad_04sep2019_fv.png
-
 
 Biológica
 ===========
@@ -16,9 +17,9 @@ Vegetación acuatíca
 -------------------------
     *Sensibilidad - biológica*
 
-    **Peso local**:0.16
+    **Peso local**:0.34
 
-    **insumo:** |ifv_v_acuatica_yuc.tif|
+    **insumo:** ifv_v_acuatica_yuc.tif
     
     **Definición:** Distancia entre los pastos y la línea de costa 
 
@@ -45,70 +46,63 @@ Vegetación acuatíca
  
 
     **Resultado:**: SIG/desarrollo/sig_papiit/entregables/sensibilidad/biologica/v_acuatica_yuc/fv_v_acuatica_yuc.tif
+    
+    **Nombre de la capa:** fv_v_acuatica_yuc
 
-    **issue**: |vegetacion_acuatica|
+    **issue**: vegetacion_acuatica
 
 
 Vegetación costera
 ---------------------
     *Sensibilidad - Biológica*
 
-    **peso local** : 1.00
-
-    **Insumo**:fv_costera_presencia.tif
+    **peso local** : 0.66
 
     **Definición:** Esta capa representa la integración de las capas de presencia de 
     vegetación de duna constera con la capa de manglar.
-
-    vegetacion costera = ifv_v_dunas_presencia(0.80) + ifv_v_manglar_presencia(0.20)
-
-    **metadatos**
-
-    **issue**
-
-
-
     
-Manglar
+    Integración: 
+
+     ``fv_v_costera_presencia = ifv_v_dunas_presencia(1.0) + ifv_v_manglar_presencia(0.25)``
+
+
+Insumos
 ^^^^^^^^^
+
+    **Manglar**
+
+        *Sensibilidad - Biológica - Vegetación costera*
+
+        **peso local:** 1.0
+
+        **Insumo:** ifv_manglar_presencia.tif
+        
+        **Definición:** Esta capa representa la presencia de manglar en la zona de estudio
+
+        **Tipo de función:** Discreta
+
+    **Duna costera**
+
     *Sensibilidad - Biológica - Vegetación costera*
 
-    **peso local**: 1.0
+        **peso local:**: 0.25
+        
+        **Insumo**: ifv_dunas_presencia.tif
 
-    **Insumo**: ifv_manglar_presencia.tif
-    
-    **Definición:** Esta capa representa la presencia de manglar en la zona de estudio
+        **Definición:** Esta capa representa la presencia de vegetacion de dunas costeras en la zona de estudio
 
-    **Tipo de función** Discreta
+        **Tipo de función:** Discreta
 
-Duna costera
-^^^^^^^^^^^^
-*Sensibilidad - Biológica - Vegetación costera*
 
-    **peso local:**: 0.25
-    
-    **Insumo**: ifv_dunas_presencia.tif
+**Resultado:**: SIG/desarrollo/sig_papiit/entregables/sensibilidad/biologica/v_costera_yuc/fv_v_costera_presencia.tif
 
-    **Definición:** Esta capa representa la presencia de vegetacion de dunas costeras en la zona de estudio
+**Nombre de la capa:** fv_v_costera_presencia.tif
 
-    **Tipo de función:** Discreta
-
+**issue**:  Vegetación costera
 
 
 Física
 =======
-
-**Peso**:0.50
-
-**Nombre del archivo**:
-
-Esta capa representa la integración de las capas Ancho de playa, Dunas costeras
-Elevación y tipo de litoral con sus respectivos pesos. 
-
-``Física = ancho_de_playa*0.33 + dunas_costeras*0.56 + elevacion*0.04 + tipo_litoral * 0.07``
-
-
-
 
 
 Ancho de playa 
@@ -133,6 +127,11 @@ Ancho de playa
 
     .. image:: ../recursos/fv/fv_c_sens_veg_acuatica.png
 
+    **Resultado:**
+
+    **Nombre de la capa:** 
+
+    **issue**
      
 
 Dunas costeras
@@ -143,9 +142,17 @@ Dunas costeras
 
     **Insumo:** fv_duna_yuc.tif
 
-    Esta capa representa la presencia de dunas costeras en la costa, El insumo ocupado
+    **Definición:** Esta capa representa la presencia de dunas costeras en la costa, El insumo ocupado
     para la generación de esta capa corresponde a información del POETY combinado con 
     el ancho de playa.
+
+    **Tipo de función:** Discreta
+
+    **Resultado:**
+
+    **Nombre de la capa:** 
+
+    **issue**
 
 Elevación 
 ---------------
@@ -169,6 +176,13 @@ Elevación
 
 
     .. image:: ../recursos/fv/fv_c_sens_elevacion.png
+
+    **Resultado:**
+
+    **Nombre de la capa:** 
+
+    **issue**
+    
 
 Tipo de litoral
 -----------------
@@ -215,3 +229,9 @@ Tipo de litoral
     ========= =========== ====
  
  
+
+    **Resultado:**
+
+    **Nombre de la capa:** 
+
+    **issue**
