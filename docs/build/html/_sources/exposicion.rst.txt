@@ -20,7 +20,7 @@ Vegetación acuatíca
 
     **Peso local**:0.16
 
-    **insumo:** |ifv_v_acuatica_yuc.tif|
+    **insumo:** |ifv_v_acuatica_yuc.shp|
     
     **Definición:** Distancia entre los pastos y la línea de costa 
 
@@ -98,7 +98,7 @@ Insumos
 
         .. image:: ../recursos/fv/fv_c_exp_dunas_costeras.png
 
-        **Resultado:**  SIG\desarrollo\sig_papiit\entregables\exposicion\biologica\v_costera_yuc\fv_distancia_dunas.tif
+        **Resultado:**  SIG/desarrollo/sig_papiit/entregables/exposicion/biologica/v_costera_yuc/fv_distancia_dunas.tif
 
     **Manglar** 
     
@@ -123,7 +123,7 @@ Insumos
 
         .. imagen:: ../recursos/fv/fv_c_exp_manglar.png
 
-        **Resultado:** \SIG\desarrollo\sig_papiit\entregables\exposicion\biologica\v_costera_yuc\fv_distancia_manglar.tif
+        **Resultado:** /SIG/desarrollo/sig_papiit/entregables/exposicion/biologica/v_costera_yuc/fv_distancia_manglar.tif
 
 
 **Resultado**: SIG/desarrollo/sig_papiit/entregables/exposicion/biologica/v_costera_yuc/fv_v_costera_distancia_yuc.tif
@@ -140,7 +140,7 @@ Los insumos de exposición biológica se integran en una capa de la siguiente fo
 
 exp_biologica = fv_costera_distacia_yuc * 0.84 + fv_v_acuatica_yuc * 0.16 
 
-**Resultaddo:** SIG\desarrollo\sig_papiit\entregables\exposicion\salida\exp_biologica.tif
+**Resultado:** SIG/desarrollo/sig_papiit/entregables/exposicion/salida/exp_biologica.tif
 
 
 
@@ -224,7 +224,7 @@ Los insumos de exposición - física se integran en una capa de la siguiente for
 
 exp_fisica = fv_distancia_playa * 0.13 + fv_elevacion * 0.87 
 
-**Resultado:** SIG\desarrollo\sig_papiit\entregables\exposicion\salida\exp_fisica.tif
+**Resultado:** SIG/desarrollo/sig_papiit/entregables/exposicion/salida/exp_fisica.tif
 
 
 Integración
@@ -238,7 +238,7 @@ exposición = exp_biologica * 0.50 + exp_fisica * 0.50
 Resultado
 ***********
 
-SIG\desarrollo\sig_papiit\entregables\exposicion\salida\exposicion.tif
+SIG/desarrollo/sig_papiit/entregables/exposicion/salida/exposicion.tif
 
 
 
@@ -251,9 +251,9 @@ SIG\desarrollo\sig_papiit\entregables\exposicion\salida\exposicion.tif
 
     <a href= "http://magrat.mine.nu:8088/geonetwork/srv/spa/catalog.search#/metadata/8c2b6d48-48cb-4503-a40c-ee2db87f5356" target="_blank">vegetacion_costera</a>
 
-.. |ifv_v_acuatica_yuc.tif| raw:: html
+.. |ifv_v_acuatica_yuc.shp| raw:: html
 
-    <a href= "http://magrat.mine.nu:8088/geonetwork/srv/spa/catalog.search#/metadata/680ed0c8-211e-4cbc-966c-fb47c6358f66" target="_blank">ifv_v_acuatica_yuc.tif</a>
+    <a href= "http://magrat.mine.nu:8088/geonetwork/srv/spa/catalog.search#/metadata/680ed0c8-211e-4cbc-966c-fb47c6358f66" target="_blank">ifv_v_acuatica_yuc.shp</a>
 
 
 .. |fv_v_acuatica_yuc| raw:: html
