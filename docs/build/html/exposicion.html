@@ -97,6 +97,8 @@
 </li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="#integracion">Integración</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#resultado">Resultado</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="sensibilidad.html">Criterio de sensiblidad</a></li>
@@ -178,7 +180,7 @@
 <div><p><em>Exposición - biológica</em></p>
 <p>Criterio: vegetacion acuatica</p>
 <p><strong>Peso local</strong>:0.16</p>
-<p><strong>insumo:</strong> <a href= "http://magrat.mine.nu:8088/geonetwork/srv/spa/catalog.search#/metadata/4a300c5b-af8e-47d5-ad48-3b15a3e541bf" target="_blank">ifv_v_acuatica_yuc.tif</a></p>
+<p><strong>insumo:</strong> <a href= "http://magrat.mine.nu:8088/geonetwork/srv/spa/catalog.search#/metadata/680ed0c8-211e-4cbc-966c-fb47c6358f66" target="_blank">ifv_v_acuatica_yuc.tif</a></p>
 <p><strong>Definición:</strong> Distancia entre los pastos y la línea de costa</p>
 <p><code class="docutils literal notranslate"><span class="pre">mínimo:</span> <span class="pre">0.0</span>
 <span class="pre">máximo:3000</span></code></p>
@@ -196,8 +198,8 @@ plataforma</p>
 <span class="pre">k:0.0834999999999999</span></code></p>
 <img alt="_images/fv_c_exp_veg_acuatica.png" src="_images/fv_c_exp_veg_acuatica.png" />
 <p><strong>Resultado:</strong> SIG/desarrollo/sig_papiit/entregables/exposicion/biologica/v_acuatica_yuc/fv_v_acuatica_yuc.tif</p>
-<p><strong>Nombre de la capa:</strong> <a href="#id4"><span class="problematic" id="id5">|fv_v_acuatica_yuc|</span></a></p>
-<p><strong>issue:</strong> <a href= "https://github.com/lancis-apc/espejos-lancis/issues/47" target="_blank">Vegetación acuatica</a></p>
+<p><strong>Nombre de la capa:</strong> <a href= "http://magrat.mine.nu:8088/geonetwork/srv/spa/catalog.search#/metadata/4a300c5b-af8e-47d5-ad48-3b15a3e541bf" target="_blank">fv_v_acuatica_yuc</a></p>
+<p><strong>issue:</strong> <a href= "https://github.com/lancis-apc/espejos-lancis/issues/47" target="_blank">Vegetación acuática</a></p>
 </div></blockquote>
 </div>
 <div class="section" id="vegetacion-costera">
@@ -207,7 +209,6 @@ plataforma</p>
 <p>Criterio : Vegetación costera</p>
 <p><strong>Definición</strong>: Tipo de vegetación que se encuentra en la franja de 3 kilometros (manglar, dunas)</p>
 <p><strong>peso local:</strong> 0.84</p>
-<p><strong>insumo:</strong> <a href="#id6"><span class="problematic" id="id7">|fv_v_costera_yuc.tif|</span></a></p>
 <p>Esta capa representa la integración de las capas de distancia de dunas costeras con la capa de distancias de manglar
 la construcción es</p>
 <p><code class="docutils literal notranslate"><span class="pre">fv_v_costera_yuc</span> <span class="pre">=</span> <span class="pre">fv_distancia_dunas.tif*0.25</span> <span class="pre">+</span> <span class="pre">fv_ditancia_manglar.tif*0.75</span></code></p>
@@ -219,11 +220,10 @@ la construcción es</p>
 <p><em>Exposición - biológica - Vegetación costera</em></p>
 <blockquote>
 <div><p><strong>peso</strong>: 0.25</p>
-<p><strong>insumo:</strong> fv_distancia_dunas.tif</p>
+<p><strong>insumo:</strong> ifv_distancia_dunas_int.tif</p>
 <p><strong>Definición:</strong> Lejanía a una duna costera dentro de la franja de 3 kms</p>
 <p><code class="docutils literal notranslate"><span class="pre">mínimo:</span> <span class="pre">0.0</span>&#160; <span class="pre">máximo:3000</span></code></p>
-<p>Función continua - logística</p>
-<p>insumo: ifv_distancia_dunas.tif</p>
+<p><strong>Tipo de función:</strong> Continua - logística</p>
 <p>archivo json: fv_exp_bio_veg_dunas.json</p>
 <p><code class="docutils literal notranslate"><span class="pre">centro:100</span>
 <span class="pre">min:0</span>
@@ -231,14 +231,14 @@ la construcción es</p>
 <span class="pre">saturación:10</span>
 <span class="pre">k:0.255</span></code></p>
 <img alt="_images/fv_c_exp_dunas_costeras.png" src="_images/fv_c_exp_dunas_costeras.png" />
+<p><strong>Resultado:</strong>  SIGdesarrollosig_papiitentregablesexposicionbiologicav_costera_yucfv_distancia_dunas.tif</p>
 </div></blockquote>
 <p><strong>Manglar</strong></p>
 <p><em>Exposición - Biológica - Vegetación costera</em></p>
 <blockquote>
 <div><p><strong>peso local:</strong> 0.75</p>
-<p>insumo: fv_ditancia_manglar.tif</p>
+<p>insumo: ifv_ditancia_manglar.tif</p>
 <p><strong>Definición:</strong> Lejanía a una zona de manglar dentro de la franja de 3kms</p>
-<p><code class="docutils literal notranslate"><span class="pre">mínimo:</span> <span class="pre">0.00</span> <span class="pre">máximo:1.00</span></code></p>
 <p><strong>Tipo de función:</strong> Continua - logística</p>
 <p>archivo json: fv_exp_bio_veg_manglar.json</p>
 <p><code class="docutils literal notranslate"><span class="pre">centro:250</span>
@@ -247,11 +247,16 @@ la construcción es</p>
 <span class="pre">saturación:4</span>
 <span class="pre">k:0.108</span></code></p>
 <img alt="_images/fv_c_exp_manglar.png" src="_images/fv_c_exp_manglar.png" />
+<p><strong>Resultado:</strong> SIGdesarrollosig_papiitentregablesexposicionbiologicav_costera_yucfv_distancia_manglar.tif</p>
 </div></blockquote>
 </div></blockquote>
 <p><strong>Resultado</strong>: SIG/desarrollo/sig_papiit/entregables/exposicion/biologica/v_costera_yuc/fv_v_costera_distancia_yuc.tif</p>
 <p><strong>Nombre de la capa:</strong> fv_v_costera_distancia_yuc</p>
 <p><strong>issue</strong>: <a href= "https://github.com/lancis-apc/espejos-lancis/issues/66" target="_blank">Vegetación costera</a></p>
+<p><strong>Integración</strong></p>
+<p>Los insumos de exposición biológica se integran en una capa de la siguiente forma:</p>
+<p>exp_biologica = fv_costera_distacia_yuc * 0.84 + fv_v_acuatica_yuc * 0.16</p>
+<p><strong>Resultaddo:</strong> SIGdesarrollosig_papiitentregablesexposicionsalidaexp_biologica.tif</p>
 </div>
 </div>
 </div>
@@ -270,7 +275,7 @@ la construcción es</p>
 </div>
 <p><code class="docutils literal notranslate"><span class="pre">mínimo:</span> <span class="pre">0.00</span>
 <span class="pre">máximo:3000.00</span></code></p>
-<p><a href="#id2"><span class="problematic" id="id3">**</span></a>Tipo de función: ** Continua - logística</p>
+<p><strong>Tipo de función:</strong> Continua - logística</p>
 <p>archivo json: fv_exp_fis_playa.json</p>
 <p><code class="docutils literal notranslate"><span class="pre">centro:60,</span>
 <span class="pre">min:0,</span>
@@ -279,9 +284,9 @@ la construcción es</p>
 <span class="pre">k:0.1815</span></code></p>
 <img alt="_images/fv_c_exp_aplaya.png" src="_images/fv_c_exp_aplaya.png" />
 </div></blockquote>
-<p><strong>Resultado</strong>: SIG/desarrollo/sig_papiit/entregables/exposicion/biologica/v_costera_yuc/fv__distancia_playa.tif</p>
-<p><strong>Nombre de la capa:</strong> <a href="#id8"><span class="problematic" id="id9">|fv_distancia_playa|</span></a></p>
-<p><strong>issue</strong>: <a href= "https://github.com/lancis-apc/espejos-lancis/issues/69" target="_blank">ancho de playa</a></p>
+<p><strong>Resultado</strong>: SIG/desarrollo/sig_papiit/entregables/exposicion/biologica/v_costera_yuc/fv_distancia_playa.tif</p>
+<p><strong>Nombre de la capa:</strong> <a href= "http://magrat.mine.nu:8088/geonetwork/srv/spa/catalog.search#/metadata/ac5e34c8-1c3c-4bfb-a4ab-9be7885f9db6" target="_blank">fv_distancia_playa.tif</a></p>
+<p><strong>issue</strong>: <a href= "https://github.com/lancis-apc/espejos-lancis/issues/69" target="_blank">Distancia playa</a></p>
 </div>
 <div class="section" id="elevacion">
 <h4>Elevación<a class="headerlink" href="#elevacion" title="Enlazar permanentemente con este título">¶</a></h4>
@@ -299,10 +304,23 @@ la construcción es</p>
 <img alt="_images/fv_c_exp_elevacion.png" src="_images/fv_c_exp_elevacion.png" />
 </div></blockquote>
 <p><strong>Resultado</strong>: SIG/desarrollo/sig_papiit/entregables/exposicion/fisica/elev_yuc/fv_elevacion.tif</p>
-<p><strong>Nombre de la capa:</strong> <a href="#id10"><span class="problematic" id="id11">|fv_elevacion|</span></a></p>
-<p><strong>issue</strong>: <a href="#id12"><span class="problematic" id="id13">|Elevación|</span></a></p>
+<p><strong>Nombre de la capa:</strong> <a href= "http://magrat.mine.nu:8088/geonetwork/srv/spa/catalog.search#/metadata/b794113f-dc2a-4ce0-b700-6d65263c9df4" target="_blank">fv_e_elev_yuc.tif</a></p>
+<p><strong>issue</strong>: <a href= "https://github.com/lancis-apc/espejos-lancis/issues/58" target="_blank">Elevación</a></p>
+<p><strong>Integración</strong></p>
+<p>Los insumos de exposición - física se integran en una capa de la siguiente forma:</p>
+<p>exp_fisica = fv_distancia_playa * 0.13 + fv_elevacion * 0.87</p>
+<p><strong>Resultado:</strong> SIGdesarrollosig_papiitentregablesexposicionsalidaexp_fisica.tif</p>
 </div>
 </div>
+</div>
+<div class="section" id="integracion">
+<h2>Integración<a class="headerlink" href="#integracion" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>el criterio de <em>Biológica</em> y <em>Física</em> se integran  para formar la capa de exposición</p>
+<p>exposición = exp_biologica * 0.50 + exp_fisica * 0.50</p>
+</div>
+<div class="section" id="resultado">
+<h2>Resultado<a class="headerlink" href="#resultado" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>SIGdesarrollosig_papiitentregablesexposicionsalidaexposicion.tif</p>
 </div>
 </div>
 
