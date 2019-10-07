@@ -50,7 +50,7 @@ Vegetación acuatíca
 
     **Nombre de la capa:** |fv_v_acuatica_yuc|
 
-    **issue:** |vegetacion_acuatica|
+    **issue:** |Vegetación acuática|
 
 
     
@@ -64,7 +64,6 @@ Vegetación costera
 
     **peso local:** 0.84
 
-    **insumo:** |fv_v_costera_yuc.tif|
     
     Esta capa representa la integración de las capas de distancia de dunas costeras con la capa de distancias de manglar
     la construcción es 
@@ -80,16 +79,15 @@ Insumos
 
         **peso**: 0.25 
         
-        **insumo:** fv_distancia_dunas.tif
+        **insumo:** ifv_distancia_dunas_int.tif
 
         **Definición:** Lejanía a una duna costera dentro de la franja de 3 kms
 
         ``mínimo: 0.0  máximo:3000``
 
-        Función continua - logística 
+        **Tipo de función:** Continua - logística 
         
-        insumo: ifv_distancia_dunas.tif
-        
+             
         archivo json: fv_exp_bio_veg_dunas.json
     
         ``centro:100
@@ -100,7 +98,7 @@ Insumos
 
         .. image:: ../recursos/fv/fv_c_exp_dunas_costeras.png
 
-
+        **Resultado:**  SIG\desarrollo\sig_papiit\entregables\exposicion\biologica\v_costera_yuc\fv_distancia_dunas.tif
 
     **Manglar** 
     
@@ -108,11 +106,10 @@ Insumos
         
         **peso local:** 0.75
 
-        insumo: fv_ditancia_manglar.tif
+        insumo: ifv_ditancia_manglar.tif
         
         **Definición:** Lejanía a una zona de manglar dentro de la franja de 3kms
 
-        ``mínimo: 0.00 máximo:1.00``
 
         **Tipo de función:** Continua - logística 
         
@@ -126,7 +123,7 @@ Insumos
 
         .. imagen:: ../recursos/fv/fv_c_exp_manglar.png
 
-
+        **Resultado:** \SIG\desarrollo\sig_papiit\entregables\exposicion\biologica\v_costera_yuc\fv_distancia_manglar.tif
 
 
 **Resultado**: SIG/desarrollo/sig_papiit/entregables/exposicion/biologica/v_costera_yuc/fv_v_costera_distancia_yuc.tif
@@ -135,6 +132,17 @@ Insumos
 **Nombre de la capa:** fv_v_costera_distancia_yuc
 
 **issue**: |vegetacion_costera|
+
+
+**Integración**
+
+Los insumos de exposición biológica se integran en una capa de la siguiente forma: 
+
+exp_biologica = fv_costera_distacia_yuc * 0.84 + fv_v_acuatica_yuc * 0.16 
+
+**Resultaddo:** SIG\desarrollo\sig_papiit\entregables\exposicion\salida\exp_biologica.tif
+
+
 
 
 
@@ -158,7 +166,7 @@ Ancho de playa
     ``mínimo: 0.00
     máximo:3000.00``
 
-    **Tipo de función: ** Continua - logística
+    **Tipo de función:** Continua - logística
         
     archivo json: fv_exp_fis_playa.json
 
@@ -170,12 +178,12 @@ Ancho de playa
 
     .. image:: ../recursos/fv/fv_c_exp_aplaya.png
 
-**Resultado**: SIG/desarrollo/sig_papiit/entregables/exposicion/biologica/v_costera_yuc/fv__distancia_playa.tif
+**Resultado**: SIG/desarrollo/sig_papiit/entregables/exposicion/biologica/v_costera_yuc/fv_distancia_playa.tif
 
 
-**Nombre de la capa:** |fv_distancia_playa|
+**Nombre de la capa:** |fv_distancia_playa.tif|
 
-**issue**: |Ancho_de_playa|
+**issue**: |Distancia playa|
 
 
 Elevación
@@ -207,33 +215,60 @@ Elevación
 
 **Nombre de la capa:** |fv_elevacion|
 
-**issue**: |Elevación|
+**issue**: |elevacion|
+
+
+**Integración**
+
+Los insumos de exposición - física se integran en una capa de la siguiente forma: 
+
+exp_fisica = fv_distancia_playa * 0.13 + fv_elevacion * 0.87 
+
+**Resultado:** SIG\desarrollo\sig_papiit\entregables\exposicion\salida\exp_fisica.tif
+
+
+Integración
+*************
+
+el criterio de *Biológica* y *Física* se integran  para formar la capa de exposición 
+
+exposición = exp_biologica * 0.50 + exp_fisica * 0.50
+
+
+Resultado
+***********
+
+SIG\desarrollo\sig_papiit\entregables\exposicion\salida\exposicion.tif
+
+
+
 
 
 .. ####liga de los metadatos#####
 .. parte Biológica 
 
-.. |ifv_v_costera_yuc.tif| raw:: html
+.. |fv_v_costera_yuc.tif| raw:: html
 
-    <a href= "http://magrat.mine.nu:8088/geonetwork/srv/spa/catalog.search#/metadata/3970a9d9-e5fc-4522-ab83-fabefed5633b" target="_blank">ifv_v_costera_yuc.tif</a>
+    <a href= "http://magrat.mine.nu:8088/geonetwork/srv/spa/catalog.search#/metadata/8c2b6d48-48cb-4503-a40c-ee2db87f5356" target="_blank">vegetacion_costera</a>
 
 .. |ifv_v_acuatica_yuc.tif| raw:: html
 
-    <a href= "http://magrat.mine.nu:8088/geonetwork/srv/spa/catalog.search#/metadata/4a300c5b-af8e-47d5-ad48-3b15a3e541bf" target="_blank">ifv_v_acuatica_yuc.tif</a>
+    <a href= "http://magrat.mine.nu:8088/geonetwork/srv/spa/catalog.search#/metadata/680ed0c8-211e-4cbc-966c-fb47c6358f66" target="_blank">ifv_v_acuatica_yuc.tif</a>
 
 
+.. |fv_v_acuatica_yuc| raw:: html
 
-
+    <a href= "http://magrat.mine.nu:8088/geonetwork/srv/spa/catalog.search#/metadata/4a300c5b-af8e-47d5-ad48-3b15a3e541bf" target="_blank">fv_v_acuatica_yuc</a>
 
 .. parte física
 
-.. |e_fv_ancho_playa_yuc| raw:: html
+.. |fv_distancia_playa.tif| raw:: html
 
-    <a href= "http://magrat.mine.nu:8088/geonetwork/srv/spa/catalog.search#/metadata/ac5e34c8-1c3c-4bfb-a4ab-9be7885f9db6" target="_blank">e_fv_ancho_playa_yuc</a>
+    <a href= "http://magrat.mine.nu:8088/geonetwork/srv/spa/catalog.search#/metadata/ac5e34c8-1c3c-4bfb-a4ab-9be7885f9db6" target="_blank">fv_distancia_playa.tif</a>
 
-.. |fv_e_elev_yuc| raw:: html
+.. |fv_elevacion| raw:: html
 
-    <a href= "http://magrat.mine.nu:8088/geonetwork/srv/spa/catalog.search#/metadata/b794113f-dc2a-4ce0-b700-6d65263c9df4" target="_blank">fv_e_elev_yuc</a>
+    <a href= "http://magrat.mine.nu:8088/geonetwork/srv/spa/catalog.search#/metadata/b794113f-dc2a-4ce0-b700-6d65263c9df4" target="_blank">fv_e_elev_yuc.tif</a>
 
 
 .. ####liga de los issues#####
@@ -242,20 +277,20 @@ Elevación
 .. |vegetacion_costera| raw:: html
 
     <a href= "https://github.com/lancis-apc/espejos-lancis/issues/66" target="_blank">Vegetación costera</a>
-.. |vegetacion_acuatica| raw:: html
+.. |Vegetación acuática| raw:: html
 
-    <a href= "https://github.com/lancis-apc/espejos-lancis/issues/47" target="_blank">Vegetación acuatica</a>
+    <a href= "https://github.com/lancis-apc/espejos-lancis/issues/47" target="_blank">Vegetación acuática</a>
 
 .. fisica
 
 .. |elevacion| raw:: html
     
-    <a href= "https://github.com/lancis-apc/espejos-lancis/issues/58" target="_blank">elevacion</a>
+    <a href= "https://github.com/lancis-apc/espejos-lancis/issues/58" target="_blank">Elevación</a>
 
 .. |duna_costera| raw:: html
     
     <a href= "https://github.com/lancis-apc/espejos-lancis/issues/60" target="_blank">duna costera</a>
     
-.. |ancho_de_playa| raw:: html
+.. |Distancia playa| raw:: html
     
-    <a href= "https://github.com/lancis-apc/espejos-lancis/issues/69" target="_blank">ancho de playa</a>
+    <a href= "https://github.com/lancis-apc/espejos-lancis/issues/69" target="_blank">Distancia playa</a>

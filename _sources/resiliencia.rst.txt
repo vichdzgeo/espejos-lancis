@@ -38,11 +38,12 @@ Biodiversidad
     ========= ===================== ====
    
    
-    **Resultado:**
+    **Resultado:** SIG/desarrollo/sig_papiit/entregables/resiliencia/biologica/biodiversidad_yuc/fv_biodiversidad_yuc.tif
 
-    **Nombre de la capa:** 
+    **Nombre de la capa:** fv_biodiversidad_yuc.tif
 
-    **issue**
+
+    **issue:** 
 
 
 Servicios ambientales
@@ -83,12 +84,13 @@ Insumos:
         saturacion: 3,
         k:0.0834999999999999``
 
-        .. image:: ../recursos/fi_fv_res_bio_v_acuatica.JPG
+        .. image:: ../recursos/fv_c_res_veg_acuatica.png
 
         
-        **Resultado:**
+        **Resultado:** sig_papiit/entregables/resiliencia/biologica/serv_ambientales_yuc/prot_costera_yuc/fv_v_acuatica_yuc.tif
 
-        **Nombre de la capa:** 
+
+        **Nombre de la capa:** fv_v_acuatica_yuc.tif
 
         **issue**
 
@@ -100,15 +102,15 @@ Insumos:
 
         **Peso local:** 0.14
 
-        **Insumo:**
+        **Insumo:** 
 
-        **Definición:**
+        **Definición:** 
 
-        **Tipo de función:**
+        **Tipo de función:**   Discreta (Presencia 1, ausencia 0)
 
-        **Resultado:**
+        **Resultado:** /sig_papiit/entregables/resiliencia/biologica/serv_ambientales_yuc/prot_costera_yuc/ifv_dunas_presencia_int.tif
 
-        **Nombre de la capa:** 
+        **Nombre de la capa:** ifv_dunas_presencia_int.tif
 
         **issue**
 
@@ -125,13 +127,13 @@ Insumos:
 
         **Definición:**
 
-        **Tipo de función:**
+        **Tipo de función:** Discreta (Presencia 1, ausencia 0)
 
-        **Resultado:**
+        **Resultado:**  /sig_papiit/entregables/resiliencia/biologica/serv_ambientales_yuc/prot_costera_yuc/ifv_manglar_presencia_int.tif
 
-        **Nombre de la capa:** 
+        **Nombre de la capa:** ifv_manglar_presencia_int.tif
 
-        **issue**
+        **issue** 
 
 Provisión
 ^^^^^^^^^^
@@ -139,11 +141,12 @@ Provisión
 
     **Peso local**:0.50
 
-    **Insumo:**
+    **Insumo:** ifv_provision_disc_yuc_int.tif
+
 
     **Definición:**
 
-    **Tipo de función:**
+    **Tipo de función:** Discreta 
 
         ========= ===================== ====
         Categoria Descripción           Peso
@@ -156,10 +159,10 @@ Provisión
         ========= ===================== ====
 
 
-    **Resultado:**
-
-    **Nombre de la capa:** 
-
+    **Resultado:** /sig_papiit/entregables/resiliencia/biologica/serv_ambientales_yuc/provision_yuc/fv_provision_yuc.tif
+  
+    **Nombre de la capa:**  fv_provision_yuc.tif
+  
     **issue**
 
 
