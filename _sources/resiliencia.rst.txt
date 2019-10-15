@@ -49,7 +49,7 @@ Biodiversidad
 Servicios ambientales
 ---------------------
 
-Proteccion costera
+Protección costera
 ^^^^^^^^^^^^^^^^^^^
 
 *Resiliencia - Biológica - Servicios ambientales*
@@ -66,7 +66,7 @@ Insumos:
 
         **Peso local:** 0.16
 
-        **Insumo:** ifv_v_acuatica.tif
+        **Insumo:** |ifv_v_acuatica.tif|
 
         **Definición:** Distancia entre los pastos y la línea de costa 
 
@@ -84,13 +84,13 @@ Insumos:
         saturacion: 3,
         k:0.0834999999999999``
 
-        .. image:: ../recursos/fv_c_res_veg_acuatica.png
+        .. image:: ../recursos/fv/fv_c_res_veg_acuatica.png
 
         
         **Resultado:** sig_papiit/entregables/resiliencia/biologica/serv_ambientales_yuc/prot_costera_yuc/fv_v_acuatica_yuc.tif
 
 
-        **Nombre de la capa:** fv_v_acuatica_yuc.tif
+        **Nombre de la capa:** |fv_v_acuatica_yuc.tif|
 
         **issue**
 
@@ -102,15 +102,15 @@ Insumos:
 
         **Peso local:** 0.14
 
-        **Insumo:** 
+        **Insumo:** ifv_dunas_presencia_yuc.tif
 
         **Definición:** 
 
         **Tipo de función:**   Discreta (Presencia 1, ausencia 0)
 
-        **Resultado:** /sig_papiit/entregables/resiliencia/biologica/serv_ambientales_yuc/prot_costera_yuc/ifv_dunas_presencia_int.tif
+        **Resultado:** /sig_papiit/entregables/resiliencia/biologica/serv_ambientales_yuc/prot_costera_yuc/fv_dunas_presencia_yuc.tif
 
-        **Nombre de la capa:** ifv_dunas_presencia_int.tif
+        **Nombre de la capa:** fv_dunas_presencia_yuc.tif
 
         **issue**
 
@@ -123,15 +123,15 @@ Insumos:
 
         **Peso local**:0.70
 
-        **Insumo:**
+        **Insumo:** ifv_manglar_presencia_yuc.tif
 
         **Definición:**
 
         **Tipo de función:** Discreta (Presencia 1, ausencia 0)
 
-        **Resultado:**  /sig_papiit/entregables/resiliencia/biologica/serv_ambientales_yuc/prot_costera_yuc/ifv_manglar_presencia_int.tif
+        **Resultado:**  /sig_papiit/entregables/resiliencia/biologica/serv_ambientales_yuc/prot_costera_yuc/fv_manglar_presencia_yuc.tif
 
-        **Nombre de la capa:** ifv_manglar_presencia_int.tif
+        **Nombre de la capa:** fv_manglar_presencia_yuc.tif
 
         **issue** 
 
@@ -141,7 +141,7 @@ Provisión
 
     **Peso local**:0.50
 
-    **Insumo:** ifv_provision_disc_yuc_int.tif
+    **Insumo:** ifv_provision_yuc.tif
 
 
     **Definición:**
@@ -184,15 +184,17 @@ Ancho de playa
 
     **Peso local:**:0.62
 
-    **Insumo:**
+    **Insumo:** ifv_ancho_playa_yuc.tif
 
     **Definición:** Esta capa representa la presencia del ancho de playa en la costa.
 
     **Tipo de función:**
 
+    .. imagen:: ../recursos/fv/fv_c_res_aplaya.png
+
     **Resultado:**
 
-    **Nombre de la capa:** 
+    **Nombre de la capa:** fv_ancho_playa_yuc.tif
 
     **issue**
 
@@ -204,7 +206,7 @@ Dunas costeras
     
     **Peso local:**:0.27
 
-    **Insumo:**
+    **Insumo:** ifv_duna_yuc.tif
 
     **Definición:**     Esta capa representa la presencia de dunas costeras en la costa, El insumo ocupado
     para la generación de esta capa corresponde a información del POETY
@@ -213,7 +215,7 @@ Dunas costeras
 
     **Resultado:**
 
-    **Nombre de la capa:** 
+    **Nombre de la capa:** fv_duna_yuc.tif
 
     **issue**
 
@@ -227,7 +229,7 @@ Elevación
 
     **Peso local:**:0.06
 
-    **Insumo:**
+    **Insumo:** ifv_elev_yuc.tif
 
     **Definición:**     El insumo para la generación de esta capa proviene del Continuo de Elevaciones Mexicano (CEM) de INEGI,
     a la cual se le aplico una funcion de valor *concava decreciente*
@@ -245,11 +247,11 @@ Elevación
         saturacion:``
 
 
-         .. imagen:: ../recursos/fi_fv_sen_fis_elevacion.JPG
+         .. imagen:: ../recursos/fv/fv_c_res_elevacion.png
 
-    **Resultado:**
+    **Resultado:** SIG/desarrollo/sig_papiit/entregables/resiliencia/fisica/elev_yuc/fv_elev_yuc.tif
 
-    **Nombre de la capa:** 
+    **Nombre de la capa:** fv_elev_yuc.tif
 
     **issue**
     
@@ -262,7 +264,7 @@ Tipo de litoral
     **Peso local**:0.05
 
     
-    **Insumo:**
+    **Insumo:** ifv_tipo_litoral_yuc.tif
 
     **Definición:** Esta capa representa la presencia de diferentes tipos de litoral, estos fueron clasificados
     conforme a la siguiente tabla, el insumo ocupado es la capa de uso de suelo y vegetación 
@@ -301,12 +303,13 @@ Tipo de litoral
         4         Vegetado    0.15
         ========= =========== ====
 
-    **Resultado:**
+    **Resultado:** SIG/desarrollo/sig_papiit/entregables/resiliencia/fisica/t_litoral_yuc/fv_tipo_litoral_yuc.tif
 
-    **Nombre de la capa:** 
+    **Nombre de la capa:** fv_tipo_litoral_yuc.tif
+
 
     **issue**
 
-
+.. ligas
 
  

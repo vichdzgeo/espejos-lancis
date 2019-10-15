@@ -100,6 +100,8 @@
 </li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="#integracion">Integración</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#resultado">Resultado</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="resiliencia.html">Criterio de resiliencia</a></li>
@@ -179,7 +181,7 @@
 <blockquote>
 <div><p><em>Sensibilidad - biológica</em></p>
 <p><strong>Peso local</strong>:0.34</p>
-<p><strong>insumo:</strong> ifv_v_acuatica_yuc.tif</p>
+<p><strong>insumo:</strong> <a href= "" target="_blank">ifv_v_acuatica_yuc.tif</a></p>
 <p><strong>Definición:</strong> Distancia entre los pastos y la línea de costa</p>
 <p><code class="docutils literal notranslate"><span class="pre">mínimo:</span> <span class="pre">0.0</span>
 <span class="pre">máximo:3000</span></code></p>
@@ -197,8 +199,8 @@ plataforma</p>
 <span class="pre">k:0.0834999999999999</span></code></p>
 <img alt="_images/fv_c_sens_veg_acuatica.png" src="_images/fv_c_sens_veg_acuatica.png" />
 <p><strong>Resultado:</strong>: SIG/desarrollo/sig_papiit/entregables/sensibilidad/biologica/v_acuatica_yuc/fv_v_acuatica_yuc.tif</p>
-<p><strong>Nombre de la capa:</strong> fv_v_acuatica_yuc</p>
-<p><strong>issue</strong>: vegetacion_acuatica</p>
+<p><strong>Nombre de la capa:</strong> <a href= "" target="_blank">fv_v_acuatica_yuc.tif</a></p>
+<p><strong>issue</strong>: <a href= "" target="_blank">Vegetación acuática</a></p>
 </div></blockquote>
 </div>
 <div class="section" id="vegetacion-costera">
@@ -206,8 +208,7 @@ plataforma</p>
 <blockquote>
 <div><p><em>Sensibilidad - Biológica</em></p>
 <p><strong>peso local</strong> : 0.66</p>
-<p><strong>Definición:</strong> Esta capa representa la integración de las capas de presencia de
-vegetación de duna constera con la capa de manglar.</p>
+<p><strong>Definición:</strong> integración de las capas de presencia de vegetación de duna constera con la capa de manglar.</p>
 <p>Integración:</p>
 <blockquote>
 <div><code class="docutils literal notranslate"><span class="pre">fv_v_costera_presencia</span> <span class="pre">=</span> <span class="pre">ifv_v_dunas_presencia(1.0)</span> <span class="pre">+</span> <span class="pre">ifv_v_manglar_presencia(0.25)</span></code></div></blockquote>
@@ -219,22 +220,26 @@ vegetación de duna constera con la capa de manglar.</p>
 <blockquote>
 <div><p><em>Sensibilidad - Biológica - Vegetación costera</em></p>
 <p><strong>peso local:</strong> 1.0</p>
-<p><strong>Insumo:</strong> ifv_manglar_presencia.tif</p>
-<p><strong>Definición:</strong> Esta capa representa la presencia de manglar en la zona de estudio</p>
+<p><strong>Insumo:</strong>  ifv_manglar_presencia_yuc.tif</p>
+<p><strong>Definición:</strong> presencia de manglar en la zona de estudio</p>
 <p><strong>Tipo de función:</strong> Discreta</p>
 </div></blockquote>
 <p><strong>Duna costera</strong></p>
 <p><em>Sensibilidad - Biológica - Vegetación costera</em></p>
 <blockquote>
 <div><p><strong>peso local:</strong>: 0.25</p>
-<p><strong>Insumo</strong>: ifv_dunas_presencia.tif</p>
-<p><strong>Definición:</strong> Esta capa representa la presencia de vegetacion de dunas costeras en la zona de estudio</p>
+<p><strong>Insumo</strong>: ifv_dunas_presencia_yuc.tif</p>
+<p><strong>Definición:</strong> presencia de vegetacion de dunas costeras en la zona de estudio</p>
 <p><strong>Tipo de función:</strong> Discreta</p>
 </div></blockquote>
 </div></blockquote>
-<p><strong>Resultado:</strong>: SIG/desarrollo/sig_papiit/entregables/sensibilidad/biologica/v_costera_yuc/fv_v_costera_presencia.tif</p>
-<p><strong>Nombre de la capa:</strong> fv_v_costera_presencia.tif</p>
-<p><strong>issue</strong>:  Vegetación costera</p>
+<p><strong>Resultado:</strong>: SIG/desarrollo/sig_papiit/entregables/sensibilidad/biologica/v_costera_yuc/fv_v_costera_presencia_yuc.tif</p>
+<p><strong>Nombre de la capa:</strong> <a href= "" target="_blank">fv_v_costera_presencia_yuc.tif</a></p>
+<p><strong>issue</strong>:  <a href= "" target="_blank">Vegetación costera</a></p>
+<p><strong>Integración</strong></p>
+<p>Los inusmo de sensibilidad biológica se integran en una capa de la siguiente forma:</p>
+<p>sen_biologica = fv_v_costera * 0.66 + fv_v_acuatica * 0.34</p>
+<p><strong>Resultado</strong> SIG/desarrollo/sig_papiit/entregables/sensibilidad/salida/sen_biologica.tif</p>
 </div>
 </div>
 </div>
@@ -245,10 +250,8 @@ vegetación de duna constera con la capa de manglar.</p>
 <p><em>Sensibilidad - Física</em></p>
 <blockquote>
 <div><p><strong>Peso local:</strong> 0.33</p>
-<p><strong>Insumo:</strong>: fv_ancho_playa_yuc.tif</p>
-<p><strong>Definición:</strong> Esta capa representa el ancho de playa en la costa. El insumo ocupado para la
-generación de esta capa corresponde a información dle POETY, se ocupo una función
-logística para representar esta capa</p>
+<p><strong>Insumo:</strong>: <a href= "" target="_blank">ifv_ancho_playa_yuc.tif</a></p>
+<p><strong>Definición:</strong></p>
 <p><strong>Tipo de función:</strong> Continua - Logística</p>
 <p><code class="docutils literal notranslate"><span class="pre">min:0</span>
 <span class="pre">max:54</span>
@@ -256,9 +259,9 @@ logística para representar esta capa</p>
 <span class="pre">k:0.1325</span>
 <span class="pre">saturación:5</span></code></p>
 <img alt="_images/fv_c_sens_veg_acuatica.png" src="_images/fv_c_sens_veg_acuatica.png" />
-<p><strong>Resultado:</strong></p>
-<p><strong>Nombre de la capa:</strong></p>
-<p><strong>issue</strong></p>
+<p><strong>Resultado:</strong> SIG/desarrollo/sig_papiit/entregables/sensibilidad/fisica/ancho_playa_yuc/fv_ancho_playa_yuc.tif</p>
+<p><strong>Nombre de la capa:</strong> <a href= "" target="_blank">fv_ancho_playa_yuc.tif</a></p>
+<p><strong>issue</strong> <a href= "" target="_blank">Ancho de playa</a></p>
 </div></blockquote>
 </div>
 <div class="section" id="dunas-costeras">
@@ -266,14 +269,14 @@ logística para representar esta capa</p>
 <p><em>Sensibilidad - Física</em></p>
 <blockquote>
 <div><p><strong>Peso local</strong>:0.56</p>
-<p><strong>Insumo:</strong> fv_duna_yuc.tif</p>
+<p><strong>Insumo:</strong> <a href= "" target="_blank">ifv_duna_yuc.tif</a></p>
 <p><strong>Definición:</strong> Esta capa representa la presencia de dunas costeras en la costa, El insumo ocupado
 para la generación de esta capa corresponde a información del POETY combinado con
 el ancho de playa.</p>
 <p><strong>Tipo de función:</strong> Discreta</p>
-<p><strong>Resultado:</strong></p>
-<p><strong>Nombre de la capa:</strong></p>
-<p><strong>issue</strong></p>
+<p><strong>Resultado:</strong> C:/Dropbox (LANCIS)/SIG/desarrollo/sig_papiit/entregables/sensibilidad/fisica/duna_yuc/fv_duna_yuc/fv_duna_yuc.tif</p>
+<p><strong>Nombre de la capa:</strong> <a href= "" target="_blank">fv_duna_yuc.tif</a></p>
+<p><strong>issue</strong> <a href= "" target="_blank">Duna costera</a></p>
 </div></blockquote>
 </div>
 <div class="section" id="elevacion">
@@ -281,7 +284,7 @@ el ancho de playa.</p>
 <p><em>Sensibilidad - Física</em></p>
 <blockquote>
 <div><p><strong>Peso local:</strong>:0.04</p>
-<p><strong>Insumo:</strong> fv_elevacion.tif</p>
+<p><strong>Insumo:</strong> <a href= "" target="_blank">ifv_elev_yuc_v2.tif</a></p>
 <p><strong>Definición:</strong> El insumo para la generación de esta capa proviene del Continuo de Elevaciones Mexicano (CEM) de INEGI,
 a la cual se le aplico una funcion de valor <em>concava creciente</em></p>
 <p><strong>Tipo de función:</strong> continua - Concava creciente</p>
@@ -291,9 +294,9 @@ a la cual se le aplico una funcion de valor <em>concava creciente</em></p>
 <span class="pre">gama:</span> <span class="pre">0.01975</span>
 <span class="pre">saturacion:</span> <span class="pre">13</span></code></p>
 <img alt="_images/fv_c_sens_elevacion.png" src="_images/fv_c_sens_elevacion.png" />
-<p><strong>Resultado:</strong></p>
-<p><strong>Nombre de la capa:</strong></p>
-<p><strong>issue</strong></p>
+<p><strong>Resultado:</strong> SIG/desarrollo/sig_papiit/entregables/sensibilidad/fisica/elev_yuc/fv_elevacion_yuc.tif</p>
+<p><strong>Nombre de la capa:</strong> <a href= "" target="_blank">fv_elevacion_yuc.tif</a></p>
+<p><strong>issue</strong> <a href= "" target="_blank">Elevación</a></p>
 </div></blockquote>
 </div>
 <div class="section" id="tipo-de-litoral">
@@ -301,7 +304,7 @@ a la cual se le aplico una funcion de valor <em>concava creciente</em></p>
 <p><em>Sensibilidad - Física</em></p>
 <blockquote>
 <div><p><strong>Peso local:</strong> 0.07</p>
-<p><strong>Insumo</strong>: fv_tipo_litoral_yuc.tif</p>
+<p><strong>Insumo</strong>: ifv_tipo_litoral_yuc.tif</p>
 <p><strong>Definición:</strong> Esta capa representa la presencia de diferentes tipos de litoral, estos fueron clasificados
 conforme a la siguiente tabla, el insumo ocupado es la capa de uso de suelo y vegetación
 serie VI de INEGI</p>
@@ -390,12 +393,25 @@ serie VI de INEGI</p>
 </tr>
 </tbody>
 </table>
-<p><strong>Resultado:</strong></p>
-<p><strong>Nombre de la capa:</strong></p>
-<p><strong>issue</strong></p>
+<p><strong>Resultado:</strong> SIG/desarrollo/sig_papiit/entregables/sensibilidad/fisica/t_litoral_yuc/fv_tipo_litoral_yuc.tif</p>
+<p><strong>Nombre de la capa:</strong> <a href= "" target="_blank">fv_tipo_litoral_yuc.tif</a></p>
+<p><strong>issue</strong> <a href= "" target="_blank">Tipo de litoral</a></p>
 </div></blockquote>
+<p><strong>Integración</strong></p>
+<p>las capas de sensibilidad física se integran en una capa de la siguiente forma:</p>
+<p>sen_fisica = fv_tipo_litoral_yuc * 0.07 + fv_elevacion_yuc * 0.04 + fv_duna_yuc * 0.56 + fv_ancho_playa_yuc * 0.33</p>
+<p><strong>Resultado</strong> SIG/desarrollo/sig_papiit/entregables/sensibilidad/salida/sen_fisica.tif</p>
 </div>
 </div>
+</div>
+<div class="section" id="integracion">
+<h2>Integración<a class="headerlink" href="#integracion" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>el criterio de <em>Biológica</em> y <em>Física</em> se integran  para formar la capa de sensibilidad</p>
+<p>sensibilidad = sen_biologica * 0.50 + sen_fisica * 0.50</p>
+</div>
+<div class="section" id="resultado">
+<h2>Resultado<a class="headerlink" href="#resultado" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>SIG/desarrollo/sig_papiit/entregables/sensibilidad/salida/sensibilidad.tif</p>
 </div>
 </div>
 
