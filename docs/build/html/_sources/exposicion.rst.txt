@@ -2,7 +2,6 @@ Criterio de exposición
 ##########################
 
 
-
 .. imagen:: ../recursos/vulnerabilidad_exposicion_fv.png
 
 
@@ -16,11 +15,14 @@ Vegetación acuatíca
 -------------------------
     *Exposición - biológica*
  
-    Criterio: vegetacion acuatica 
+
+.. warning::
+    Verificar capa y actualizar metadatos e issue
+
 
     **Peso local**:0.16
 
-    **insumo:** |ifv_v_acuatica_yuc.shp|
+    **insumo:** |ifv_v_acuatica_yuc.tif|
     
     **Definición:** Distancia entre los pastos y la línea de costa 
 
@@ -79,7 +81,7 @@ Insumos
 
         **peso**: 0.25 
         
-        **insumo:** ifv_distancia_dunas_int.tif
+        **insumo:** ifv_distancia_dunas_yuc.tif
 
         **Definición:** Lejanía a una duna costera dentro de la franja de 3 kms
 
@@ -98,7 +100,7 @@ Insumos
 
         .. image:: ../recursos/fv/fv_c_exp_dunas_costeras.png
 
-        **Resultado:**  SIG/desarrollo/sig_papiit/entregables/exposicion/biologica/v_costera_yuc/fv_distancia_dunas.tif
+        **Resultado:**  SIG/desarrollo/sig_papiit/entregables/exposicion/biologica/v_costera_yuc/fv_distancia_dunas_yuc.tif
 
     **Manglar** 
     
@@ -106,7 +108,7 @@ Insumos
         
         **peso local:** 0.75
 
-        insumo: ifv_ditancia_manglar.tif
+        insumo: ifv_distancia_manglar_yuc.tif
         
         **Definición:** Lejanía a una zona de manglar dentro de la franja de 3kms
 
@@ -123,7 +125,7 @@ Insumos
 
         .. imagen:: ../recursos/fv/fv_c_exp_manglar.png
 
-        **Resultado:** /SIG/desarrollo/sig_papiit/entregables/exposicion/biologica/v_costera_yuc/fv_distancia_manglar.tif
+        **Resultado:** /SIG/desarrollo/sig_papiit/entregables/exposicion/biologica/v_costera_yuc/fv_distancia_manglar_yuc.tif
 
 
 **Resultado**: SIG/desarrollo/sig_papiit/entregables/exposicion/biologica/v_costera_yuc/fv_v_costera_distancia_yuc.tif
@@ -155,7 +157,7 @@ Ancho de playa
 
     **peso local:** 0.13
 
-    **insumo:** ifv_distancia_playa.tif
+    **insumo:** |ifv_distancia_playa_yuc.tif|
 
     **Definición:** Distancia entre la línea de mar y el final de la playa
     
@@ -178,10 +180,10 @@ Ancho de playa
 
     .. image:: ../recursos/fv/fv_c_exp_aplaya.png
 
-**Resultado**: SIG/desarrollo/sig_papiit/entregables/exposicion/biologica/v_costera_yuc/fv_distancia_playa.tif
+**Resultado**: SIG/desarrollo/sig_papiit/entregables/exposicion/biologica/v_costera_yuc/fv_distancia_playa_yuc.tif
 
 
-**Nombre de la capa:** |fv_distancia_playa.tif|
+**Nombre de la capa:** |fv_distancia_playa_yuc.tif|
 
 **issue**: |Distancia playa|
 
@@ -192,7 +194,7 @@ Elevación
 
     **peso local:** 0.87
 
-    **insumo:** ifv_elev_yuc.tif
+    **insumo:** |ifv_elev_yuc_v2.tif|
 
     **Definición:** Localización sobre el nivel medio del mar
 
@@ -210,7 +212,7 @@ Elevación
 
     .. image:: ../recursos/fv/fv_c_exp_elevacion.png
 
-**Resultado**: SIG/desarrollo/sig_papiit/entregables/exposicion/fisica/elev_yuc/fv_elevacion.tif
+**Resultado**: SIG/desarrollo/sig_papiit/entregables/exposicion/fisica/elev_yuc/fv_elevacion_yuc.tif
 
 
 **Nombre de la capa:** |fv_elevacion|
@@ -241,34 +243,43 @@ Resultado
 SIG/desarrollo/sig_papiit/entregables/exposicion/salida/exposicion.tif
 
 
-
-
-
 .. ####liga de los metadatos#####
 .. parte Biológica 
 
-.. |fv_v_costera_yuc.tif| raw:: html
+.. |ifv_v_acuatica_yuc.tif| raw:: html
 
-    <a href= "http://magrat.mine.nu:8088/geonetwork/srv/spa/catalog.search#/metadata/8c2b6d48-48cb-4503-a40c-ee2db87f5356" target="_blank">vegetacion_costera</a>
-
-.. |ifv_v_acuatica_yuc.shp| raw:: html
-
-    <a href= "http://magrat.mine.nu:8088/geonetwork/srv/spa/catalog.search#/metadata/680ed0c8-211e-4cbc-966c-fb47c6358f66" target="_blank">ifv_v_acuatica_yuc.shp</a>
-
+    <a href= "http://magrat.mine.nu:8088/geonetwork/srv/spa/catalog.search#/metadata/8e16b5bc-4e1f-41ea-a1f1-3dbedf6f3c67" target="_blank">ifv_v_acuatica_yuc.tif</a>
 
 .. |fv_v_acuatica_yuc| raw:: html
 
-    <a href= "http://magrat.mine.nu:8088/geonetwork/srv/spa/catalog.search#/metadata/4a300c5b-af8e-47d5-ad48-3b15a3e541bf" target="_blank">fv_v_acuatica_yuc</a>
+    <a href= "http://magrat.mine.nu:8088/geonetwork/srv/spa/catalog.search#/metadata/4a300c5b-af8e-47d5-ad48-3b15a3e541bf" target="_blank">fv_v_acuatica_yuc.tif</a>
+
+
+.. |fv_costera_distancia_yuc| raw:: html
+
+    <a href= "http://magrat.mine.nu:8088/geonetwork/srv/spa/catalog.search#/metadata/3970a9d9-e5fc-4522-ab83-fabefed5633b" target="fv_v_costera_distancia_yuc.tif</a>
 
 .. parte física
 
-.. |fv_distancia_playa.tif| raw:: html
+.. |ifv_distancia_playa_yuc.tif| raw:: html
 
-    <a href= "http://magrat.mine.nu:8088/geonetwork/srv/spa/catalog.search#/metadata/ac5e34c8-1c3c-4bfb-a4ab-9be7885f9db6" target="_blank">fv_distancia_playa.tif</a>
+    <a href= "http://magrat.mine.nu:8088/geonetwork/srv/spa/catalog.search#/metadata/1f63fbd6-216e-4cf2-94df-b4fd2073f117" target="_blank">ifv_distancia_playa_yuc.tif</a>
+
+
+
+.. |fv_distancia_playa_yuc.tif| raw:: html
+
+    <a href= "http://magrat.mine.nu:8088/geonetwork/srv/spa/catalog.search#/metadata/ac5e34c8-1c3c-4bfb-a4ab-9be7885f9db6" target="_blank">fv_distancia_playa_yuc.tif</a>
+
+
+.. |ifv_elev_yuc_v2.tif| raw:: html
+
+    <a href= "http://magrat.mine.nu:8088/geonetwork/srv/spa/catalog.search#/metadata/b794113f-dc2a-4ce0-b700-6d65263c9df4" target="_blank">ifv_elev_yuc_v2.tif</a>
+
 
 .. |fv_elevacion| raw:: html
 
-    <a href= "http://magrat.mine.nu:8088/geonetwork/srv/spa/catalog.search#/metadata/b794113f-dc2a-4ce0-b700-6d65263c9df4" target="_blank">fv_e_elev_yuc.tif</a>
+    <a href= "http://magrat.mine.nu:8088/geonetwork/srv/spa/catalog.search#/metadata/b794113f-dc2a-4ce0-b700-6d65263c9df4" target="_blank">fv_elevacion_yuc.tif</a>
 
 
 .. ####liga de los issues#####

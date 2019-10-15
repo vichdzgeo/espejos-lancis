@@ -3,8 +3,8 @@ Criterio de sensiblidad
 
 
 
-
 .. imagen:: ../recursos/vulnerabilidad_sensibilidad_fv.png
+
 
 Insumos
 *********
@@ -12,14 +12,13 @@ Insumos
 Biológica
 ===========
 
-
 Vegetación acuatíca
 -------------------------
     *Sensibilidad - biológica*
 
     **Peso local**:0.34
 
-    **insumo:** ifv_v_acuatica_yuc.tif
+    **insumo:** |ifv_v_acuatica_yuc.tif|
     
     **Definición:** Distancia entre los pastos y la línea de costa 
 
@@ -47,9 +46,9 @@ Vegetación acuatíca
 
     **Resultado:**: SIG/desarrollo/sig_papiit/entregables/sensibilidad/biologica/v_acuatica_yuc/fv_v_acuatica_yuc.tif
     
-    **Nombre de la capa:** fv_v_acuatica_yuc
+    **Nombre de la capa:** |fv_v_acuatica_yuc.tif|
 
-    **issue**: vegetacion_acuatica
+    **issue**: |Vegetación acuática|
 
 
 Vegetación costera
@@ -58,8 +57,7 @@ Vegetación costera
 
     **peso local** : 0.66
 
-    **Definición:** Esta capa representa la integración de las capas de presencia de 
-    vegetación de duna constera con la capa de manglar.
+    **Definición:** integración de las capas de presencia de vegetación de duna constera con la capa de manglar.
     
     Integración: 
 
@@ -75,9 +73,9 @@ Insumos
 
         **peso local:** 1.0
 
-        **Insumo:** ifv_manglar_presencia.tif
+        **Insumo:**  ifv_manglar_presencia_yuc.tif
         
-        **Definición:** Esta capa representa la presencia de manglar en la zona de estudio
+        **Definición:** presencia de manglar en la zona de estudio
 
         **Tipo de función:** Discreta
 
@@ -87,19 +85,28 @@ Insumos
 
         **peso local:**: 0.25
         
-        **Insumo**: ifv_dunas_presencia.tif
+        **Insumo**: ifv_dunas_presencia_yuc.tif
 
-        **Definición:** Esta capa representa la presencia de vegetacion de dunas costeras en la zona de estudio
+        **Definición:** presencia de vegetacion de dunas costeras en la zona de estudio
 
         **Tipo de función:** Discreta
 
 
-**Resultado:**: SIG/desarrollo/sig_papiit/entregables/sensibilidad/biologica/v_costera_yuc/fv_v_costera_presencia.tif
+**Resultado:**: SIG/desarrollo/sig_papiit/entregables/sensibilidad/biologica/v_costera_yuc/fv_v_costera_presencia_yuc.tif
 
-**Nombre de la capa:** fv_v_costera_presencia.tif
+**Nombre de la capa:** |fv_v_costera_presencia_yuc.tif|
 
-**issue**:  Vegetación costera
+**issue**:  |Vegetación costera|
 
+
+
+**Integración**
+
+Los inusmo de sensibilidad biológica se integran en una capa de la siguiente forma: 
+
+sen_biologica = fv_v_costera * 0.66 + fv_v_acuatica * 0.34 
+
+**Resultado** SIG/desarrollo/sig_papiit/entregables/sensibilidad/salida/sen_biologica.tif
 
 Física
 =======
@@ -111,11 +118,9 @@ Ancho de playa
 
     **Peso local:** 0.33
 
-    **Insumo:**: fv_ancho_playa_yuc.tif
+    **Insumo:**: |ifv_ancho_playa_yuc.tif| 
 
-    **Definición:** Esta capa representa el ancho de playa en la costa. El insumo ocupado para la
-    generación de esta capa corresponde a información dle POETY, se ocupo una función 
-    logística para representar esta capa
+    **Definición:**  
 
     **Tipo de función:** Continua - Logística
 
@@ -127,11 +132,11 @@ Ancho de playa
 
     .. image:: ../recursos/fv/fv_c_sens_veg_acuatica.png
 
-    **Resultado:**
+    **Resultado:** SIG/desarrollo/sig_papiit/entregables/sensibilidad/fisica/ancho_playa_yuc/fv_ancho_playa_yuc.tif
 
-    **Nombre de la capa:** 
+    **Nombre de la capa:** |fv_ancho_playa_yuc.tif|
 
-    **issue**
+    **issue** |Ancho de playa|
      
 
 Dunas costeras
@@ -140,7 +145,7 @@ Dunas costeras
     
     **Peso local**:0.56
 
-    **Insumo:** fv_duna_yuc.tif
+    **Insumo:** |ifv_duna_yuc.tif|
 
     **Definición:** Esta capa representa la presencia de dunas costeras en la costa, El insumo ocupado
     para la generación de esta capa corresponde a información del POETY combinado con 
@@ -148,11 +153,11 @@ Dunas costeras
 
     **Tipo de función:** Discreta
 
-    **Resultado:**
+    **Resultado:** C:/Dropbox (LANCIS)/SIG/desarrollo/sig_papiit/entregables/sensibilidad/fisica/duna_yuc/fv_duna_yuc/fv_duna_yuc.tif
 
-    **Nombre de la capa:** 
+    **Nombre de la capa:** |fv_duna_yuc.tif|
 
-    **issue**
+    **issue** |Duna costera|
 
 Elevación 
 ---------------
@@ -160,7 +165,7 @@ Elevación
     
     **Peso local:**:0.04
 
-    **Insumo:** fv_elevacion.tif
+    **Insumo:** |ifv_elev_yuc_v2.tif|
 
     **Definición:** El insumo para la generación de esta capa proviene del Continuo de Elevaciones Mexicano (CEM) de INEGI,
     a la cual se le aplico una funcion de valor *concava creciente* 
@@ -177,11 +182,11 @@ Elevación
 
     .. image:: ../recursos/fv/fv_c_sens_elevacion.png
 
-    **Resultado:**
+    **Resultado:** SIG/desarrollo/sig_papiit/entregables/sensibilidad/fisica/elev_yuc/fv_elevacion_yuc.tif
 
-    **Nombre de la capa:** 
+    **Nombre de la capa:** |fv_elevacion_yuc.tif|
 
-    **issue**
+    **issue** |Elevación|
     
 
 Tipo de litoral
@@ -190,7 +195,7 @@ Tipo de litoral
     
     **Peso local:** 0.07
 
-    **Insumo**: fv_tipo_litoral_yuc.tif
+    **Insumo**: ifv_tipo_litoral_yuc.tif
 
     **Definición:** Esta capa representa la presencia de diferentes tipos de litoral, estos fueron clasificados
     conforme a la siguiente tabla, el insumo ocupado es la capa de uso de suelo y vegetación 
@@ -230,8 +235,112 @@ Tipo de litoral
  
  
 
-    **Resultado:**
+    **Resultado:** SIG/desarrollo/sig_papiit/entregables/sensibilidad/fisica/t_litoral_yuc/fv_tipo_litoral_yuc.tif
 
-    **Nombre de la capa:** 
+    **Nombre de la capa:** |fv_tipo_litoral_yuc.tif|
 
-    **issue**
+    **issue** |Tipo de litoral|
+
+**Integración**
+
+
+las capas de sensibilidad física se integran en una capa de la siguiente forma: 
+
+sen_fisica = fv_tipo_litoral_yuc * 0.07 + fv_elevacion_yuc * 0.04 + fv_duna_yuc * 0.56 + fv_ancho_playa_yuc * 0.33
+
+**Resultado** SIG/desarrollo/sig_papiit/entregables/sensibilidad/salida/sen_fisica.tif
+
+
+Integración
+*************
+
+el criterio de *Biológica* y *Física* se integran  para formar la capa de sensibilidad 
+
+sensibilidad = sen_biologica * 0.50 + sen_fisica * 0.50
+
+
+Resultado
+***********
+
+SIG/desarrollo/sig_papiit/entregables/sensibilidad/salida/sensibilidad.tif
+
+
+
+.. Ligas 
+.. #Vegetación acuática
+
+.. |ifv_v_acuatica_yuc.tif| raw:: html
+    
+    <a href= "" target="_blank">ifv_v_acuatica_yuc.tif</a>
+
+.. |fv_v_acuatica_yuc.tif| raw:: html
+    
+    <a href= "" target="_blank">fv_v_acuatica_yuc.tif</a>
+
+.. |Vegetación acuática|  raw:: html
+    
+    <a href= "" target="_blank">Vegetación acuática</a>
+
+
+.. #Vegetación costera
+
+.. |fv_v_costera_presencia_yuc.tif| raw:: html
+
+    <a href= "" target="_blank">fv_v_costera_presencia_yuc.tif</a>
+
+.. |Vegetación costera|  raw:: html
+
+    <a href= "" target="_blank">Vegetación costera</a>
+
+.. #Ancho de playa
+
+.. |ifv_ancho_playa_yuc.tif| raw:: html
+
+    <a href= "" target="_blank">ifv_ancho_playa_yuc.tif</a>
+
+.. |fv_ancho_playa_yuc.tif| raw:: html
+
+    <a href= "" target="_blank">fv_ancho_playa_yuc.tif</a>
+
+.. |Ancho de playa| raw:: html
+
+    <a href= "" target="_blank">Ancho de playa</a>
+.. #Dunas costeras
+
+.. |ifv_duna_yuc.tif| raw:: html
+
+    <a href= "" target="_blank">ifv_duna_yuc.tif</a>
+.. |fv_duna_yuc.tif| raw:: html
+
+    <a href= "" target="_blank">fv_duna_yuc.tif</a>
+
+.. |Duna costera| raw:: html
+
+    <a href= "" target="_blank">Duna costera</a>
+
+.. #Elevacion
+
+.. |ifv_elev_yuc_v2.tif| raw:: html
+
+    <a href= "" target="_blank">ifv_elev_yuc_v2.tif</a>
+
+.. |fv_elevacion_yuc.tif| raw:: html
+
+    <a href= "" target="_blank">fv_elevacion_yuc.tif</a>
+
+.. |Elevación| raw:: html
+
+    <a href= "" target="_blank">Elevación</a>
+
+
+.. #Tipo de litoral
+
+.. |ifv_tipo_litoral_yuc.tif| raw:: html
+
+    <a href= "" target="_blank">ifv_tipo_litoral_yuc.tif</a>
+.. |fv_tipo_litoral_yuc.tif| raw:: html
+
+    <a href= "" target="_blank">fv_tipo_litoral_yuc.tif</a>
+.. |Tipo de litoral| raw:: html
+
+    <a href= "" target="_blank">Tipo de litoral</a>
