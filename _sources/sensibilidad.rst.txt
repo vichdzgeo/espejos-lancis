@@ -102,7 +102,7 @@ Insumos
 
 **Integración**
 
-Los inusmo de sensibilidad biológica se integran en una capa de la siguiente forma: 
+Los insumos de sensibilidad biológica se integran en una capa de la siguiente forma: 
 
 sen_biologica = fv_v_costera * 0.66 + fv_v_acuatica * 0.34 
 
@@ -271,76 +271,77 @@ SIG/desarrollo/sig_papiit/entregables/sensibilidad/salida/sensibilidad.tif
 
 .. |ifv_v_acuatica_yuc.tif| raw:: html
     
-    <a href= "" target="_blank">ifv_v_acuatica_yuc.tif</a>
+    <a href= "http://magrat.mine.nu:8088/geonetwork/srv/spa/catalog.search#/metadata/188ed4da-d849-4c40-b902-f0751cdcdc96" target="_blank">ifv_v_acuatica_yuc.tif</a>
 
 .. |fv_v_acuatica_yuc.tif| raw:: html
     
-    <a href= "" target="_blank">fv_v_acuatica_yuc.tif</a>
+    <a href= "http://magrat.mine.nu:8088/geonetwork/srv/spa/catalog.search#/metadata/ead203a1-f80a-44e6-8828-c6361438fda7" target="_blank">fv_v_acuatica_yuc.tif</a>
 
 .. |Vegetación acuática|  raw:: html
     
-    <a href= "" target="_blank">Vegetación acuática</a>
+    <a href= "https://github.com/lancis-apc/espejos-lancis/issues/64" target="_blank">Vegetación acuática</a>
 
 
 .. #Vegetación costera
 
 .. |fv_v_costera_presencia_yuc.tif| raw:: html
 
-    <a href= "" target="_blank">fv_v_costera_presencia_yuc.tif</a>
+    <a href= "http://magrat.mine.nu:8088/geonetwork/srv/spa/catalog.search#/metadata/8521cca4-497f-499a-8425-7c563fc59e02" target="_blank">fv_v_costera_presencia_yuc.tif</a>
 
 .. |Vegetación costera|  raw:: html
 
-    <a href= "" target="_blank">Vegetación costera</a>
+    <a href= "https://github.com/lancis-apc/espejos-lancis/issues/65" target="_blank">Vegetación costera</a>
 
 .. #Ancho de playa
 
 .. |ifv_ancho_playa_yuc.tif| raw:: html
 
-    <a href= "" target="_blank">ifv_ancho_playa_yuc.tif</a>
+    <a href= "http://magrat.mine.nu:8088/geonetwork/srv/spa/catalog.search#/metadata/5e4501b7-a425-4f56-a3d0-1c9bd31319a0" target="_blank">ifv_ancho_playa_yuc.tif</a>
 
 .. |fv_ancho_playa_yuc.tif| raw:: html
 
-    <a href= "" target="_blank">fv_ancho_playa_yuc.tif</a>
+    <a href= "http://magrat.mine.nu:8088/geonetwork/srv/spa/catalog.search#/metadata/8fd8fde8-4801-4752-b847-d1d032c92c43" target="_blank">fv_ancho_playa_yuc.tif</a>
 
 .. |Ancho de playa| raw:: html
 
-    <a href= "" target="_blank">Ancho de playa</a>
+    <a href= "https://github.com/lancis-apc/espejos-lancis/issues/67" target="_blank">Ancho de playa</a>
+
 .. #Dunas costeras
 
 .. |ifv_duna_yuc.tif| raw:: html
 
-    <a href= "" target="_blank">ifv_duna_yuc.tif</a>
+    <a href= "http://magrat.mine.nu:8088/geonetwork/srv/spa/catalog.search#/metadata/b0f9c6b1-bc93-4e4b-8bfc-1f606c65898d" target="_blank">ifv_duna_yuc.tif</a>
 .. |fv_duna_yuc.tif| raw:: html
 
-    <a href= "" target="_blank">fv_duna_yuc.tif</a>
+    <a href= "http://magrat.mine.nu:8088/geonetwork/srv/spa/catalog.search#/metadata/bfbb9b86-75d3-40eb-bf50-afc06bad84fc" target="_blank">fv_duna_yuc.tif</a>
 
 .. |Duna costera| raw:: html
 
-    <a href= "" target="_blank">Duna costera</a>
+    <a href= "https://github.com/lancis-apc/espejos-lancis/issues/62" target="_blank">Duna costera</a>
 
 .. #Elevacion
 
 .. |ifv_elev_yuc_v2.tif| raw:: html
 
-    <a href= "" target="_blank">ifv_elev_yuc_v2.tif</a>
+    <a href= "http://magrat.mine.nu:8088/geonetwork/srv/spa/catalog.search#/metadata/a065c6db-6faf-4840-a188-852808452ad0" target="_blank">ifv_elev_yuc_v2.tif</a>
 
 .. |fv_elevacion_yuc.tif| raw:: html
 
-    <a href= "" target="_blank">fv_elevacion_yuc.tif</a>
+    <a href= "http://magrat.mine.nu:8088/geonetwork/srv/spa/catalog.search#/metadata/e386162b-58dd-49d8-a17a-62d43a5b5f5c" target="_blank">fv_elevacion_yuc.tif</a>
 
 .. |Elevación| raw:: html
 
-    <a href= "" target="_blank">Elevación</a>
+    <a href= "https://github.com/lancis-apc/espejos-lancis/issues/59" target="_blank">Elevación</a>
 
 
 .. #Tipo de litoral
 
 .. |ifv_tipo_litoral_yuc.tif| raw:: html
 
-    <a href= "" target="_blank">ifv_tipo_litoral_yuc.tif</a>
+    <a href= "http://magrat.mine.nu:8088/geonetwork/srv/spa/catalog.search#/metadata/ea4792db-93a8-4ea1-9ba3-75a1aefdb8b2" target="_blank">ifv_tipo_litoral_yuc.tif</a>
 .. |fv_tipo_litoral_yuc.tif| raw:: html
 
-    <a href= "" target="_blank">fv_tipo_litoral_yuc.tif</a>
+    <a href= "http://magrat.mine.nu:8088/geonetwork/srv/spa/catalog.search#/metadata/0d70eb64-f225-4e0c-af9a-e630934f84ec" target="_blank">fv_tipo_litoral_yuc.tif</a>
 .. |Tipo de litoral| raw:: html
 
-    <a href= "" target="_blank">Tipo de litoral</a>
+    <a href= "https://github.com/lancis-apc/espejos-lancis/issues/54" target="_blank">Tipo de litoral</a>
