@@ -1,5 +1,5 @@
 Criterio de resiliencia
-##########################
+#######################
 
 
 .. imagen:: ../recursos/vulnerabilidad_resiliencia_fv.png
@@ -17,7 +17,7 @@ Biodiversidad
 
     **peso local:** 0.50
 
-    **insumo:** ifv_biodiversidad_yuc.tif
+    **insumo:** |ifv_biodiversidad_yuc.tif|
 
 
     **Definición:** Esta capa representa la presencia de vegetación costera en la zona de estudio.
@@ -40,10 +40,10 @@ Biodiversidad
    
     **Resultado:** SIG/desarrollo/sig_papiit/entregables/resiliencia/biologica/biodiversidad_yuc/fv_biodiversidad_yuc.tif
 
-    **Nombre de la capa:** fv_biodiversidad_yuc.tif
+    **Nombre de la capa:** |fv_biodiversidad_yuc.tif|
 
 
-    **issue:** 
+    **issue:**  |Biodiversidad|
 
 
 Servicios ambientales
@@ -66,7 +66,7 @@ Insumos:
 
         **Peso local:** 0.16
 
-        **Insumo:** |ifv_v_acuatica.tif|
+        **Insumo:** ifv_v_acuatica.tif
 
         **Definición:** Distancia entre los pastos y la línea de costa 
 
@@ -74,8 +74,8 @@ Insumos:
 
         .. note::
             Esta capa fue procesada en grass 7
-        
-        
+
+
         archivo json: fv_exp_bio_v_acuatica.json
 
         ``centro:1500,
@@ -90,9 +90,9 @@ Insumos:
         **Resultado:** sig_papiit/entregables/resiliencia/biologica/serv_ambientales_yuc/prot_costera_yuc/fv_v_acuatica_yuc.tif
 
 
-        **Nombre de la capa:** |fv_v_acuatica_yuc.tif|
+        **Nombre de la capa:** fv_v_acuatica_yuc.tif
 
-        **issue**
+        
 
 
 
@@ -112,7 +112,7 @@ Insumos:
 
         **Nombre de la capa:** fv_dunas_presencia_yuc.tif
 
-        **issue**
+       
 
 
                 
@@ -133,7 +133,18 @@ Insumos:
 
         **Nombre de la capa:** fv_manglar_presencia_yuc.tif
 
-        **issue** 
+    
+    **Integración**
+
+    fv_proteccion_costera = fv_v_acuatica_yuc * 0.16 + fv_dunas_presencia_yuc * 0.14 + fv_manglar_presencia_yuc * 0.70
+        
+    **Resultado**
+    SIG/desarrollo/sig_papiit/entregables/resiliencia/biologica/serv_ambientales_yuc/prot_costera_yuc/fv_prot_costera_yuc.tif
+
+    **Nombre de la capa:**  fv_prot_costera_yuc.tif **falta metadato**
+  
+    **issue** Protección costera **Agregar la liga del metadato**
+
 
 Provisión
 ^^^^^^^^^^
@@ -141,7 +152,7 @@ Provisión
 
     **Peso local**:0.50
 
-    **Insumo:** ifv_provision_yuc.tif
+    **Insumo:** |ifv_provision_yuc.tif|
 
 
     **Definición:**
@@ -161,17 +172,27 @@ Provisión
 
     **Resultado:** /sig_papiit/entregables/resiliencia/biologica/serv_ambientales_yuc/provision_yuc/fv_provision_yuc.tif
   
-    **Nombre de la capa:**  fv_provision_yuc.tif
+    **Nombre de la capa:**  |fv_provision_yuc.tif| **falta metadato**
   
-    **issue**
+    **issue** |Provisión|
 
 
+    **Integración**
 
+    serv_ambientales_yuc  = fv_prot_costera_yuc * 0.75 + fv_provision_yuc * 0.25 
 
+    **Resultado**  
 
+    SIG/desarrollo/sig_papiit/entregables/resiliencia/salida/serv_ambientales.tif
 
+    
+    **Integración**
 
+    res_biologica = fv_biodiversidad_yuc * 0.50 + serv_ambientales_yuc * 0.50 
 
+    **Resultado** 
+
+    SIG/desarrollo/sig_papiit/entregables/resiliencia/salida/res_biologica.tif
 
 
 Física
@@ -184,7 +205,7 @@ Ancho de playa
 
     **Peso local:**:0.62
 
-    **Insumo:** ifv_ancho_playa_yuc.tif
+    **Insumo:** |ifv_ancho_playa_yuc.tif|
 
     **Definición:** Esta capa representa la presencia del ancho de playa en la costa.
 
@@ -194,9 +215,9 @@ Ancho de playa
 
     **Resultado:**
 
-    **Nombre de la capa:** fv_ancho_playa_yuc.tif
+    **Nombre de la capa:** |fv_ancho_playa_yuc.tif|
 
-    **issue**
+    **issue** |Ancho de playa|
 
     
 
@@ -206,18 +227,18 @@ Dunas costeras
     
     **Peso local:**:0.27
 
-    **Insumo:** ifv_duna_yuc.tif
+    **Insumo:** |ifv_duna_yuc.tif|
 
-    **Definición:**     Esta capa representa la presencia de dunas costeras en la costa, El insumo ocupado
+    **Definición:** Esta capa representa la presencia de dunas costeras en la costa, El insumo ocupado
     para la generación de esta capa corresponde a información del POETY
 
     **Tipo de función:**
 
     **Resultado:**
 
-    **Nombre de la capa:** fv_duna_yuc.tif
+    **Nombre de la capa:** |fv_duna_yuc.tif|
 
-    **issue**
+    **issue** |Dunas costeras|
 
 
 
@@ -229,7 +250,7 @@ Elevación
 
     **Peso local:**:0.06
 
-    **Insumo:** ifv_elev_yuc.tif
+    **Insumo:** |ifv_elev_yuc.tif|
 
     **Definición:**     El insumo para la generación de esta capa proviene del Continuo de Elevaciones Mexicano (CEM) de INEGI,
     a la cual se le aplico una funcion de valor *concava decreciente*
@@ -251,9 +272,9 @@ Elevación
 
     **Resultado:** SIG/desarrollo/sig_papiit/entregables/resiliencia/fisica/elev_yuc/fv_elev_yuc.tif
 
-    **Nombre de la capa:** fv_elev_yuc.tif
+    **Nombre de la capa:** |fv_elev_yuc.tif|
 
-    **issue**
+    **issue** |Elevación|
     
    
 
@@ -264,7 +285,7 @@ Tipo de litoral
     **Peso local**:0.05
 
     
-    **Insumo:** ifv_tipo_litoral_yuc.tif
+    **Insumo:** |ifv_tipo_litoral_yuc.tif|
 
     **Definición:** Esta capa representa la presencia de diferentes tipos de litoral, estos fueron clasificados
     conforme a la siguiente tabla, el insumo ocupado es la capa de uso de suelo y vegetación 
@@ -305,11 +326,138 @@ Tipo de litoral
 
     **Resultado:** SIG/desarrollo/sig_papiit/entregables/resiliencia/fisica/t_litoral_yuc/fv_tipo_litoral_yuc.tif
 
-    **Nombre de la capa:** fv_tipo_litoral_yuc.tif
+    **Nombre de la capa:** |fv_tipo_litoral_yuc.tif|
 
 
-    **issue**
+    **issue** |Tipo de litoral|
+
+
+    **Integración**
+    res_fisica = fv_ancho_playa_yuc * 0.62 + fv_duna_yuc * 0.27 + fv_elev_yuc * 0.06 + fv_tipo_litoral_yuc * 0.05
+
+    **Resultado** 
+    SIG/desarrollo/sig_papiit/entregables/resiliencia/salida/res_fisica.tif 
+
+
+
+Integración
+============
+
+resiliencia = res_biologica * 0.50 + res_fisica * 0.50
+
+
+Resultado
+==========
+
+SIG/desarrollo/sig_papiit/entregables/resiliencia/salida/resiliencia_yuc.tif
+
 
 .. ligas
 
- 
+.. Biodiversidad
+
+
+.. |ifv_biodiversidad_yuc.tif| raw:: html
+
+    <a href= "http://magrat.mine.nu:8088/geonetwork/srv/spa/catalog.search#/metadata/a138bbf7-edfd-4220-85f0-3758b3501d2b" target="_blank">ifv_biodiversidad_yuc.tif</a>
+
+.. |fv_biodiversidad_yuc.tif| raw:: html 
+
+    <a href= "http://magrat.mine.nu:8088/geonetwork/srv/spa/catalog.search#/metadata/eb347808-46b3-48b1-a536-5718fd7f560d" target="_blank">fv_biodiversidad_yuc.tif</a>
+
+
+.. |Biodiversidad| raw:: html|
+
+    <a href= "https://github.com/lancis-apc/espejos-lancis/issues/63" target="_blank">Biodiversidad</a>
+
+.. Servicios ambientales
+.. Protección costera 
+
+.. raw:: html
+
+    <a href= "" target="_blank"></a>
+.. raw:: html 
+
+    <a href= "" target="_blank"></a>
+
+.. raw:: html 
+
+    <a href= "" target="_blank"></a>
+
+
+.. Provisión 
+
+.. |ifv_provision_yuc.tif| raw:: html
+
+    <a href= "http://magrat.mine.nu:8088/geonetwork/srv/spa/catalog.search#/metadata/150afcd1-e2b3-4fd8-9818-ac123c311154" target="_blank">ifv_provision_yuc.tif</a>
+
+.. |fv_provision_yuc.tif| raw:: html 
+
+    <a href= "" target="_blank">fv_provision_yuc.tif</a>
+
+.. |Provisión| raw:: html 
+
+    <a href= "https://github.com/lancis-apc/espejos-lancis/issues/49" target="_blank">Provisión</a>
+
+
+.. Fisica
+.. Ancho de playa 
+
+.. |ifv_ancho_playa_yuc.tif| raw:: html
+
+    <a href= "http://magrat.mine.nu:8088/geonetwork/srv/spa/catalog.search#/metadata/2ee70ef3-59d1-4ba7-8db2-c6e9e14342ff" target="_blank">ifv_ancho_playa_yuc.tif</a>
+
+.. |fv_ancho_playa_yuc.tif| raw:: html 
+
+    <a href= "http://magrat.mine.nu:8088/geonetwork/srv/spa/catalog.search#/metadata/67c144b7-7930-49e7-a9ef-c535c87d75ac" target="_blank">fv_ancho_playa_yuc.tif</a>
+
+.. |Ancho de playa| raw:: html 
+
+    <a href= "https://github.com/lancis-apc/espejos-lancis/issues/68" target="_blank">Ancho de playa</a>
+
+
+
+
+.. Dunas costeras
+
+.. |ifv_duna_yuc.tif| raw:: html
+
+    <a href= "http://magrat.mine.nu:8088/geonetwork/srv/spa/catalog.search#/metadata/0185f4bf-48d6-46c1-973d-917f41af9d46" target="_blank">ifv_duna_yuc.tif</a>
+
+.. |fv_duna_yuc.tif| raw:: html
+
+    <a href= "http://magrat.mine.nu:8088/geonetwork/srv/spa/catalog.search#/metadata/f7f5efdf-c2c7-47b5-8a00-ffb5281d0007" target="_blank">fv_duna_yuc.tif</a>
+
+.. |Dunas costeras| raw:: html
+
+    <a href= "https://github.com/lancis-apc/espejos-lancis/issues/61" target="_blank">Dunas costeras</a>
+
+
+.. Elevación 
+
+.. |ifv_elev_yuc.tif| raw:: html
+
+    <a href= "http://magrat.mine.nu:8088/geonetwork/srv/spa/catalog.search#/metadata/c000fff6-e339-4a90-a0fa-1910086309d4" target="_blank">ifv_elev_yuc.tif</a>
+
+.. |fv_elev_yuc.tif| raw:: html 
+
+    <a href= "http://magrat.mine.nu:8088/geonetwork/srv/spa/catalog.search#/metadata/c000fff6-e339-4a90-a0fa-1910086309d4" target="_blank">fv_elev_yuc.tif</a>
+
+.. |Elevación| raw:: html
+
+    <a href= "https://github.com/lancis-apc/espejos-lancis/issues/58" target="_blank">Elevación</a>
+
+
+.. Tipo de litoral 
+
+.. |ifv_tipo_litoral_yuc.tif| raw:: html
+
+    <a href= "http://magrat.mine.nu:8088/geonetwork/srv/spa/catalog.search#/metadata/718b3df0-6f05-4a43-9278-e977b4549f45" target="_blank">ifv_tipo_litoral_yuc.tif</a>
+
+.. |fv_tipo_litoral_yuc.tif| raw:: html 
+
+    <a href= "http://magrat.mine.nu:8088/geonetwork/srv/spa/catalog.search#/metadata/cf4aebc2-c97c-490f-a166-1592da725a5c" target="_blank">fv_tipo_litoral_yuc.tif</a>
+
+.. |Tipo de litoral| raw:: html 
+
+    <a href= "https://github.com/lancis-apc/espejos-lancis/issues/54" target="_blank">Tipo de litoral</a>
