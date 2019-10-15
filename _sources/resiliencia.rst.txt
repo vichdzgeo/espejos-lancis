@@ -141,9 +141,9 @@ Insumos:
     **Resultado**
     SIG/desarrollo/sig_papiit/entregables/resiliencia/biologica/serv_ambientales_yuc/prot_costera_yuc/fv_prot_costera_yuc.tif
 
-    **Nombre de la capa:**  |fv_prot_costera_yuc.tif| **falta metadato**
+    **Nombre de la capa:**  fv_prot_costera_yuc.tif **falta metadato**
   
-    **issue** |Protección costera| **Agregar la liga del metadato**
+    **issue** Protección costera **Agregar la liga del metadato**
 
 
 Provisión
