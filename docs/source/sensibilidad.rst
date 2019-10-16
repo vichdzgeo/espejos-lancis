@@ -100,13 +100,15 @@ Insumos
 
 
 
-**Integración**
+
+Resultado
+---------
 
 Los insumos de sensibilidad biológica se integran en una capa de la siguiente forma: 
 
-sen_biologica = fv_v_costera * 0.66 + fv_v_acuatica * 0.34 
+``sen_biologica = fv_v_costera * 0.66 + fv_v_acuatica * 0.34``
 
-**Resultado** SIG/desarrollo/sig_papiit/entregables/sensibilidad/salida/sen_biologica.tif
+SIG/desarrollo/sig_papiit/entregables/sensibilidad/salida/sen_biologica.tif
 
 Física
 =======
@@ -241,14 +243,16 @@ Tipo de litoral
 
     **issue** |Tipo de litoral|
 
-**Integración**
 
+
+Resultado
+-----------------
 
 las capas de sensibilidad física se integran en una capa de la siguiente forma: 
 
-sen_fisica = fv_tipo_litoral_yuc * 0.07 + fv_elevacion_yuc * 0.04 + fv_duna_yuc * 0.56 + fv_ancho_playa_yuc * 0.33
+``sen_fisica = fv_tipo_litoral_yuc * 0.07 + fv_elevacion_yuc * 0.04 + fv_duna_yuc * 0.56 + fv_ancho_playa_yuc * 0.33``
 
-**Resultado** SIG/desarrollo/sig_papiit/entregables/sensibilidad/salida/sen_fisica.tif
+Ruta: SIG/desarrollo/sig_papiit/entregables/sensibilidad/salida/sen_fisica.tif
 
 
 Integración

@@ -97,10 +97,11 @@
 <li class="toctree-l4"><a class="reference internal" href="#dunas-costeras">Dunas costeras</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#elevacion">Elevación</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#tipo-de-litoral">Tipo de litoral</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id1"><strong>Resultado</strong></a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#integracion">Integración</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id1">Resultado</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id2">Resultado</a></li>
 </ul>
 </li>
 </ul>
@@ -335,12 +336,8 @@ SIG/desarrollo/sig_papiit/entregables/resiliencia/biologica/serv_ambientales_yuc
 </div>
 <div class="section" id="resultado">
 <h4>Resultado<a class="headerlink" href="#resultado" title="Enlazar permanentemente con este título">¶</a></h4>
-<blockquote>
-<div><p><strong>Integración</strong></p>
-<p>res_biologica = fv_biodiversidad_yuc * 0.50 + serv_ambientales_yuc * 0.50</p>
-<p><strong>Salida</strong>
-SIG/desarrollo/sig_papiit/entregables/resiliencia/salida/res_biologica.tif</p>
-</div></blockquote>
+<p><code class="docutils literal notranslate"><span class="pre">res_biologica</span> <span class="pre">=</span> <span class="pre">fv_biodiversidad_yuc</span> <span class="pre">*</span> <span class="pre">0.50</span> <span class="pre">+</span> <span class="pre">serv_ambientales_yuc</span> <span class="pre">*</span> <span class="pre">0.50</span></code></p>
+<p>Ruta:  SIG/desarrollo/sig_papiit/entregables/resiliencia/salida/res_biologica.tif</p>
 </div>
 </div>
 <div class="section" id="fisica">
@@ -501,19 +498,20 @@ serie VI de INEGI</p>
 <p><strong>Resultado:</strong> SIG/desarrollo/sig_papiit/entregables/resiliencia/fisica/t_litoral_yuc/fv_tipo_litoral_yuc.tif</p>
 <p><strong>Nombre de la capa:</strong> <a href= "http://magrat.mine.nu:8088/geonetwork/srv/spa/catalog.search#/metadata/cf4aebc2-c97c-490f-a166-1592da725a5c" target="_blank">fv_tipo_litoral_yuc.tif</a></p>
 <p><strong>issue</strong> <a href= "https://github.com/lancis-apc/espejos-lancis/issues/54" target="_blank">Tipo de litoral</a></p>
-<p><strong>Integración</strong>
-res_fisica = fv_ancho_playa_yuc * 0.62 + fv_duna_yuc * 0.27 + fv_elev_yuc * 0.06 + fv_tipo_litoral_yuc * 0.05</p>
-<p><strong>Resultado</strong>
-SIG/desarrollo/sig_papiit/entregables/resiliencia/salida/res_fisica.tif</p>
 </div></blockquote>
+</div>
+<div class="section" id="id1">
+<h4><strong>Resultado</strong><a class="headerlink" href="#id1" title="Enlazar permanentemente con este título">¶</a></h4>
+<p><code class="docutils literal notranslate"><span class="pre">res_fisica</span> <span class="pre">=</span> <span class="pre">fv_ancho_playa_yuc</span> <span class="pre">*</span> <span class="pre">0.62</span> <span class="pre">+</span> <span class="pre">fv_duna_yuc</span> <span class="pre">*</span> <span class="pre">0.27</span> <span class="pre">+</span> <span class="pre">fv_elev_yuc</span> <span class="pre">*</span> <span class="pre">0.06</span> <span class="pre">+</span> <span class="pre">fv_tipo_litoral_yuc</span> <span class="pre">*</span> <span class="pre">0.05</span></code></p>
+<p>Ruta: SIG/desarrollo/sig_papiit/entregables/resiliencia/salida/res_fisica.tif</p>
 </div>
 </div>
 <div class="section" id="integracion">
 <h3>Integración<a class="headerlink" href="#integracion" title="Enlazar permanentemente con este título">¶</a></h3>
 <p>resiliencia = res_biologica * 0.50 + res_fisica * 0.50</p>
 </div>
-<div class="section" id="id1">
-<h3>Resultado<a class="headerlink" href="#id1" title="Enlazar permanentemente con este título">¶</a></h3>
+<div class="section" id="id2">
+<h3>Resultado<a class="headerlink" href="#id2" title="Enlazar permanentemente con este título">¶</a></h3>
 <p>SIG/desarrollo/sig_papiit/entregables/resiliencia/salida/resiliencia_yuc.tif</p>
 <a href= "" target="_blank"></a><a href= "" target="_blank"></a><a href= "" target="_blank"></a></div>
 </div>
