@@ -89,6 +89,7 @@
 <li class="toctree-l3"><a class="reference internal" href="#biologica">Biológica</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#vegetacion-acuatica">Vegetación acuatíca</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#vegetacion-costera">Vegetación costera</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#resultado">Resultado</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#fisica">Física</a><ul>
@@ -96,12 +97,13 @@
 <li class="toctree-l4"><a class="reference internal" href="#dunas-costeras">Dunas costeras</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#elevacion">Elevación</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#tipo-de-litoral">Tipo de litoral</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id2">Resultado</a></li>
 </ul>
 </li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#integracion">Integración</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#resultado">Resultado</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id3">Resultado</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="resiliencia.html">Criterio de resiliencia</a></li>
@@ -236,11 +238,13 @@ plataforma</p>
 <p><strong>Resultado:</strong>: SIG/desarrollo/sig_papiit/entregables/sensibilidad/biologica/v_costera_yuc/fv_v_costera_presencia_yuc.tif</p>
 <p><strong>Nombre de la capa:</strong> <a href= "http://magrat.mine.nu:8088/geonetwork/srv/spa/catalog.search#/metadata/8521cca4-497f-499a-8425-7c563fc59e02" target="_blank">fv_v_costera_presencia_yuc.tif</a></p>
 <p><strong>issue</strong>:  <a href= "https://github.com/lancis-apc/espejos-lancis/issues/65" target="_blank">Vegetación costera</a></p>
-<p><strong>Integración</strong></p>
-<p>Los insumos de sensibilidad biológica se integran en una capa de la siguiente forma:</p>
-<p>sen_biologica = fv_v_costera * 0.66 + fv_v_acuatica * 0.34</p>
-<p><strong>Resultado</strong> SIG/desarrollo/sig_papiit/entregables/sensibilidad/salida/sen_biologica.tif</p>
 </div>
+</div>
+<div class="section" id="resultado">
+<h4>Resultado<a class="headerlink" href="#resultado" title="Enlazar permanentemente con este título">¶</a></h4>
+<p>Los insumos de sensibilidad biológica se integran en una capa de la siguiente forma:</p>
+<p><code class="docutils literal notranslate"><span class="pre">sen_biologica</span> <span class="pre">=</span> <span class="pre">fv_v_costera</span> <span class="pre">*</span> <span class="pre">0.66</span> <span class="pre">+</span> <span class="pre">fv_v_acuatica</span> <span class="pre">*</span> <span class="pre">0.34</span></code></p>
+<p>SIG/desarrollo/sig_papiit/entregables/sensibilidad/salida/sen_biologica.tif</p>
 </div>
 </div>
 <div class="section" id="fisica">
@@ -397,10 +401,12 @@ serie VI de INEGI</p>
 <p><strong>Nombre de la capa:</strong> <a href= "http://magrat.mine.nu:8088/geonetwork/srv/spa/catalog.search#/metadata/0d70eb64-f225-4e0c-af9a-e630934f84ec" target="_blank">fv_tipo_litoral_yuc.tif</a></p>
 <p><strong>issue</strong> <a href= "https://github.com/lancis-apc/espejos-lancis/issues/54" target="_blank">Tipo de litoral</a></p>
 </div></blockquote>
-<p><strong>Integración</strong></p>
+</div>
+<div class="section" id="id2">
+<h4>Resultado<a class="headerlink" href="#id2" title="Enlazar permanentemente con este título">¶</a></h4>
 <p>las capas de sensibilidad física se integran en una capa de la siguiente forma:</p>
-<p>sen_fisica = fv_tipo_litoral_yuc * 0.07 + fv_elevacion_yuc * 0.04 + fv_duna_yuc * 0.56 + fv_ancho_playa_yuc * 0.33</p>
-<p><strong>Resultado</strong> SIG/desarrollo/sig_papiit/entregables/sensibilidad/salida/sen_fisica.tif</p>
+<p><code class="docutils literal notranslate"><span class="pre">sen_fisica</span> <span class="pre">=</span> <span class="pre">fv_tipo_litoral_yuc</span> <span class="pre">*</span> <span class="pre">0.07</span> <span class="pre">+</span> <span class="pre">fv_elevacion_yuc</span> <span class="pre">*</span> <span class="pre">0.04</span> <span class="pre">+</span> <span class="pre">fv_duna_yuc</span> <span class="pre">*</span> <span class="pre">0.56</span> <span class="pre">+</span> <span class="pre">fv_ancho_playa_yuc</span> <span class="pre">*</span> <span class="pre">0.33</span></code></p>
+<p>Ruta: SIG/desarrollo/sig_papiit/entregables/sensibilidad/salida/sen_fisica.tif</p>
 </div>
 </div>
 </div>
@@ -409,8 +415,8 @@ serie VI de INEGI</p>
 <p>el criterio de <em>Biológica</em> y <em>Física</em> se integran  para formar la capa de sensibilidad</p>
 <p>sensibilidad = sen_biologica * 0.50 + sen_fisica * 0.50</p>
 </div>
-<div class="section" id="resultado">
-<h2>Resultado<a class="headerlink" href="#resultado" title="Enlazar permanentemente con este título">¶</a></h2>
+<div class="section" id="id3">
+<h2>Resultado<a class="headerlink" href="#id3" title="Enlazar permanentemente con este título">¶</a></h2>
 <p>SIG/desarrollo/sig_papiit/entregables/sensibilidad/salida/sensibilidad.tif</p>
 </div>
 </div>

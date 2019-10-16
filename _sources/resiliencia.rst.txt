@@ -189,12 +189,10 @@ Servicios ambientales
 
 Resultado 
 -----------
-    **Integración**
+``res_biologica = fv_biodiversidad_yuc * 0.50 + serv_ambientales_yuc * 0.50``
 
-    res_biologica = fv_biodiversidad_yuc * 0.50 + serv_ambientales_yuc * 0.50 
 
-    **Salida**
-    SIG/desarrollo/sig_papiit/entregables/resiliencia/salida/res_biologica.tif
+Ruta:  SIG/desarrollo/sig_papiit/entregables/resiliencia/salida/res_biologica.tif
 
 
 Física
@@ -334,11 +332,14 @@ Tipo de litoral
     **issue** |Tipo de litoral|
 
 
-    **Integración**
-    res_fisica = fv_ancho_playa_yuc * 0.62 + fv_duna_yuc * 0.27 + fv_elev_yuc * 0.06 + fv_tipo_litoral_yuc * 0.05
 
-    **Resultado** 
-    SIG/desarrollo/sig_papiit/entregables/resiliencia/salida/res_fisica.tif 
+**Resultado**
+-------------------
+
+``res_fisica = fv_ancho_playa_yuc * 0.62 + fv_duna_yuc * 0.27 + fv_elev_yuc * 0.06 + fv_tipo_litoral_yuc * 0.05``
+
+
+Ruta: SIG/desarrollo/sig_papiit/entregables/resiliencia/salida/res_fisica.tif 
 
 
 
