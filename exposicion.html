@@ -88,17 +88,18 @@
 <li class="toctree-l3"><a class="reference internal" href="#biologica">Biológica</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#vegetacion-acuatica">Vegetación acuatíca</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#vegetacion-costera">Vegetación costera</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#resultado">Resultado</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#fisica">Física</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#ancho-de-playa">Ancho de playa</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#elevacion">Elevación</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id1">Resultado:</a></li>
 </ul>
 </li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#integracion">Integración</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#resultado">Resultado</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="sensibilidad.html">Criterio de sensiblidad</a></li>
@@ -178,10 +179,6 @@
 <h4>Vegetación acuatíca<a class="headerlink" href="#vegetacion-acuatica" title="Enlazar permanentemente con este título">¶</a></h4>
 <blockquote>
 <div><p><em>Exposición - biológica</em></p>
-</div></blockquote>
-<div class="admonition warning">
-<p class="admonition-title">Advertencia</p>
-<p>Verificar capa y actualizar metadatos e issue</p>
 <p><strong>Peso local</strong>:0.16</p>
 <p><strong>insumo:</strong> <a href= "http://magrat.mine.nu:8088/geonetwork/srv/spa/catalog.search#/metadata/8e16b5bc-4e1f-41ea-a1f1-3dbedf6f3c67" target="_blank">ifv_v_acuatica_yuc.tif</a></p>
 <p><strong>Definición:</strong> Distancia entre los pastos y la línea de costa</p>
@@ -189,8 +186,8 @@
 <span class="pre">máximo:3000</span></code></p>
 <p><strong>tipo de función:</strong>  Continua - Logística</p>
 <div class="admonition note">
-<p class="admonition-title">Nota</p>
-<p>Esta capa fue procesada en grass 7 ya que no se pudo procesar en la
+<p class="first admonition-title">Nota</p>
+<p class="last">Esta capa fue procesada en grass 7 ya que no se pudo procesar en la
 plataforma</p>
 </div>
 <p>archivo json: fv_exp_bio_v_acuatica.json</p>
@@ -203,21 +200,18 @@ plataforma</p>
 <p><strong>Resultado:</strong> SIG/desarrollo/sig_papiit/entregables/exposicion/biologica/v_acuatica_yuc/fv_v_acuatica_yuc.tif</p>
 <p><strong>Nombre de la capa:</strong> <a href= "http://magrat.mine.nu:8088/geonetwork/srv/spa/catalog.search#/metadata/4a300c5b-af8e-47d5-ad48-3b15a3e541bf" target="_blank">fv_v_acuatica_yuc.tif</a></p>
 <p><strong>issue:</strong> <a href= "https://github.com/lancis-apc/espejos-lancis/issues/47" target="_blank">Vegetación acuática</a></p>
-</div>
+</div></blockquote>
 </div>
 <div class="section" id="vegetacion-costera">
 <h4>Vegetación costera<a class="headerlink" href="#vegetacion-costera" title="Enlazar permanentemente con este título">¶</a></h4>
-<blockquote>
-<div><p><em>Exposición - Biológica</em></p>
+<p><em>Exposición - Biológica</em></p>
 <p>Criterio : Vegetación costera</p>
 <p><strong>Definición</strong>: Tipo de vegetación que se encuentra en la franja de 3 kilometros (manglar, dunas)</p>
 <p><strong>peso local:</strong> 0.84</p>
 <p>Esta capa representa la integración de las capas de distancia de dunas costeras con la capa de distancias de manglar
 la construcción es</p>
 <p><code class="docutils literal notranslate"><span class="pre">fv_v_costera_yuc</span> <span class="pre">=</span> <span class="pre">fv_distancia_dunas.tif*0.25</span> <span class="pre">+</span> <span class="pre">fv_ditancia_manglar.tif*0.75</span></code></p>
-</div></blockquote>
-<div class="section" id="id1">
-<h5>Insumos<a class="headerlink" href="#id1" title="Enlazar permanentemente con este título">¶</a></h5>
+<p><strong>Insumos</strong></p>
 <blockquote>
 <div><p><strong>Dunas costeras</strong></p>
 <p><em>Exposición - biológica - Vegetación costera</em></p>
@@ -256,11 +250,12 @@ la construcción es</p>
 <p><strong>Resultado</strong>: SIG/desarrollo/sig_papiit/entregables/exposicion/biologica/v_costera_yuc/fv_v_costera_distancia_yuc.tif</p>
 <p><strong>Nombre de la capa:</strong> fv_v_costera_distancia_yuc</p>
 <p><strong>issue</strong>: <a href= "https://github.com/lancis-apc/espejos-lancis/issues/66" target="_blank">Vegetación costera</a></p>
-<p><strong>Integración</strong></p>
-<p>Los insumos de exposición biológica se integran en una capa de la siguiente forma:</p>
-<p>exp_biologica = fv_costera_distacia_yuc * 0.84 + fv_v_acuatica_yuc * 0.16</p>
-<p><strong>Resultado:</strong> SIG/desarrollo/sig_papiit/entregables/exposicion/salida/exp_biologica.tif</p>
 </div>
+<div class="section" id="resultado">
+<h4>Resultado<a class="headerlink" href="#resultado" title="Enlazar permanentemente con este título">¶</a></h4>
+<p>Los insumos de exposición biológica se integran en una capa de la siguiente forma:</p>
+<p><code class="docutils literal notranslate"><span class="pre">exp_biologica</span> <span class="pre">=</span> <span class="pre">fv_costera_distacia_yuc</span> <span class="pre">*</span> <span class="pre">0.84</span> <span class="pre">+</span> <span class="pre">fv_v_acuatica_yuc</span> <span class="pre">*</span> <span class="pre">0.16</span></code></p>
+<p>Ruta : SIG/desarrollo/sig_papiit/entregables/exposicion/salida/exp_biologica.tif</p>
 </div>
 </div>
 <div class="section" id="fisica">
@@ -273,8 +268,8 @@ la construcción es</p>
 <p><strong>insumo:</strong> <a href= "http://magrat.mine.nu:8088/geonetwork/srv/spa/catalog.search#/metadata/1f63fbd6-216e-4cf2-94df-b4fd2073f117" target="_blank">ifv_distancia_playa_yuc.tif</a></p>
 <p><strong>Definición:</strong> Distancia entre la línea de mar y el final de la playa</p>
 <div class="admonition note">
-<p class="admonition-title">Nota</p>
-<p>verificar esta Definición</p>
+<p class="first admonition-title">Nota</p>
+<p class="last">verificar esta Definición</p>
 </div>
 <p><code class="docutils literal notranslate"><span class="pre">mínimo:</span> <span class="pre">0.00</span>
 <span class="pre">máximo:3000.00</span></code></p>
@@ -309,10 +304,12 @@ la construcción es</p>
 <p><strong>Resultado</strong>: SIG/desarrollo/sig_papiit/entregables/exposicion/fisica/elev_yuc/fv_elevacion_yuc.tif</p>
 <p><strong>Nombre de la capa:</strong> <a href= "http://magrat.mine.nu:8088/geonetwork/srv/spa/catalog.search#/metadata/b794113f-dc2a-4ce0-b700-6d65263c9df4" target="_blank">fv_elevacion_yuc.tif</a></p>
 <p><strong>issue</strong>: <a href= "https://github.com/lancis-apc/espejos-lancis/issues/58" target="_blank">Elevación</a></p>
-<p><strong>Integración</strong></p>
+</div>
+<div class="section" id="id1">
+<h4>Resultado:<a class="headerlink" href="#id1" title="Enlazar permanentemente con este título">¶</a></h4>
 <p>Los insumos de exposición - física se integran en una capa de la siguiente forma:</p>
-<p>exp_fisica = fv_distancia_playa * 0.13 + fv_elevacion * 0.87</p>
-<p><strong>Resultado:</strong> SIG/desarrollo/sig_papiit/entregables/exposicion/salida/exp_fisica.tif</p>
+<p><code class="docutils literal notranslate"><span class="pre">exp_fisica</span> <span class="pre">=</span> <span class="pre">fv_distancia_playa</span> <span class="pre">*</span> <span class="pre">0.13</span> <span class="pre">+</span> <span class="pre">fv_elevacion</span> <span class="pre">*</span> <span class="pre">0.87</span></code></p>
+<p><strong>Ruta:</strong> SIG/desarrollo/sig_papiit/entregables/exposicion/salida/exp_fisica.tif</p>
 </div>
 </div>
 </div>
@@ -320,10 +317,7 @@ la construcción es</p>
 <h2>Integración<a class="headerlink" href="#integracion" title="Enlazar permanentemente con este título">¶</a></h2>
 <p>el criterio de <em>Biológica</em> y <em>Física</em> se integran  para formar la capa de exposición</p>
 <p>exposición = exp_biologica * 0.50 + exp_fisica * 0.50</p>
-</div>
-<div class="section" id="resultado">
-<h2>Resultado<a class="headerlink" href="#resultado" title="Enlazar permanentemente con este título">¶</a></h2>
-<p>SIG/desarrollo/sig_papiit/entregables/exposicion/salida/exposicion.tif</p>
+<p><strong>Ruta:</strong> SIG/desarrollo/sig_papiit/entregables/exposicion/salida/exposicion.tif</p>
 </div>
 </div>
 

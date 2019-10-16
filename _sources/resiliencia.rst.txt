@@ -49,15 +49,14 @@ Biodiversidad
 Servicios ambientales
 ---------------------
 
-Protección costera
-^^^^^^^^^^^^^^^^^^^
+**Protección costera**
+
 
 *Resiliencia - Biológica - Servicios ambientales*
 
 **Peso local:** 0.75
 
-Insumos:
-~~~~~~~~~
+**Insumos:**
 
 
     **Vegetación acúatica**
@@ -146,8 +145,8 @@ Insumos:
     **issue** Protección costera **Agregar la liga del metadato**
 
 
-Provisión
-^^^^^^^^^^
+**Provisión**
+
     *Resiliencia - Biológica - Servicios ambientales*
 
     **Peso local**:0.50
@@ -186,12 +185,15 @@ Provisión
     SIG/desarrollo/sig_papiit/entregables/resiliencia/salida/serv_ambientales.tif
 
     
+
+
+Resultado 
+-----------
     **Integración**
 
     res_biologica = fv_biodiversidad_yuc * 0.50 + serv_ambientales_yuc * 0.50 
 
-    **Resultado** 
-
+    **Salida**
     SIG/desarrollo/sig_papiit/entregables/resiliencia/salida/res_biologica.tif
 
 

@@ -1,9 +1,7 @@
 Criterio de exposición
 ##########################
 
-
 .. imagen:: ../recursos/vulnerabilidad_exposicion_fv.png
-
 
 Insumos
 *********
@@ -14,11 +12,6 @@ Biológica
 Vegetación acuatíca
 -------------------------
     *Exposición - biológica*
- 
-
-.. warning::
-    Verificar capa y actualizar metadatos e issue
-
 
     **Peso local**:0.16
 
@@ -58,23 +51,23 @@ Vegetación acuatíca
     
 Vegetación costera
 ---------------------
-    *Exposición - Biológica*
+*Exposición - Biológica*
 
-    Criterio : Vegetación costera
+Criterio : Vegetación costera
 
-    **Definición**: Tipo de vegetación que se encuentra en la franja de 3 kilometros (manglar, dunas) 
+**Definición**: Tipo de vegetación que se encuentra en la franja de 3 kilometros (manglar, dunas) 
 
-    **peso local:** 0.84
+**peso local:** 0.84
+
+
+Esta capa representa la integración de las capas de distancia de dunas costeras con la capa de distancias de manglar
+la construcción es 
+
+``fv_v_costera_yuc = fv_distancia_dunas.tif*0.25 + fv_ditancia_manglar.tif*0.75``
 
     
-    Esta capa representa la integración de las capas de distancia de dunas costeras con la capa de distancias de manglar
-    la construcción es 
-    
-    ``fv_v_costera_yuc = fv_distancia_dunas.tif*0.25 + fv_ditancia_manglar.tif*0.75``
- 
-    
-Insumos
-^^^^^^^^
+**Insumos**
+
     **Dunas costeras**
     
     *Exposición - biológica - Vegetación costera*
@@ -136,15 +129,13 @@ Insumos
 **issue**: |vegetacion_costera|
 
 
-**Integración**
-
+Resultado
+----------
 Los insumos de exposición biológica se integran en una capa de la siguiente forma: 
 
-exp_biologica = fv_costera_distacia_yuc * 0.84 + fv_v_acuatica_yuc * 0.16 
+``exp_biologica = fv_costera_distacia_yuc * 0.84 + fv_v_acuatica_yuc * 0.16``
 
-**Resultado:** SIG/desarrollo/sig_papiit/entregables/exposicion/salida/exp_biologica.tif
-
-
+Ruta : SIG/desarrollo/sig_papiit/entregables/exposicion/salida/exp_biologica.tif
 
 
 
@@ -220,13 +211,16 @@ Elevación
 **issue**: |elevacion|
 
 
-**Integración**
+ 
+
+Resultado:
+-----------
 
 Los insumos de exposición - física se integran en una capa de la siguiente forma: 
 
-exp_fisica = fv_distancia_playa * 0.13 + fv_elevacion * 0.87 
+``exp_fisica = fv_distancia_playa * 0.13 + fv_elevacion * 0.87``
 
-**Resultado:** SIG/desarrollo/sig_papiit/entregables/exposicion/salida/exp_fisica.tif
+**Ruta:** SIG/desarrollo/sig_papiit/entregables/exposicion/salida/exp_fisica.tif
 
 
 Integración
@@ -237,10 +231,7 @@ el criterio de *Biológica* y *Física* se integran  para formar la capa de expo
 exposición = exp_biologica * 0.50 + exp_fisica * 0.50
 
 
-Resultado
-***********
-
-SIG/desarrollo/sig_papiit/entregables/exposicion/salida/exposicion.tif
+**Ruta:** SIG/desarrollo/sig_papiit/entregables/exposicion/salida/exposicion.tif
 
 
 .. ####liga de los metadatos#####
@@ -304,4 +295,4 @@ SIG/desarrollo/sig_papiit/entregables/exposicion/salida/exposicion.tif
     
 .. |Distancia playa| raw:: html
     
-    <a href= "https://github.com/lancis-apc/espejos-lancis/issues/69" target="_blank">Distancia playa</a>
+    <a href= "https://github.com/lancis-apc/espejos-lancis/issues/69" target="_blank">Distancia playa</a> 
