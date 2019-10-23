@@ -1,6 +1,9 @@
 Criterio de exposición
 ##########################
 
+Elementos extrínsecos. Grado en el la exposición geográfica determina la peligrosidad de una amenaza.
+
+
 .. imagen:: ../recursos/vulnerabilidad_exposicion_fv.png
 
 Insumos
@@ -76,7 +79,7 @@ la construcción es
         
         **insumo:** ifv_distancia_dunas_yuc.tif
 
-        **Definición:** Lejanía a una duna costera dentro de la franja de 3 kms
+        **Definición:** Distancia mínima a una celda de dunas
 
         ``mínimo: 0.0  máximo:3000``
 
@@ -103,7 +106,7 @@ la construcción es
 
         insumo: ifv_distancia_manglar_yuc.tif
         
-        **Definición:** Lejanía a una zona de manglar dentro de la franja de 3kms
+        **Definición:** Distancia mínima a una celda de manglar, independiente de la orientación. Barrera a inundaciones
 
 
         **Tipo de función:** Continua - logística 
@@ -232,6 +235,7 @@ exposición = exp_biologica * 0.50 + exp_fisica * 0.50
 
 
 **Ruta:** SIG/desarrollo/sig_papiit/entregables/exposicion/salida/exposicion.tif
+
 
 
 .. ####liga de los metadatos#####

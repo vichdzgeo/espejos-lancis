@@ -1,6 +1,7 @@
 Criterio de resiliencia
 #######################
 
+Capacidad del sistema de resisitir, absober y sobreponerse al impacto de una amenaza.
 
 .. imagen:: ../recursos/vulnerabilidad_resiliencia_fv.png
 
@@ -14,6 +15,9 @@ Biológica
 Biodiversidad
 --------------
 *Resiliencia - Biológica*
+
+    Clasificación de tipos de vegetación costera (a mayor biodiversidad, mayor resiliencia) 
+    ejemplo: manglar, pastos marinos, vegetación duna, otros tipos de vegetación sumergible
 
     **peso local:** 0.50
 
@@ -48,9 +52,11 @@ Biodiversidad
 
 Servicios ambientales
 ---------------------
+Presencia de tipos de vegetación que proveen protección a la línea de costa y hábitat (pastos marinos, dunas costeras y manglar)
 
 **Protección costera**
 
+Presencia de tipos de vegetación que proveen protección a la línea de costa (dunas costeras, manglares, humedales)
 
 *Resiliencia - Biológica - Servicios ambientales*
 
@@ -149,6 +155,8 @@ Servicios ambientales
 
     *Resiliencia - Biológica - Servicios ambientales*
 
+    Presencia de tipos de vegetación que proveen alimento, materias primas, recursos genéticos
+
     **Peso local**:0.50
 
     **Insumo:** |ifv_provision_yuc.tif|
@@ -207,7 +215,7 @@ Ancho de playa
 
     **Insumo:** |ifv_ancho_playa_yuc.tif|
 
-    **Definición:** Esta capa representa la presencia del ancho de playa en la costa.
+    **Definición:** presencia del ancho de playa en la costa.
 
     **Tipo de función:**
 
