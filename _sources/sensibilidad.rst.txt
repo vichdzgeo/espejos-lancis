@@ -1,7 +1,7 @@
 Criterio de sensiblidad
 ##########################
 
-
+Atributos intrínsecos. Grado de susceptibilidad de un sistema ante amenazas.
 
 .. imagen:: ../recursos/vulnerabilidad_sensibilidad_fv.png
 
