@@ -6,7 +6,9 @@
 Documentación del proyecto de Vulnerabilidad costera - Yucatán PAPIIT
 =========================================================================
 
-|mapa|
+.. raw:: html
+    
+    <iframe width="800" height="600" frameborder="0" style="border:0" src="http://sig.apps.lancis.ecologia.unam.mx/index.php/view/map/?repository=yucatan&project=vulnerabilidad_yucatan&layers=0B0000TTFFFT&bbox=-10022378.323523%2C2339933.15766%2C-9733446.356646%2C2491584.221757&crs=EPSG%3A3857&layerStyles=vulnerabilidad_costera_02_oct19%3Adefault%3Bvulnerabilidad_costera_01_oct19%3Adefault" allowfullscreen></iframe>
 
 
 .. toctree::
@@ -27,6 +29,3 @@ Indices and tables
 * :ref:`search`
 
 
-.. |mapa| raw:: html
-    
-    <iframe width="800" height="600" frameborder="0" style="border:0" src="http://sig.apps.lancis.ecologia.unam.mx/index.php/view/map/?repository=yucatan&project=vulnerabilidad_yucatan&layers=0B0000TTFFFT&bbox=-10022378.323523%2C2339933.15766%2C-9733446.356646%2C2491584.221757&crs=EPSG%3A3857&layerStyles=vulnerabilidad_costera_02_oct19%3Adefault%3Bvulnerabilidad_costera_01_oct19%3Adefault" allowfullscreen></iframe>
