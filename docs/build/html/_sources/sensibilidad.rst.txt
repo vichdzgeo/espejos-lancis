@@ -132,7 +132,7 @@ Ancho de playa
     k:0.1325
     saturación:5``
 
-    .. image:: ../recursos/fv/fv_c_sens_veg_acuatica.png
+    .. image:: ../recursos/fv/fv_c_sens_aplaya.png
 
     **Resultado:** SIG/desarrollo/sig_papiit/entregables/sensibilidad/fisica/ancho_playa_yuc/fv_ancho_playa_yuc.tif
 
