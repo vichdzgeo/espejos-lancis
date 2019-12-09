@@ -1,0 +1,16 @@
+Criterio de diagnostico,Puntos (cero o diez),Numero de atributos o campos con problema (donde aplique),Tiempo aproximado de correccion (horas),Comentarios
+La capa cuenta con metadatos,NA
+La capa cuenta con proyeccion y datum definida correctamente,10
+La capa tiene la geometria completa,10
+La capa no tiene lineas o poligonos sobrelapados y no tiene duplicados,10
+La capa no tiene puntos; lineas o poligonos sin nombre o atributo asociado,10
+La capa no tiene huecos,NA
+La capa no cuenta con registros nulos o sin informacion,0,1,ISIDORE_AF
+Se conoce el significado de la informacion contenida en los campos y esta completa,NA
+Se conocen las unidades de todos los campos de la tabla de atributos,NA
+Los campos estan codificados adecuadamente (UTF-8; el tipo numerico o texto correcto),0,1,ISIDORE_AF
+Se conoce la resolucion o escala del mapa,NA
+Se conoce la fecha de la fuente o publicacion de la capa,NA
+Se conoce el linaje o estirpe y el metodo de clasificacion de la capa,NA
+Se conoce la fuente y responsable de los datos,NA
+La capa cubre la totalidad de la extension territorial del proyecto,NA
