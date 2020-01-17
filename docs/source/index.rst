@@ -14,12 +14,23 @@ Documentación del proyecto de Vulnerabilidad costera - Yucatán PAPIIT
 
 .. toctree::
    :maxdepth: 2
-   :caption: Criterios:
+   :caption: Yúcatan:
 
    exposicion
    sensibilidad
    resiliencia
 
+
+Documentación del proyecto de Vulnerabilidad costera - BCS PAPIIT
+=========================================================================
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Baja California Sur:
+
+   exposicion
+   sensibilidad
+   resiliencia
 
 
 
