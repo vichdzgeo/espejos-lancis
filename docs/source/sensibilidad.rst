@@ -1,7 +1,7 @@
-Criterio de sensiblidad
+Susceptibilidad
 ##########################
 
-Atributos intrínsecos. Grado de susceptibilidad de un sistema ante amenazas.
+
 
 .. imagen:: ../recursos/vulnerabilidad_sensibilidad_fv.png
 
@@ -11,45 +11,6 @@ Insumos
 
 Biológica
 ===========
-
-Vegetación acuatíca
--------------------------
-    *Sensibilidad - biológica*
-
-    **Peso local**:0.34
-
-    **insumo:** |ifv_v_acuatica_yuc.tif|
-    
-    **Definición:** Distancia entre los pastos y la línea de costa 
-
-    ``mínimo: 0.0
-    máximo:3000``
-
-    **tipo de función:**  Continua - Logística
-
-    
-    .. note::
-        Esta capa fue procesada en grass 7 ya que no se pudo procesar en la 
-        plataforma  
-    
-    
-    archivo json: fv_sens_bio_v_acuatica.json
-
-    ``centro:1500,
-    min:0,
-    max:3000,
-    saturacion: 3,
-    k:0.0834999999999999``
-
-    .. image:: ../recursos/fv/fv_c_sens_veg_acuatica.png
- 
-
-    **Resultado:**: SIG/desarrollo/sig_papiit/entregables/sensibilidad/biologica/v_acuatica_yuc/fv_v_acuatica_yuc.tif
-    
-    **Nombre de la capa:** |fv_v_acuatica_yuc.tif|
-
-    **issue**: |Vegetación acuática|
-
 
 Vegetación costera
 ---------------------
@@ -113,33 +74,6 @@ SIG/desarrollo/sig_papiit/entregables/sensibilidad/salida/sen_biologica.tif
 Física
 =======
 
-
-Ancho de playa 
----------------
-*Sensibilidad - Física*
-
-    **Peso local:** 0.33
-
-    **Insumo:**: |ifv_ancho_playa_yuc.tif| 
-
-    **Definición:**  
-
-    **Tipo de función:** Continua - Logística
-
-    ``min:0
-    max:54
-    center:23
-    k:0.1325
-    saturación:5``
-
-    .. image:: ../recursos/fv/fv_c_sens_aplaya.png
-
-    **Resultado:** SIG/desarrollo/sig_papiit/entregables/sensibilidad/fisica/ancho_playa_yuc/fv_ancho_playa_yuc.tif
-
-    **Nombre de la capa:** |fv_ancho_playa_yuc.tif|
-
-    **issue** |Ancho de playa|
-     
 
 Dunas costeras
 ---------------

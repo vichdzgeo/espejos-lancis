@@ -1,4 +1,4 @@
-Criterio de resiliencia
+Resiliencia
 #######################
 
 Capacidad del sistema de resisitir, absober y sobreponerse al impacto de una amenaza.
