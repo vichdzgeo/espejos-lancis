@@ -1,7 +1,7 @@
 Exposición
 ##########################
 
-Elementos extrínsecos. Grado en el la exposición geográfica determina la peligrosidad de una amenaza.
+.. Elementos extrínsecos. Grado en el la exposición geográfica determina la peligrosidad de una amenaza.
 
 
 .. imagen:: ../recursos/vulnerabilidad_exposicion_fv.png
