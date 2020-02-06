@@ -28,9 +28,6 @@ Documentación del proyecto de Vulnerabilidad costera - BCS PAPIIT
    :maxdepth: 2
    :caption: Baja California Sur:
 
-   exposicion
-   sensibilidad
-   resiliencia
 
 
 

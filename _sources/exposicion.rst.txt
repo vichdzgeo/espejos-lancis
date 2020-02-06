@@ -1,4 +1,4 @@
-Criterio de exposición
+Exposición
 ##########################
 
 Elementos extrínsecos. Grado en el la exposición geográfica determina la peligrosidad de una amenaza.
