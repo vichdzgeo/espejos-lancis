@@ -1,7 +1,7 @@
 Resiliencia
 #######################
 
-Capacidad del sistema de resisitir, absober y sobreponerse al impacto de una amenaza.
+.. Capacidad del sistema de resisitir, absober y sobreponerse al impacto de una amenaza.
 
 .. imagen:: ../recursos/vulnerabilidad_resiliencia_fv.png
 
