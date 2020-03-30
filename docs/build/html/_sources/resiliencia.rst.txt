@@ -32,7 +32,7 @@ Biodiversidad
 
 
     ========= ===================== ====
-    Categoria Descripción           Peso
+    Categoria Descripción            fv
     ========= ===================== ====
     1         Dunas Costeras        0.33
     2         Manglar               1.00
@@ -167,13 +167,13 @@ Presencia de tipos de vegetación que proveen protección a la línea de costa (
     **Tipo de función:** Discreta 
 
         ========= ===================== ====
-        Categoria Descripción           Peso
+        Categoria Descripción           fv
         ========= ===================== ====
-        1         Dunas Costeras        0.19
-        2         Manglar               0.56
-        3         Tular                 0.05
-        4         Vegetación de peten   0.17
-        5         vegetación arbustiva  0.03
+        1         Dunas Costeras        0.32
+        2         Manglar               1.00
+        3         Tular                 0.08
+        4         Vegetación de peten   0.29
+        5         vegetación arbustiva  0.05
         ========= ===================== ====
 
 
@@ -324,15 +324,15 @@ Tipo de litoral
 
 
         ========= =========== ====
-        Categoria Descripción Peso
+        Categoria Descripción fv
         ========= =========== ====
-        1         Arenoso     0.28
-        2         Artificial  0.05
-        3         Lodoso      0.52
-        4         Vegetado    0.15
+        1         Arenoso     0.29
+        2         Artificial  1.00
+        3         Lodoso      0.10
+        4         Vegetado    0.54
         ========= =========== ====
 
-    **Resultado:** SIG/desarrollo/sig_papiit/entregables/resiliencia/fisica/t_litoral_yuc/fv_tipo_litoral_yuc.tif
+    **Resultado:** SIG/desarrollo/sig_papiit/entregables/resiliencia/fisica/t_litoral_yuc/fv_tipo_litoral_yuc_v2.tif
 
     **Nombre de la capa:** |fv_tipo_litoral_yuc.tif|
 
