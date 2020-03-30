@@ -6,14 +6,10 @@
 Documentación del proyecto de Vulnerabilidad costera - Yucatán PAPIIT
 =========================================================================
 
-.. imagen:: ../recursos/vulnerabilidad_01.png
-
-.. imagen:: ../recursos/vulnerabilidad_02.png   
-
 
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
    :caption: Yúcatan:
 
    exposicion
@@ -25,7 +21,7 @@ Documentación del proyecto de Vulnerabilidad costera - BCS PAPIIT
 =========================================================================
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
    :caption: Baja California Sur:
 
 

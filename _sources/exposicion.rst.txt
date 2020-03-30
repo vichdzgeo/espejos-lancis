@@ -145,19 +145,16 @@ Ruta : SIG/desarrollo/sig_papiit/entregables/exposicion/salida/exp_biologica.tif
 Física
 ========
 
-Ancho de playa
-----------------
+ Distancia a la playa
+-------------------------
 *Exposición - Física*
 
     **peso local:** 0.13
 
     **insumo:** |ifv_distancia_playa_yuc.tif|
 
-    **Definición:** Distancia entre la línea de mar y el final de la playa
-    
-    .. Note::
-        verificar esta Definición
-    
+    **Definición:** Distancia a la playa
+
    
     ``mínimo: 0.00
     máximo:3000.00``

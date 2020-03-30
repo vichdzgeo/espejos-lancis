@@ -161,7 +161,7 @@ Tipo de litoral
 
 
     ========= =========== ====
-    Categoria Descripción Peso
+    Categoria Descripción  fv
     ========= =========== ====
     1         Arenoso     0.55
     2         Artificial  0.11
