@@ -145,7 +145,7 @@ Ruta : SIG/desarrollo/sig_papiit/entregables/exposicion/salida/exp_biologica.tif
 Física
 ========
 
- Distancia a la playa
+Distancia a la playa
 -------------------------
 
 *Exposición - Física*
