@@ -75,7 +75,7 @@ Presencia de tipos de vegetación que proveen protección a la línea de costa (
 
         **Definición:** Distancia entre los pastos y la línea de costa 
 
-        **Tipo de función:** continua - Logística
+        **Tipo de función:** continua - Logística invertida
 
         .. note::
             Esta capa fue procesada en grass 7
