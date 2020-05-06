@@ -9,7 +9,7 @@ Endemismo
 ===========
 Sensibilidad - Endemismo*
 
-    **peso local:** 0.142
+    **peso local:** 0.25
 
     **insumo:** |6372_40RY_EN.tif|
 
@@ -30,7 +30,7 @@ Riqueza
 ===========
 Sensibilidad - riqueza*
 
-    **peso local:** 0.142
+    **peso local:** 0.25
 
     **insumo:** |6372_41RY_RQ.tif|
 
@@ -51,7 +51,7 @@ Distancia a playa arenosa
 
 Sensibilidad - distancia A playa arenosa*
 
-    **peso local:** 0.142
+    **peso local:** 0.25
 
     **insumo:** |6372_30RY_PLAR.tif|
 
@@ -72,7 +72,7 @@ Sensibilidad - distancia A playa arenosa*
 ============================
 Sensibilidad - Índice de salud del sistema*
 
-    **peso local:** 0.142
+    **peso local:** 0.25
 
     **insumo:** |6372_43RY_ISIS.tif|
 

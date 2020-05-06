@@ -11,7 +11,7 @@ Distancia a infraestructura de apoyo
 
     *Exposición - Distancia a la infraestructura de apoyo*
 
-    **peso local:** 0.142
+    **peso local:** 0.07
 
     **insumo:** |6372_05RY_INAP.tif|
 
@@ -32,7 +32,7 @@ Distancia a carreteras y caminos
 =================================
  *Exposición - Distancia a carreteras y caminos*
 
-    **peso local:** 0.142
+    **peso local:** 0.07
 
     **insumo:** |6372_06RY_CC.tif|
 
@@ -53,7 +53,7 @@ Distancia a infraestructura portuaria y aérea
 ================================================
 *Exposición - infraestructura portuaria y aérea*
 
-    **peso local:** 0.142
+    **peso local:** 0.07
 
     **insumo:** |6372_07RY_INPA.tif|
 
@@ -74,7 +74,7 @@ Distancia a infraestructura portuaria y aérea
 ===============================================
 *Exposición - disponibilidad de energía eléctrica*
 
-    **peso local:** 0.142
+    **peso local:** 0.07
 
     **insumo:** |6372_09RY_DE.tif|
 
@@ -95,7 +95,7 @@ Distancia a sitios de resguardo
 ====================================
 *Exposición - distancia a sitios de resguardo*
 
-    **peso local:** 0.142
+    **peso local:** 0.07
 
     **insumo:** |6372_15RY_SR.tif|
 
@@ -116,7 +116,7 @@ Distancia a línea de costa
 ===========================
 *Exposición - distancia a línea de costa*
 
-    **peso local:** 0.142
+    **peso local:** 0.07
 
     **insumo:** |6372_16RY_LC.tif|
 
@@ -137,7 +137,7 @@ Distancia a línea de costa
 =========================================
 *Exposición - Índice de importancia económica primaria*
 
-    **peso local:** 0.142
+    **peso local:** 0.07
 
     **insumo:** |6372_18RY_IE01.tif|
 
@@ -158,7 +158,7 @@ Distancia a línea de costa
 ==================================================
 *Exposición - Índice de disponibilidad de agua sector forestal*
 
-    **peso local:** 0.142
+    **peso local:** 0.07
 
     **insumo:** |6372_24RY_DAFS.tif|
 
@@ -179,7 +179,7 @@ Distancia a línea de costa
 =========================================================
 *Exposición - Índice de disponibilidad de agua del sector agricola*
 
-    **peso local:** 0.142
+    **peso local:** 0.07
 
     **insumo:** |6372_08RY_DAAG.tif|
 
@@ -200,7 +200,7 @@ Distancia a arroyos
 ===================
 *Exposición - distancia a apoyos*
 
-    **peso local:** 0.142
+    **peso local:** 0.07
 
     **insumo:** |6372_25RY_HIDR.tif|
 
@@ -221,7 +221,7 @@ Distancia a arroyos
 ===========================================
 *Exposición - Índice de importancia económica secundaria*
 
-    **peso local:** 0.142
+    **peso local:** 0.07
 
     **insumo:** |6372_29RY_IE02.tif|
 
@@ -242,7 +242,7 @@ Distancia a arroyos
 =========================================
 *Exposición - Índice de importancia económica terciaria*
 
-    **peso local:** 0.142
+    **peso local:** 0.07
 
     **insumo:** |6372_32RY_IE03.tif|
 
@@ -262,7 +262,7 @@ Campos pesqueros
 ================
 *Exposición - campos pesqueros*
 
-    **peso local:** 0.142
+    **peso local:** 0.07
 
     **insumo:** |6372_34RY_CP.tif|
 
@@ -283,7 +283,7 @@ Distancia a sitios arqueológicos
 ================================
 *Exposición - distancia a sitios arqueológicos*
 
-    **peso local:** 0.142
+    **peso local:** 0.07
 
     **insumo:** |6372_38RY_SA.tif|
 
