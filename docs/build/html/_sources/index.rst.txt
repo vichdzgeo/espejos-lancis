@@ -3,9 +3,8 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Documentación del proyecto de Vulnerabilidad costera - Yucatán PAPIIT
+Documentación del proyecto de Vulnerabilidad costera PAPIIT
 =========================================================================
-
 
 
 .. toctree::
@@ -17,21 +16,23 @@ Documentación del proyecto de Vulnerabilidad costera - Yucatán PAPIIT
    resiliencia
 
 
-Documentación del proyecto de Vulnerabilidad costera - BCS PAPIIT
-=========================================================================
 
 .. toctree::
    :maxdepth: 1
    :caption: Baja California Sur:
 
+   exposicion_bcs
+   sensibilidad_bcs
+   resiliencia_bcs 
 
 
 
-Indices and tables 
-==================
 
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+.. Índices and tables 
+.. ==================
+
+.. * :ref:`genindex`
+.. * :ref:`modindex`
+.. * :ref:`search`
 
 

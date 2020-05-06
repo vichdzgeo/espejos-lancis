@@ -4,7 +4,7 @@ Exposición
 .. Elementos extrínsecos. Grado en el la exposición geográfica determina la peligrosidad de una amenaza.
 
 
-.. imagen:: ../recursos/vulnerabilidad_exposicion_fv.png
+.. imagen:: ../recursos/vulnerabilidad_exposición_fv.png
 
 Insumos
 *********
@@ -44,7 +44,7 @@ Vegetación acuatíca
     .. image:: ../recursos/fv/fv_c_exp_veg_acuatica.png
 
 
-    **Resultado:** SIG/desarrollo/sig_papiit/entregables/exposicion/biologica/v_acuatica_yuc/fv_v_acuatica_yuc.tif
+    **Resultado:** SIG/desarrollo/sig_papiit/entregables/exposición/biologica/v_acuatica_yuc/fv_v_acuatica_yuc.tif
 
     **Nombre de la capa:** |fv_v_acuatica_yuc|
 
@@ -96,7 +96,7 @@ la construcción es
 
         .. image:: ../recursos/fv/fv_c_exp_dunas_costeras.png
 
-        **Resultado:**  SIG/desarrollo/sig_papiit/entregables/exposicion/biologica/v_costera_yuc/fv_distancia_dunas_yuc.tif
+        **Resultado:**  SIG/desarrollo/sig_papiit/entregables/exposición/biologica/v_costera_yuc/fv_distancia_dunas_yuc.tif
 
     **Manglar** 
     
@@ -121,10 +121,10 @@ la construcción es
 
         .. imagen:: ../recursos/fv/fv_c_exp_manglar.png
 
-        **Resultado:** /SIG/desarrollo/sig_papiit/entregables/exposicion/biologica/v_costera_yuc/fv_distancia_manglar_yuc.tif
+        **Resultado:** /SIG/desarrollo/sig_papiit/entregables/exposición/biologica/v_costera_yuc/fv_distancia_manglar_yuc.tif
 
 
-**Resultado**: SIG/desarrollo/sig_papiit/entregables/exposicion/biologica/v_costera_yuc/fv_v_costera_distancia_yuc.tif
+**Resultado**: SIG/desarrollo/sig_papiit/entregables/exposición/biologica/v_costera_yuc/fv_v_costera_distancia_yuc.tif
 
 
 **Nombre de la capa:** fv_v_costera_distancia_yuc
@@ -138,7 +138,7 @@ Los insumos de exposición biológica se integran en una capa de la siguiente fo
 
 ``exp_biologica = fv_costera_distacia_yuc * 0.84 + fv_v_acuatica_yuc * 0.16``
 
-Ruta : SIG/desarrollo/sig_papiit/entregables/exposicion/salida/exp_biologica.tif
+Ruta : SIG/desarrollo/sig_papiit/entregables/exposición/salida/exp_biologica.tif
 
 
 
@@ -172,7 +172,7 @@ Distancia a la playa
 
     .. image:: ../recursos/fv/fv_c_exp_aplaya.png
 
-**Resultado**: SIG/desarrollo/sig_papiit/entregables/exposicion/biologica/v_costera_yuc/fv_distancia_playa_yuc.tif
+**Resultado**: SIG/desarrollo/sig_papiit/entregables/exposición/biologica/v_costera_yuc/fv_distancia_playa_yuc.tif
 
 
 **Nombre de la capa:** |fv_distancia_playa_yuc.tif|
@@ -204,7 +204,7 @@ Elevación
 
     .. image:: ../recursos/fv/fv_c_exp_elevacion.png
 
-**Resultado**: SIG/desarrollo/sig_papiit/entregables/exposicion/fisica/elev_yuc/fv_elevacion_yuc.tif
+**Resultado**: SIG/desarrollo/sig_papiit/entregables/exposición/fisica/elev_yuc/fv_elevacion_yuc.tif
 
 
 **Nombre de la capa:** |fv_elevacion|
@@ -221,7 +221,7 @@ Los insumos de exposición - física se integran en una capa de la siguiente for
 
 ``exp_fisica = fv_distancia_playa * 0.13 + fv_elevacion * 0.87``
 
-**Ruta:** SIG/desarrollo/sig_papiit/entregables/exposicion/salida/exp_fisica.tif
+**Ruta:** SIG/desarrollo/sig_papiit/entregables/exposición/salida/exp_fisica.tif
 
 
 Integración
@@ -232,7 +232,7 @@ el criterio de *Biológica* y *Física* se integran  para formar la capa de expo
 exposición = exp_biologica * 0.50 + exp_fisica * 0.50
 
 
-**Ruta:** SIG/desarrollo/sig_papiit/entregables/exposicion/salida/exposicion.tif
+**Ruta:** SIG/desarrollo/sig_papiit/entregables/exposición/salida/exposición.tif
 
 
 

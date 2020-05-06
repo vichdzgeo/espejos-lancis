@@ -2,8 +2,8 @@ Criterio de diagnostico,Puntos (cero o diez),Numero de atributos o campos con pr
 La capa cuenta con metadatos,NA
 La capa cuenta con proyeccion y datum definida correctamente,10
 La capa tiene la geometria completa,10
-La capa no tiene lineas o poligonos sobrelapados y no tiene duplicados,2
-La capa no tiene puntos; lineas o poligonos sin nombre o atributo asociado,10
+La capa no tiene líneas o poligonos sobrelapados y no tiene duplicados,2
+La capa no tiene puntos; líneas o poligonos sin nombre o atributo asociado,10
 La capa no tiene huecos,NA
 La capa no cuenta con registros nulos o sin informacion,10,0,
 Se conoce el significado de la informacion contenida en los campos y esta completa,NA
