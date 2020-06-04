@@ -3,7 +3,7 @@ Susceptibilidad
 
 
 
-.. imagen:: ../recursos/vulnerabilidad_susceptibilidad_fv.png
+.. imagen:: ../recursos/vulnerabilidad_sensibilidad_fv.png
 
 
 Insumos
