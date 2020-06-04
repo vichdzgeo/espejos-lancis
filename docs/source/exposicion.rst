@@ -4,7 +4,7 @@ Exposición
 .. Elementos extrínsecos. Grado en el la exposición geográfica determina la peligrosidad de una amenaza.
 
 
-.. imagen:: ../recursos/vulnerabilidad_exposición_fv.png
+.. imagen:: ../recursos/vulnerabilidad_exposicion_13abr2020.png
 
 Insumos
 *********
@@ -44,7 +44,7 @@ Vegetación acuatíca
     .. image:: ../recursos/fv/fv_c_exp_veg_acuatica.png
 
 
-    **Resultado:** SIG/desarrollo/sig_papiit/entregables/exposición/biologica/v_acuatica_yuc/fv_v_acuatica_yuc.tif
+    **Resultado:** SIG/desarrollo/sig_papiit/entregables/exposicion/biologica/v_acuatica_yuc/fv_v_acuatica_yuc.tif
 
     **Nombre de la capa:** |fv_v_acuatica_yuc|
 
@@ -232,7 +232,7 @@ el criterio de *Biológica* y *Física* se integran  para formar la capa de expo
 exposición = exp_biologica * 0.50 + exp_fisica * 0.50
 
 
-**Ruta:** SIG/desarrollo/sig_papiit/entregables/exposición/salida/exposición.tif
+**Ruta:** SIG/desarrollo/sig_papiit/entregables/exposición/salida/exposicion_yuc.tif
 
 
 

@@ -14,6 +14,7 @@ Documentación del proyecto de Vulnerabilidad costera PAPIIT
    exposicion
    sensibilidad
    resiliencia
+   vulnerabilidad_yuc
 
 
 
