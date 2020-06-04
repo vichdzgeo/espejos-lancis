@@ -200,7 +200,7 @@ sensibilidad = sen_biologica * 0.50 + sen_fisica * 0.50
 Resultado
 ***********
 
-SIG/desarrollo/sig_papiit/entregables/sensibilidad/salida/sensibilidad.tif
+SIG/desarrollo/sig_papiit/entregables/sensibilidad/salida/susceptibilidad_yuc.tif
 
 
 
