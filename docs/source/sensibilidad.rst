@@ -3,7 +3,7 @@ Susceptibilidad
 
 
 
-.. imagen:: ../recursos/vulnerabilidad_sensibilidad_fv.png
+.. imagen:: ../recursos/vulnerabilidad_susceptibilidad_fv.png
 
 
 Insumos
@@ -14,7 +14,7 @@ Biológica
 
 Vegetación costera
 ---------------------
-    *Sensibilidad - Biológica*
+    *susceptibilidad - Biológica*
 
     **peso local** : 0.66
 
@@ -30,7 +30,7 @@ Insumos
 
     **Manglar**
 
-        *Sensibilidad - Biológica - Vegetación costera*
+        *susceptibilidad - Biológica - Vegetación costera*
 
         **peso local:** 1.0
 
@@ -42,7 +42,7 @@ Insumos
 
     **Duna costera**
 
-    *Sensibilidad - Biológica - Vegetación costera*
+    *susceptibilidad - Biológica - Vegetación costera*
 
         **peso local:**: 0.25
         
@@ -53,7 +53,7 @@ Insumos
         **Tipo de función:** Discreta
 
 
-**Resultado:**: SIG/desarrollo/sig_papiit/entregables/sensibilidad/biologica/v_costera_yuc/fv_v_costera_presencia_yuc.tif
+**Resultado:**: SIG/desarrollo/sig_papiit/entregables/susceptibilidad/biologica/v_costera_yuc/fv_v_costera_presencia_yuc.tif
 
 **Nombre de la capa:** |fv_v_costera_presencia_yuc.tif|
 
@@ -65,11 +65,11 @@ Insumos
 Resultado
 ---------
 
-Los insumos de sensibilidad biológica se integran en una capa de la siguiente forma: 
+Los insumos de susceptibilidad biológica se integran en una capa de la siguiente forma: 
 
 ``sen_biologica = fv_v_costera * 0.66 + fv_v_acuatica * 0.34``
 
-SIG/desarrollo/sig_papiit/entregables/sensibilidad/salida/sen_biologica.tif
+SIG/desarrollo/sig_papiit/entregables/susceptibilidad/salida/sen_biologica.tif
 
 Física
 =======
@@ -77,7 +77,7 @@ Física
 
 Dunas costeras
 ---------------
-*Sensibilidad - Física*
+*susceptibilidad - Física*
     
     **Peso local**:0.56
 
@@ -89,7 +89,7 @@ Dunas costeras
 
     **Tipo de función:** Discreta
 
-    **Resultado:** C:/Dropbox (LANCIS)/SIG/desarrollo/sig_papiit/entregables/sensibilidad/fisica/duna_yuc/fv_duna_yuc/fv_duna_yuc.tif
+    **Resultado:** C:/Dropbox (LANCIS)/SIG/desarrollo/sig_papiit/entregables/susceptibilidad/fisica/duna_yuc/fv_duna_yuc/fv_duna_yuc.tif
 
     **Nombre de la capa:** |fv_duna_yuc.tif|
 
@@ -97,7 +97,7 @@ Dunas costeras
 
 Elevación 
 ---------------
-*Sensibilidad - Física*
+*susceptibilidad - Física*
     
     **Peso local:**:0.04
 
@@ -118,7 +118,7 @@ Elevación
 
     .. image:: ../recursos/fv/fv_c_sens_elevacion.png
 
-    **Resultado:** SIG/desarrollo/sig_papiit/entregables/sensibilidad/fisica/elev_yuc/fv_elevacion_yuc.tif
+    **Resultado:** SIG/desarrollo/sig_papiit/entregables/susceptibilidad/fisica/elev_yuc/fv_elevacion_yuc.tif
 
     **Nombre de la capa:** |fv_elevacion_yuc.tif|
 
@@ -127,7 +127,7 @@ Elevación
 
 Tipo de litoral
 -----------------
-*Sensibilidad - Física*
+*susceptibilidad - Física*
     
     **Peso local:** 0.07
 
@@ -171,7 +171,7 @@ Tipo de litoral
  
  
 
-    **Resultado:** SIG/desarrollo/sig_papiit/entregables/sensibilidad/fisica/t_litoral_yuc/fv_tipo_litoral_yuc.tif
+    **Resultado:** SIG/desarrollo/sig_papiit/entregables/susceptibilidad/fisica/t_litoral_yuc/fv_tipo_litoral_yuc.tif
 
     **Nombre de la capa:** |fv_tipo_litoral_yuc.tif|
 
@@ -182,25 +182,25 @@ Tipo de litoral
 Resultado
 -----------------
 
-las capas de sensibilidad física se integran en una capa de la siguiente forma: 
+las capas de susceptibilidad física se integran en una capa de la siguiente forma: 
 
 ``sen_fisica = fv_tipo_litoral_yuc * 0.07 + fv_elevacion_yuc * 0.04 + fv_duna_yuc * 0.56 + fv_ancho_playa_yuc * 0.33``
 
-Ruta: SIG/desarrollo/sig_papiit/entregables/sensibilidad/salida/sen_fisica.tif
+Ruta: SIG/desarrollo/sig_papiit/entregables/susceptibilidad/salida/sen_fisica.tif
 
 
 Integración
 *************
 
-el criterio de *Biológica* y *Física* se integran  para formar la capa de sensibilidad 
+el criterio de *Biológica* y *Física* se integran  para formar la capa de susceptibilidad 
 
-sensibilidad = sen_biologica * 0.50 + sen_fisica * 0.50
+susceptibilidad = sen_biologica * 0.50 + sen_fisica * 0.50
 
 
 Resultado
 ***********
 
-SIG/desarrollo/sig_papiit/entregables/sensibilidad/salida/susceptibilidad_yuc.tif
+SIG/desarrollo/sig_papiit/entregables/susceptibilidad/salida/susceptibilidad_yuc.tif
 
 
 
