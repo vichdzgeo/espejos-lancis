@@ -3,7 +3,7 @@ Susceptibilidad
 
 
 
-.. imagen:: ../recursos/vulnerabilidad_sensibilidad_fv.png
+.. imagen:: ../recursos/vulnerabilidad_susceptibilidad_1sep2020_fv.png
 
 
 Insumos
@@ -38,7 +38,7 @@ Insumos
         
         **Definición:** presencia de manglar en la zona de estudio
 
-        **Tipo de función:** Discreta
+        **Tipo de función:** Binaria
 
     **Duna costera**
 
@@ -50,7 +50,7 @@ Insumos
 
         **Definición:** presencia de vegetacion de dunas costeras en la zona de estudio
 
-        **Tipo de función:** Discreta
+        **Tipo de función:** Binaria
 
 
 **Resultado:**: SIG/desarrollo/sig_papiit/entregables/susceptibilidad/biologica/v_costera_yuc/fv_v_costera_presencia_yuc.tif
@@ -87,7 +87,7 @@ Dunas costeras
     para la generación de esta capa corresponde a información del POETY combinado con 
     el ancho de playa.
 
-    **Tipo de función:** Discreta
+    **Tipo de función:** Binaria
 
     **Resultado:** C:/Dropbox (LANCIS)/SIG/desarrollo/sig_papiit/entregables/susceptibilidad/fisica/duna_yuc/fv_duna_yuc/fv_duna_yuc.tif
 
