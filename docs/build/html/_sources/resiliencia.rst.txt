@@ -111,7 +111,7 @@ Presencia de tipos de vegetación que proveen protección a la línea de costa (
 
         **Definición:** 
 
-        **Tipo de función:**   Discreta (Presencia 1, ausencia 0)
+        **Tipo de función:**   Binaria
 
         **Resultado:** /sig_papiit/entregables/resiliencia/biologica/serv_ambientales_yuc/prot_costera_yuc/fv_dunas_presencia_yuc.tif
 
@@ -132,7 +132,7 @@ Presencia de tipos de vegetación que proveen protección a la línea de costa (
 
         **Definición:**
 
-        **Tipo de función:** Discreta (Presencia 1, ausencia 0)
+        **Tipo de función:** Binaria
 
         **Resultado:**  /sig_papiit/entregables/resiliencia/biologica/serv_ambientales_yuc/prot_costera_yuc/fv_manglar_presencia_yuc.tif
 
@@ -215,7 +215,7 @@ Ancho de playa
 
     **Insumo:** |ifv_ancho_playa_yuc.tif|
 
-    **Definición:** presencia del ancho de playa en la costa.
+    **Definición:** Binaria
 
     **Tipo de función:**
 
@@ -240,7 +240,7 @@ Dunas costeras
     **Definición:** Esta capa representa la presencia de dunas costeras en la costa, El insumo ocupado
     para la generación de esta capa corresponde a información del POETY
 
-    **Tipo de función:**
+    **Tipo de función:** Binaria
 
     **Resultado:**
 
