@@ -20,10 +20,6 @@ Vegetación costera
 
     **Definición:** integración de las capas de presencia de vegetación de duna constera con la capa de manglar.
     
-    Integración: 
-
-     ``fv_v_costera_presencia = ifv_v_dunas_presencia(1.0) + ifv_v_manglar_presencia(0.25)``
-
 
 Insumos
 ^^^^^^^^^
@@ -53,7 +49,7 @@ Insumos
         **Tipo de función:** Binaria
 
 
-**Resultado:**: SIG/desarrollo/sig_papiit/entregables/susceptibilidad/biologica/v_costera_yuc/fv_v_costera_presencia_yuc.tif
+**Resultado:**: SIG/desarrollo/sig_papiit/entregables/susceptibilidad/biologica/v_costera_yuc/fv_v_costera_presencia_yuc_100m.tif
 
 **Nombre de la capa:** |fv_v_costera_presencia_yuc.tif|
 
@@ -62,14 +58,7 @@ Insumos
 
 
 
-Resultado
----------
 
-Los insumos de susceptibilidad biológica se integran en una capa de la siguiente forma: 
-
-``sen_biologica = fv_v_costera * 0.66 + fv_v_acuatica * 0.34``
-
-SIG/desarrollo/sig_papiit/entregables/susceptibilidad/salida/sen_biologica.tif
 
 Física
 =======
@@ -89,7 +78,7 @@ Dunas costeras
 
     **Tipo de función:** Binaria
 
-    **Resultado:** C:/Dropbox (LANCIS)/SIG/desarrollo/sig_papiit/entregables/susceptibilidad/fisica/duna_yuc/fv_duna_yuc/fv_duna_yuc.tif
+    **Resultado:** C:/Dropbox (LANCIS)/SIG/desarrollo/sig_papiit/entregables/susceptibilidad/fisica/duna_yuc/fv_duna_yuc/fv_duna_yuc_100m.tif
 
     **Nombre de la capa:** |fv_duna_yuc.tif|
 
@@ -118,7 +107,7 @@ Elevación
 
     .. image:: ../recursos/fv/fv_c_sens_elevacion.png
 
-    **Resultado:** SIG/desarrollo/sig_papiit/entregables/susceptibilidad/fisica/elev_yuc/fv_elevacion_yuc.tif
+    **Resultado:** SIG/desarrollo/sig_papiit/entregables/susceptibilidad/fisica/elev_yuc/fv_elevacion_yuc_100m.tif
 
     **Nombre de la capa:** |fv_elevacion_yuc.tif|
 
@@ -171,36 +160,12 @@ Tipo de litoral
  
  
 
-    **Resultado:** SIG/desarrollo/sig_papiit/entregables/susceptibilidad/fisica/t_litoral_yuc/fv_tipo_litoral_yuc.tif
+    **Resultado:** SIG/desarrollo/sig_papiit/entregables/susceptibilidad/fisica/t_litoral_yuc/fv_tipo_litoral_yuc_100m_corregida.tif
 
     **Nombre de la capa:** |fv_tipo_litoral_yuc.tif|
 
     **issue** |Tipo de litoral|
 
-
-
-Resultado
------------------
-
-las capas de susceptibilidad física se integran en una capa de la siguiente forma: 
-
-``sen_fisica = fv_tipo_litoral_yuc * 0.07 + fv_elevacion_yuc * 0.04 + fv_duna_yuc * 0.56 + fv_ancho_playa_yuc * 0.33``
-
-Ruta: SIG/desarrollo/sig_papiit/entregables/susceptibilidad/salida/sen_fisica.tif
-
-
-Integración
-*************
-
-el criterio de *Biológica* y *Física* se integran  para formar la capa de susceptibilidad 
-
-susceptibilidad = sen_biologica * 0.50 + sen_fisica * 0.50
-
-
-Resultado
-***********
-
-SIG/desarrollo/sig_papiit/entregables/susceptibilidad/salida/susceptibilidad_yuc.tif
 
 
 
