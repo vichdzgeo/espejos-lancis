@@ -18,13 +18,13 @@ Documentación del proyecto de Vulnerabilidad costera PAPIIT
 
 
 
-.. toctree::
-   :maxdepth: 1
-   :caption: Baja California Sur:
+.. .. toctree::
+..    :maxdepth: 1
+..    :caption: Baja California Sur:
 
-   exposicion_bcs
-   sensibilidad_bcs
-   resiliencia_bcs 
+..    exposicion_bcs
+..    sensibilidad_bcs
+..    resiliencia_bcs 
 
 
 

@@ -88,20 +88,16 @@
 <li class="toctree-l2"><a class="reference internal" href="#insumos">Insumos</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#biologica">Biológica</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#vegetacion-costera">Vegetación costera</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#resultado">Resultado</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#fisica">Física</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#dunas-costeras">Dunas costeras</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#elevacion">Elevación</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#tipo-de-litoral">Tipo de litoral</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id2">Resultado</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#integracion">Integración</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id3">Resultado</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="resiliencia.html">Resiliencia</a></li>
@@ -189,9 +185,6 @@
 <div><p><em>susceptibilidad - Biológica</em></p>
 <p><strong>peso local</strong> : 0.66</p>
 <p><strong>Definición:</strong> integración de las capas de presencia de vegetación de duna constera con la capa de manglar.</p>
-<p>Integración:</p>
-<blockquote>
-<div><code class="docutils literal notranslate"><span class="pre">fv_v_costera_presencia</span> <span class="pre">=</span> <span class="pre">ifv_v_dunas_presencia(1.0)</span> <span class="pre">+</span> <span class="pre">ifv_v_manglar_presencia(0.25)</span></code></div></blockquote>
 </div></blockquote>
 <div class="section" id="id1">
 <h5>Insumos<a class="headerlink" href="#id1" title="Enlazar permanentemente con este título">¶</a></h5>
@@ -213,16 +206,10 @@
 <p><strong>Tipo de función:</strong> Binaria</p>
 </div></blockquote>
 </div></blockquote>
-<p><strong>Resultado:</strong>: SIG/desarrollo/sig_papiit/entregables/susceptibilidad/biologica/v_costera_yuc/fv_v_costera_presencia_yuc.tif</p>
+<p><strong>Resultado:</strong>: SIG/desarrollo/sig_papiit/entregables/susceptibilidad/biologica/v_costera_yuc/fv_v_costera_presencia_yuc_100m.tif</p>
 <p><strong>Nombre de la capa:</strong> <a href= "http://magrat.mine.nu:8088/geonetwork/srv/spa/catalog.search#/metadata/8521cca4-497f-499a-8425-7c563fc59e02" target="_blank">fv_v_costera_presencia_yuc.tif</a></p>
 <p><strong>issue</strong>:  <a href= "https://github.com/lancis-apc/espejos-lancis/issues/65" target="_blank">Vegetación costera</a></p>
 </div>
-</div>
-<div class="section" id="resultado">
-<h4>Resultado<a class="headerlink" href="#resultado" title="Enlazar permanentemente con este título">¶</a></h4>
-<p>Los insumos de susceptibilidad biológica se integran en una capa de la siguiente forma:</p>
-<p><code class="docutils literal notranslate"><span class="pre">sen_biologica</span> <span class="pre">=</span> <span class="pre">fv_v_costera</span> <span class="pre">*</span> <span class="pre">0.66</span> <span class="pre">+</span> <span class="pre">fv_v_acuatica</span> <span class="pre">*</span> <span class="pre">0.34</span></code></p>
-<p>SIG/desarrollo/sig_papiit/entregables/susceptibilidad/salida/sen_biologica.tif</p>
 </div>
 </div>
 <div class="section" id="fisica">
@@ -237,7 +224,7 @@
 para la generación de esta capa corresponde a información del POETY combinado con
 el ancho de playa.</p>
 <p><strong>Tipo de función:</strong> Binaria</p>
-<p><strong>Resultado:</strong> C:/Dropbox (LANCIS)/SIG/desarrollo/sig_papiit/entregables/susceptibilidad/fisica/duna_yuc/fv_duna_yuc/fv_duna_yuc.tif</p>
+<p><strong>Resultado:</strong> C:/Dropbox (LANCIS)/SIG/desarrollo/sig_papiit/entregables/susceptibilidad/fisica/duna_yuc/fv_duna_yuc/fv_duna_yuc_100m.tif</p>
 <p><strong>Nombre de la capa:</strong> <a href= "http://magrat.mine.nu:8088/geonetwork/srv/spa/catalog.search#/metadata/bfbb9b86-75d3-40eb-bf50-afc06bad84fc" target="_blank">fv_duna_yuc.tif</a></p>
 <p><strong>issue</strong> <a href= "https://github.com/lancis-apc/espejos-lancis/issues/62" target="_blank">Duna costera</a></p>
 </div></blockquote>
@@ -257,7 +244,7 @@ a la cual se le aplico una funcion de valor <em>concava creciente</em></p>
 <span class="pre">gama:</span> <span class="pre">0.01975</span>
 <span class="pre">saturacion:</span> <span class="pre">13</span></code></p>
 <img alt="_images/fv_c_sens_elevacion.png" src="_images/fv_c_sens_elevacion.png" />
-<p><strong>Resultado:</strong> SIG/desarrollo/sig_papiit/entregables/susceptibilidad/fisica/elev_yuc/fv_elevacion_yuc.tif</p>
+<p><strong>Resultado:</strong> SIG/desarrollo/sig_papiit/entregables/susceptibilidad/fisica/elev_yuc/fv_elevacion_yuc_100m.tif</p>
 <p><strong>Nombre de la capa:</strong> <a href= "http://magrat.mine.nu:8088/geonetwork/srv/spa/catalog.search#/metadata/e386162b-58dd-49d8-a17a-62d43a5b5f5c" target="_blank">fv_elevacion_yuc.tif</a></p>
 <p><strong>issue</strong> <a href= "https://github.com/lancis-apc/espejos-lancis/issues/59" target="_blank">Elevación</a></p>
 </div></blockquote>
@@ -356,27 +343,12 @@ serie VI de INEGI</p>
 </tr>
 </tbody>
 </table>
-<p><strong>Resultado:</strong> SIG/desarrollo/sig_papiit/entregables/susceptibilidad/fisica/t_litoral_yuc/fv_tipo_litoral_yuc.tif</p>
+<p><strong>Resultado:</strong> SIG/desarrollo/sig_papiit/entregables/susceptibilidad/fisica/t_litoral_yuc/fv_tipo_litoral_yuc_100m_corregida.tif</p>
 <p><strong>Nombre de la capa:</strong> <a href= "http://magrat.mine.nu:8088/geonetwork/srv/spa/catalog.search#/metadata/0d70eb64-f225-4e0c-af9a-e630934f84ec" target="_blank">fv_tipo_litoral_yuc.tif</a></p>
 <p><strong>issue</strong> <a href= "https://github.com/lancis-apc/espejos-lancis/issues/54" target="_blank">Tipo de litoral</a></p>
 </div></blockquote>
 </div>
-<div class="section" id="id2">
-<h4>Resultado<a class="headerlink" href="#id2" title="Enlazar permanentemente con este título">¶</a></h4>
-<p>las capas de susceptibilidad física se integran en una capa de la siguiente forma:</p>
-<p><code class="docutils literal notranslate"><span class="pre">sen_fisica</span> <span class="pre">=</span> <span class="pre">fv_tipo_litoral_yuc</span> <span class="pre">*</span> <span class="pre">0.07</span> <span class="pre">+</span> <span class="pre">fv_elevacion_yuc</span> <span class="pre">*</span> <span class="pre">0.04</span> <span class="pre">+</span> <span class="pre">fv_duna_yuc</span> <span class="pre">*</span> <span class="pre">0.56</span> <span class="pre">+</span> <span class="pre">fv_ancho_playa_yuc</span> <span class="pre">*</span> <span class="pre">0.33</span></code></p>
-<p>Ruta: SIG/desarrollo/sig_papiit/entregables/susceptibilidad/salida/sen_fisica.tif</p>
 </div>
-</div>
-</div>
-<div class="section" id="integracion">
-<h2>Integración<a class="headerlink" href="#integracion" title="Enlazar permanentemente con este título">¶</a></h2>
-<p>el criterio de <em>Biológica</em> y <em>Física</em> se integran  para formar la capa de susceptibilidad</p>
-<p>susceptibilidad = sen_biologica * 0.50 + sen_fisica * 0.50</p>
-</div>
-<div class="section" id="id3">
-<h2>Resultado<a class="headerlink" href="#id3" title="Enlazar permanentemente con este título">¶</a></h2>
-<p>SIG/desarrollo/sig_papiit/entregables/susceptibilidad/salida/susceptibilidad_yuc.tif</p>
 </div>
 </div>
 

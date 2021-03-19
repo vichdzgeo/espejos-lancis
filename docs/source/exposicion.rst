@@ -3,8 +3,11 @@ Exposición
 
 .. Elementos extrínsecos. Grado en el la exposición geográfica determina la peligrosidad de una amenaza.
 
+Modelo multicriterio
+*********************
 
 .. imagen:: ../recursos/vulnerabilidad_exposicion_13abr2020.png
+    :align: center
 
 Insumos
 *********

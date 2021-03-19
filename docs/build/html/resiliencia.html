@@ -90,19 +90,14 @@
 <li class="toctree-l3"><a class="reference internal" href="#biologica">Biológica</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#biodiversidad">Biodiversidad</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#servicios-ambientales">Servicios ambientales</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#resultado">Resultado</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#fisica">Física</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#ancho-de-playa">Ancho de playa</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#dunas-costeras">Dunas costeras</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#elevacion">Elevación</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#tipo-de-litoral">Tipo de litoral</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id1"><strong>Resultado</strong></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#resultado"><strong>Resultado</strong></a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#integracion">Integración</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id2">Resultado</a></li>
 </ul>
 </li>
 </ul>
@@ -180,7 +175,7 @@
             
   <div class="section" id="resiliencia">
 <h1>Resiliencia<a class="headerlink" href="#resiliencia" title="Enlazar permanentemente con este título">¶</a></h1>
-<img alt="_images/vulnerabilidad_resiliencia_fv.png" src="_images/vulnerabilidad_resiliencia_fv.png" />
+<img alt="_images/vulnerabilidad_resiliencia_fv_23nov2020.png" src="_images/vulnerabilidad_resiliencia_fv_23nov2020.png" />
 <div class="section" id="insumos">
 <h2>Insumos<a class="headerlink" href="#insumos" title="Enlazar permanentemente con este título">¶</a></h2>
 <div class="section" id="biologica">
@@ -231,7 +226,7 @@ ejemplo: manglar, pastos marinos, vegetación duna, otros tipos de vegetación s
 </tr>
 </tbody>
 </table>
-<p><strong>Resultado:</strong> SIG/desarrollo/sig_papiit/entregables/resiliencia/biologica/biodiversidad_yuc/fv_biodiversidad_yuc.tif</p>
+<p><strong>Resultado:</strong> SIG/desarrollo/sig_papiit/entregables/resiliencia/biologica/biodiversidad_yuc/fv_biodiversidad_yuc_100m.tif</p>
 <p><strong>Nombre de la capa:</strong> <a href= "http://magrat.mine.nu:8088/geonetwork/srv/spa/catalog.search#/metadata/eb347808-46b3-48b1-a536-5718fd7f560d" target="_blank">fv_biodiversidad_yuc.tif</a></p>
 <p><strong>issue:</strong>  </p>
 </div></blockquote>
@@ -263,35 +258,15 @@ ejemplo: manglar, pastos marinos, vegetación duna, otros tipos de vegetación s
 <span class="pre">saturacion:</span> <span class="pre">3,</span>
 <span class="pre">k:0.0834999999999999</span></code></p>
 <img alt="_images/fv_c_res_veg_acuatica.png" src="_images/fv_c_res_veg_acuatica.png" />
-<p><strong>Resultado:</strong> sig_papiit/entregables/resiliencia/biologica/serv_ambientales_yuc/prot_costera_yuc/fv_v_acuatica_yuc.tif</p>
-<p><strong>Nombre de la capa:</strong> fv_v_acuatica_yuc.tif</p>
+<p><strong>Resultado:</strong> sig_papiit/entregables/resiliencia/biologica/serv_ambientales_yuc/prot_costera_yuc/fv_v_acuatica_yuc_100m.tif</p>
 </div></blockquote>
-<p><strong>Dunas costeras</strong></p>
+<p><strong>Entidades protectoras</strong></p>
 <blockquote>
-<div><p><em>Resiliencia - Biológica - Servicios ambientales - Protección costera</em></p>
-<p><strong>Peso local:</strong> 0.14</p>
-<p><strong>Insumo:</strong> ifv_dunas_presencia_yuc.tif</p>
-<p><strong>Definición:</strong></p>
-<p><strong>Tipo de función:</strong>   Binaria</p>
-<p><strong>Resultado:</strong> /sig_papiit/entregables/resiliencia/biologica/serv_ambientales_yuc/prot_costera_yuc/fv_dunas_presencia_yuc.tif</p>
-<p><strong>Nombre de la capa:</strong> fv_dunas_presencia_yuc.tif</p>
+<div><p><strong>Peso local:</strong> 0.84</p>
+<p><strong>Definición:</strong> Presencia de manglar y Dunas costeras que ofrece</p>
+<p><strong>Resultado:</strong> sig_papiit/entregables/resiliencia/biologica/serv_ambientales_yuc/prot_costera_yuc/fv_entidades_protectoras.tif</p>
+<img alt="_images/fv_d_res_ent_protector.png" src="_images/fv_d_res_ent_protector.png" />
 </div></blockquote>
-<p><strong>Manglar</strong></p>
-<blockquote>
-<div><p><em>Resiliencia - Biológica - Servicios ambientales - Protección costera</em></p>
-<p><strong>Peso local</strong>:0.70</p>
-<p><strong>Insumo:</strong> ifv_manglar_presencia_yuc.tif</p>
-<p><strong>Definición:</strong></p>
-<p><strong>Tipo de función:</strong> Binaria</p>
-<p><strong>Resultado:</strong>  /sig_papiit/entregables/resiliencia/biologica/serv_ambientales_yuc/prot_costera_yuc/fv_manglar_presencia_yuc.tif</p>
-<p><strong>Nombre de la capa:</strong> fv_manglar_presencia_yuc.tif</p>
-</div></blockquote>
-<p><strong>Integración</strong></p>
-<p>fv_proteccion_costera = fv_v_acuatica_yuc * 0.16 + fv_dunas_presencia_yuc * 0.14 + fv_manglar_presencia_yuc * 0.70</p>
-<p><strong>Resultado</strong>
-SIG/desarrollo/sig_papiit/entregables/resiliencia/biologica/serv_ambientales_yuc/prot_costera_yuc/fv_prot_costera_yuc.tif</p>
-<p><strong>Nombre de la capa:</strong>  fv_prot_costera_yuc.tif <strong>falta metadato</strong></p>
-<p><strong>issue</strong> Protección costera <strong>Agregar la liga del metadato</strong></p>
 </div></blockquote>
 <p><strong>Provisión</strong></p>
 <blockquote>
@@ -338,56 +313,19 @@ SIG/desarrollo/sig_papiit/entregables/resiliencia/biologica/serv_ambientales_yuc
 </tbody>
 </table>
 </div></blockquote>
-<p><strong>Resultado:</strong> /sig_papiit/entregables/resiliencia/biologica/serv_ambientales_yuc/provision_yuc/fv_provision_yuc.tif</p>
+<p><strong>Resultado:</strong> /sig_papiit/entregables/resiliencia/biologica/serv_ambientales_yuc/provision_yuc/fv_provision_yuc_100m.tif</p>
 <p><strong>Nombre de la capa:</strong>  <a href= "" target="_blank">fv_provision_yuc.tif</a> <strong>falta metadato</strong></p>
 <p><strong>issue</strong> <a href= "https://github.com/lancis-apc/espejos-lancis/issues/49" target="_blank">Provisión</a></p>
-<p><strong>Integración</strong></p>
-<p>serv_ambientales_yuc  = fv_prot_costera_yuc * 0.75 + fv_provision_yuc * 0.25</p>
-<p><strong>Resultado</strong></p>
-<p>SIG/desarrollo/sig_papiit/entregables/resiliencia/salida/serv_ambientales.tif</p>
 </div></blockquote>
-</div>
-<div class="section" id="resultado">
-<h4>Resultado<a class="headerlink" href="#resultado" title="Enlazar permanentemente con este título">¶</a></h4>
-<p><code class="docutils literal notranslate"><span class="pre">res_biologica</span> <span class="pre">=</span> <span class="pre">fv_biodiversidad_yuc</span> <span class="pre">*</span> <span class="pre">0.50</span> <span class="pre">+</span> <span class="pre">serv_ambientales_yuc</span> <span class="pre">*</span> <span class="pre">0.50</span></code></p>
-<p>Ruta:  SIG/desarrollo/sig_papiit/entregables/resiliencia/salida/res_biologica.tif</p>
 </div>
 </div>
 <div class="section" id="fisica">
 <h3>Física<a class="headerlink" href="#fisica" title="Enlazar permanentemente con este título">¶</a></h3>
-<div class="section" id="ancho-de-playa">
-<h4>Ancho de playa<a class="headerlink" href="#ancho-de-playa" title="Enlazar permanentemente con este título">¶</a></h4>
-<p><em>Resiliencia - Física</em></p>
-<blockquote>
-<div><p><strong>Peso local:</strong>:0.62</p>
-<p><strong>Insumo:</strong> <a href= "http://magrat.mine.nu:8088/geonetwork/srv/spa/catalog.search#/metadata/2ee70ef3-59d1-4ba7-8db2-c6e9e14342ff" target="_blank">ifv_ancho_playa_yuc.tif</a></p>
-<p><strong>Definición:</strong> Binaria</p>
-<p><strong>Tipo de función:</strong></p>
-<img alt="_images/fv_c_res_aplaya.png" src="_images/fv_c_res_aplaya.png" />
-<p><strong>Resultado:</strong></p>
-<p><strong>Nombre de la capa:</strong> <a href= "http://magrat.mine.nu:8088/geonetwork/srv/spa/catalog.search#/metadata/67c144b7-7930-49e7-a9ef-c535c87d75ac" target="_blank">fv_ancho_playa_yuc.tif</a></p>
-<p><strong>issue</strong> <a href= "https://github.com/lancis-apc/espejos-lancis/issues/68" target="_blank">Ancho de playa</a></p>
-</div></blockquote>
-</div>
-<div class="section" id="dunas-costeras">
-<h4>Dunas costeras<a class="headerlink" href="#dunas-costeras" title="Enlazar permanentemente con este título">¶</a></h4>
-<p><em>Resiliencia - Física</em></p>
-<blockquote>
-<div><p><strong>Peso local:</strong>:0.27</p>
-<p><strong>Insumo:</strong> <a href= "http://magrat.mine.nu:8088/geonetwork/srv/spa/catalog.search#/metadata/0185f4bf-48d6-46c1-973d-917f41af9d46" target="_blank">ifv_duna_yuc.tif</a></p>
-<p><strong>Definición:</strong> Esta capa representa la presencia de dunas costeras en la costa, El insumo ocupado
-para la generación de esta capa corresponde a información del POETY</p>
-<p><strong>Tipo de función:</strong> Binaria</p>
-<p><strong>Resultado:</strong></p>
-<p><strong>Nombre de la capa:</strong> <a href= "http://magrat.mine.nu:8088/geonetwork/srv/spa/catalog.search#/metadata/f7f5efdf-c2c7-47b5-8a00-ffb5281d0007" target="_blank">fv_duna_yuc.tif</a></p>
-<p><strong>issue</strong> <a href= "https://github.com/lancis-apc/espejos-lancis/issues/61" target="_blank">Dunas costeras</a></p>
-</div></blockquote>
-</div>
 <div class="section" id="elevacion">
 <h4>Elevación<a class="headerlink" href="#elevacion" title="Enlazar permanentemente con este título">¶</a></h4>
 <p><em>Resiliencia - Física</em></p>
 <blockquote>
-<div><p><strong>Peso local:</strong>:0.06</p>
+<div><p><strong>Peso local:</strong>:0.60</p>
 <p><strong>Insumo:</strong> <a href= "http://magrat.mine.nu:8088/geonetwork/srv/spa/catalog.search#/metadata/c000fff6-e339-4a90-a0fa-1910086309d4" target="_blank">ifv_elev_yuc.tif</a></p>
 <p><strong>Definición:</strong>     El insumo para la generación de esta capa proviene del Continuo de Elevaciones Mexicano (CEM) de INEGI,
 a la cual se le aplico una funcion de valor <em>concava decreciente</em></p>
@@ -398,8 +336,8 @@ a la cual se le aplico una funcion de valor <em>concava decreciente</em></p>
 <p class="last">por verificar</p>
 </div>
 <p>arhivo json:</p>
-<p><code class="docutils literal notranslate"><span class="pre">min:</span> <span class="pre">-8</span>
-<span class="pre">max:</span> <span class="pre">25</span>
+<p><code class="docutils literal notranslate"><span class="pre">min:</span> <span class="pre">0</span>
+<span class="pre">max:</span> <span class="pre">31</span>
 <span class="pre">gama:</span> <span class="pre">0.01975</span>
 <span class="pre">saturacion:</span></code></p>
 <blockquote class="last">
@@ -416,7 +354,7 @@ a la cual se le aplico una funcion de valor <em>concava decreciente</em></p>
 <h4>Tipo de litoral<a class="headerlink" href="#tipo-de-litoral" title="Enlazar permanentemente con este título">¶</a></h4>
 <p><em>Resiliencia - Física</em></p>
 <blockquote>
-<div><p><strong>Peso local</strong>:0.05</p>
+<div><p><strong>Peso local</strong>:0.40</p>
 <p><strong>Insumo:</strong> <a href= "http://magrat.mine.nu:8088/geonetwork/srv/spa/catalog.search#/metadata/718b3df0-6f05-4a43-9278-e977b4549f45" target="_blank">ifv_tipo_litoral_yuc.tif</a></p>
 <p><strong>Definición:</strong> Esta capa representa la presencia de diferentes tipos de litoral, estos fueron clasificados
 conforme a la siguiente tabla, el insumo ocupado es la capa de uso de suelo y vegetación
@@ -491,7 +429,7 @@ serie VI de INEGI</p>
 <tbody valign="top">
 <tr class="row-even"><td>1</td>
 <td>Arenoso</td>
-<td>0.29</td>
+<td>0.54</td>
 </tr>
 <tr class="row-odd"><td>2</td>
 <td>Artificial</td>
@@ -499,11 +437,11 @@ serie VI de INEGI</p>
 </tr>
 <tr class="row-even"><td>3</td>
 <td>Lodoso</td>
-<td>0.10</td>
+<td>0.19</td>
 </tr>
 <tr class="row-odd"><td>4</td>
 <td>Vegetado</td>
-<td>0.54</td>
+<td>1.00</td>
 </tr>
 </tbody>
 </table>
@@ -513,20 +451,12 @@ serie VI de INEGI</p>
 <p><strong>issue</strong> <a href= "https://github.com/lancis-apc/espejos-lancis/issues/54" target="_blank">Tipo de litoral</a></p>
 </div></blockquote>
 </div>
-<div class="section" id="id1">
-<h4><strong>Resultado</strong><a class="headerlink" href="#id1" title="Enlazar permanentemente con este título">¶</a></h4>
+<div class="section" id="resultado">
+<h4><strong>Resultado</strong><a class="headerlink" href="#resultado" title="Enlazar permanentemente con este título">¶</a></h4>
 <p><code class="docutils literal notranslate"><span class="pre">res_fisica</span> <span class="pre">=</span> <span class="pre">fv_ancho_playa_yuc</span> <span class="pre">*</span> <span class="pre">0.62</span> <span class="pre">+</span> <span class="pre">fv_duna_yuc</span> <span class="pre">*</span> <span class="pre">0.27</span> <span class="pre">+</span> <span class="pre">fv_elev_yuc</span> <span class="pre">*</span> <span class="pre">0.06</span> <span class="pre">+</span> <span class="pre">fv_tipo_litoral_yuc</span> <span class="pre">*</span> <span class="pre">0.05</span></code></p>
 <p>Ruta: SIG/desarrollo/sig_papiit/entregables/resiliencia/salida/res_fisica.tif</p>
-</div>
-</div>
-<div class="section" id="integracion">
-<h3>Integración<a class="headerlink" href="#integracion" title="Enlazar permanentemente con este título">¶</a></h3>
-<p>resiliencia = res_biologica * 0.50 + res_fisica * 0.50</p>
-</div>
-<div class="section" id="id2">
-<h3>Resultado<a class="headerlink" href="#id2" title="Enlazar permanentemente con este título">¶</a></h3>
-<p>SIG/desarrollo/sig_papiit/entregables/resiliencia/salida/resiliencia_yuc.tif</p>
 <a href= "" target="_blank"></a><a href= "" target="_blank"></a><a href= "" target="_blank"></a></div>
+</div>
 </div>
 </div>
 

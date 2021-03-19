@@ -143,7 +143,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'PAPIIT.tex', 'PAPIIT Documentation',
+    (master_doc, 'PAPIIT.tex', 'Modelo de vulnerabilidad y capacidad adaptativa',
      'LANCIS', 'manual'),
 ]
 
@@ -153,7 +153,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'papiit', 'PAPIIT Documentation',
+    (master_doc, 'PAPITT', 'Modelo de vulnerabilidad y capacidad adaptativa',
      [author], 1)
 ]
 
@@ -164,7 +164,7 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'PAPIIT', 'PAPIIT Documentation',
+    (master_doc, 'PAPIIT', 'Modelo de vulnerabilidad y capacidad adaptativa',
      author, 'PAPIIT', 'One line description of project.',
      'Miscellaneous'),
 ]

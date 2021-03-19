@@ -3,8 +3,11 @@ Resiliencia
 
 .. Capacidad del sistema de resisitir, absober y sobreponerse al impacto de una amenaza.
 
-.. imagen:: ../recursos/vulnerabilidad_resiliencia_fv.png
+Modelo multicriterio
+*********************
 
+.. imagen:: ../recursos/vulnerabilidad_resiliencia_fv_23nov2020.png
+    :align: center
 
 Insumos
 *********
@@ -42,7 +45,7 @@ Biodiversidad
     ========= ===================== ====
    
    
-    **Resultado:** SIG/desarrollo/sig_papiit/entregables/resiliencia/biologica/biodiversidad_yuc/fv_biodiversidad_yuc.tif
+    **Resultado:** SIG/desarrollo/sig_papiit/entregables/resiliencia/biologica/biodiversidad_yuc/fv_biodiversidad_yuc_100m.tif
 
     **Nombre de la capa:** |fv_biodiversidad_yuc.tif|
 
@@ -92,63 +95,23 @@ Presencia de tipos de vegetación que proveen protección a la línea de costa (
         .. image:: ../recursos/fv/fv_c_res_veg_acuatica.png
 
         
-        **Resultado:** sig_papiit/entregables/resiliencia/biologica/serv_ambientales_yuc/prot_costera_yuc/fv_v_acuatica_yuc.tif
+        **Resultado:** sig_papiit/entregables/resiliencia/biologica/serv_ambientales_yuc/prot_costera_yuc/fv_v_acuatica_yuc_100m.tif
 
 
-        **Nombre de la capa:** fv_v_acuatica_yuc.tif
 
         
 
+    **Entidades protectoras**
 
-
-    **Dunas costeras**
-
-        *Resiliencia - Biológica - Servicios ambientales - Protección costera*
-
-        **Peso local:** 0.14
-
-        **Insumo:** ifv_dunas_presencia_yuc.tif
-
-        **Definición:** 
-
-        **Tipo de función:**   Binaria
-
-        **Resultado:** /sig_papiit/entregables/resiliencia/biologica/serv_ambientales_yuc/prot_costera_yuc/fv_dunas_presencia_yuc.tif
-
-        **Nombre de la capa:** fv_dunas_presencia_yuc.tif
-
-       
-
-
-                
-
-    **Manglar**
-    
-        *Resiliencia - Biológica - Servicios ambientales - Protección costera*
-
-        **Peso local**:0.70
-
-        **Insumo:** ifv_manglar_presencia_yuc.tif
-
-        **Definición:**
-
-        **Tipo de función:** Binaria
-
-        **Resultado:**  /sig_papiit/entregables/resiliencia/biologica/serv_ambientales_yuc/prot_costera_yuc/fv_manglar_presencia_yuc.tif
-
-        **Nombre de la capa:** fv_manglar_presencia_yuc.tif
-
-    
-    **Integración**
-
-    fv_proteccion_costera = fv_v_acuatica_yuc * 0.16 + fv_dunas_presencia_yuc * 0.14 + fv_manglar_presencia_yuc * 0.70
+        **Peso local:** 0.84
         
-    **Resultado**
-    SIG/desarrollo/sig_papiit/entregables/resiliencia/biologica/serv_ambientales_yuc/prot_costera_yuc/fv_prot_costera_yuc.tif
+        **Definición:** Presencia de manglar y Dunas costeras que ofrece
 
-    **Nombre de la capa:**  fv_prot_costera_yuc.tif **falta metadato**
-  
-    **issue** Protección costera **Agregar la liga del metadato**
+        **Resultado:** sig_papiit/entregables/resiliencia/biologica/serv_ambientales_yuc/prot_costera_yuc/fv_entidades_protectoras.tif
+
+        .. image:: ../recursos/fv/fv_d_res_ent_protector.png
+
+
 
 
 **Provisión**
@@ -177,76 +140,18 @@ Presencia de tipos de vegetación que proveen protección a la línea de costa (
         ========= ===================== ====
 
 
-    **Resultado:** /sig_papiit/entregables/resiliencia/biologica/serv_ambientales_yuc/provision_yuc/fv_provision_yuc.tif
+    **Resultado:** /sig_papiit/entregables/resiliencia/biologica/serv_ambientales_yuc/provision_yuc/fv_provision_yuc_100m.tif
   
     **Nombre de la capa:**  |fv_provision_yuc.tif| **falta metadato**
   
     **issue** |Provisión|
 
 
-    **Integración**
-
-    serv_ambientales_yuc  = fv_prot_costera_yuc * 0.75 + fv_provision_yuc * 0.25 
-
-    **Resultado**  
-
-    SIG/desarrollo/sig_papiit/entregables/resiliencia/salida/serv_ambientales.tif
 
     
-
-
-Resultado 
------------
-``res_biologica = fv_biodiversidad_yuc * 0.50 + serv_ambientales_yuc * 0.50``
-
-
-Ruta:  SIG/desarrollo/sig_papiit/entregables/resiliencia/salida/res_biologica.tif
-
 
 Física
 =======
-
-Ancho de playa 
----------------
-*Resiliencia - Física*
-    
-
-    **Peso local:**:0.62
-
-    **Insumo:** |ifv_ancho_playa_yuc.tif|
-
-    **Definición:** Binaria
-
-    **Tipo de función:**
-
-    .. imagen:: ../recursos/fv/fv_c_res_aplaya.png
-
-    **Resultado:**
-
-    **Nombre de la capa:** |fv_ancho_playa_yuc.tif|
-
-    **issue** |Ancho de playa|
-
-    
-
-Dunas costeras
----------------
-*Resiliencia - Física*
-    
-    **Peso local:**:0.27
-
-    **Insumo:** |ifv_duna_yuc.tif|
-
-    **Definición:** Esta capa representa la presencia de dunas costeras en la costa, El insumo ocupado
-    para la generación de esta capa corresponde a información del POETY
-
-    **Tipo de función:** Binaria
-
-    **Resultado:**
-
-    **Nombre de la capa:** |fv_duna_yuc.tif|
-
-    **issue** |Dunas costeras|
 
 
 
@@ -256,7 +161,7 @@ Elevación
     
 
 
-    **Peso local:**:0.06
+    **Peso local:**:0.60
 
     **Insumo:** |ifv_elev_yuc.tif|
 
@@ -264,14 +169,11 @@ Elevación
     a la cual se le aplico una funcion de valor *concava decreciente*
 
     **Tipo de función:** continua - Concava creciente
-        .. warning:: 
-            por verificar
-
 
         arhivo json: 
 
-        ``min: -8
-        max: 25
+        ``min: 0
+        max: 31
         gama: 0.01975
         saturacion:``
 
@@ -290,7 +192,7 @@ Tipo de litoral
 -----------------
 *Resiliencia - Física*
     
-    **Peso local**:0.05
+    **Peso local**:0.40
 
     
     **Insumo:** |ifv_tipo_litoral_yuc.tif|
@@ -326,10 +228,10 @@ Tipo de litoral
         ========= =========== ====
         Categoria Descripción fv
         ========= =========== ====
-        1         Arenoso     0.29
+        1         Arenoso     0.54
         2         Artificial  1.00
-        3         Lodoso      0.10
-        4         Vegetado    0.54
+        3         Lodoso      0.19
+        4         Vegetado    1.00
         ========= =========== ====
 
     **Resultado:** SIG/desarrollo/sig_papiit/entregables/resiliencia/fisica/t_litoral_yuc/fv_tipo_litoral_yuc_v2.tif
@@ -348,19 +250,6 @@ Tipo de litoral
 
 
 Ruta: SIG/desarrollo/sig_papiit/entregables/resiliencia/salida/res_fisica.tif 
-
-
-
-Integración
-============
-
-resiliencia = res_biologica * 0.50 + res_fisica * 0.50
-
-
-Resultado
-==========
-
-SIG/desarrollo/sig_papiit/entregables/resiliencia/salida/resiliencia_yuc.tif
 
 
 .. ligas
